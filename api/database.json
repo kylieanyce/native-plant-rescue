@@ -46,7 +46,6 @@
             "address": "",
             "pickupInfo": "",
             "available": true,
-            "image": "",
             "id": 1
         },
         {
@@ -55,7 +54,6 @@
             "address": "",
             "pickupInfo": "",
             "available": true,
-            "image": "",
             "id": 2
         },
         {
@@ -64,7 +62,6 @@
             "address": "",
             "pickupInfo": "",
             "available": true,
-            "image": "",
             "id": 3
         }
     ]
