@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function ButtonAppBar() {
+export const ButtonAppBar = () => {
     const classes = useStyles();
 
     return (
