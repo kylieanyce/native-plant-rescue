@@ -1,0 +1,71 @@
+{
+    "users": [
+        {
+            "name": "Kasey",
+            "email": "kasey@gmail.com",
+            "id": 1
+        },
+        {
+            "name": "Andy",
+            "email": "andy@gmail.com",
+            "id": 2
+        },
+        {
+            "name": "Jeaner",
+            "email": "jeaner@gmail.com",
+            "id": 3
+        }
+    ],
+    "plants": [
+        {
+            "commonName": "",
+            "scientificName": "",
+            "description": "",
+            "image": "",
+            "id": 1
+        },
+        {
+            "commonName": "",
+            "scientificName": "",
+            "description": "",
+            "image": "",
+            "id": 2
+        },
+        {
+            "commonName": "",
+            "scientificName": "",
+            "description": "",
+            "image": "",
+            "id": 3
+        }
+    ],
+    "posts": [
+        {
+            "userId": 1,
+            "plantId": 1,
+            "address": "",
+            "pickupInfo": "",
+            "available": true,
+            "image": "",
+            "id": 1
+        },
+        {
+            "userId": 2,
+            "plantId": 2,
+            "address": "",
+            "pickupInfo": "",
+            "available": true,
+            "image": "",
+            "id": 2
+        },
+        {
+            "userId": 3,
+            "plantId": 3,
+            "address": "",
+            "pickupInfo": "",
+            "available": true,
+            "image": "",
+            "id": 3
+        }
+    ]
+}
