@@ -1,0 +1,4 @@
+export const testAPI = {
+  baseURL: "THE API URL",
+  apiKey: "THE API KEY"
+}
