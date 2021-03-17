@@ -2,6 +2,7 @@ import { Route, Redirect } from "react-router-dom"
 import { userStorageKey } from "./components/auth/authSettings"
 import { NavBar } from "./components/nav/NavBar";
 import { ApplicationViews } from "./components/ApplicationViews";
+import { Identify } from "./components/plants/Identify";
 
 export const App = () => (
   <>
@@ -11,6 +12,7 @@ export const App = () => (
           <>
             <NavBar />
             <ApplicationViews />
+            <Identify />
           </>
         )
       } else {
