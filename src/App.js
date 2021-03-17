@@ -2,7 +2,7 @@ import { Route, Redirect } from "react-router-dom"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
 import { userStorageKey } from "./components/auth/authSettings"
-import { SimpleMenu } from "./components/nav/NavBar";
+import { NavBar } from "./components/nav/NavBar";
 import { ApplicationViews } from "./components/ApplicationViews";
 
 export const App = () => (
@@ -11,7 +11,7 @@ export const App = () => (
       if (sessionStorage.getItem(userStorageKey)) {
         return (
           <>
-            <SimpleMenu />
+            <NavBar />
             <ApplicationViews />
           </>
         )
