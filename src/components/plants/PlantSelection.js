@@ -1,9 +1,9 @@
 import React, {useContext} from "react"
-import { Link } from "react-router-dom"
 import { IdentifyContext } from "./IdentifyProvider";
 import { SelectPlantCard} from "./SelectPlant"
 
-export const IdentifyCard = () => {
+
+export const PlantSelection = () => {
     const {plants} = useContext(IdentifyContext)
 
     return (

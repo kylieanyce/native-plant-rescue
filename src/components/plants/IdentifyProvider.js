@@ -58,7 +58,7 @@ export const IdentifyProvider = (props) => {
                     console.log("Success:", data);
                     setPlants(data.suggestions)
                 })
-                .then(() => history.push("/identify"))
+                .then(() => history.push("/select"))
                 .catch((error) => {
                     console.error("Error:", error);
                 });

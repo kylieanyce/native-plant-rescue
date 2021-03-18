@@ -3,7 +3,7 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
-import { IdentifyCard } from "./plants/IdentifyPlant"
+import { PlantSelection } from "./plants/PlantSelection"
 import { IdentifyForm } from "./plants/IdentifyForm"
 import { IdentifyProvider } from "./plants/IdentifyProvider"
 
@@ -20,8 +20,8 @@ export const ApplicationViews = () => {
                 <Register />
             </Route>
             <IdentifyProvider>
-                <Route path="/identify">
-                    <IdentifyCard />
+                <Route path="/select">
+                    <PlantSelection />
                 </Route>
                 <Route path="/identifyForm">
                     <IdentifyForm />
