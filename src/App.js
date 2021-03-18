@@ -13,8 +13,6 @@ export const App = () => (
           <>
             <NavBar />
             <ApplicationViews />
-            {/* <IdentifyProvider />
-            <IdentifyCard /> */}
           </>
         )
       } else {
