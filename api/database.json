@@ -53,24 +53,24 @@
     {
       "userId": 1,
       "plantId": 1,
-      "address": "",
-      "pickupInfo": "",
+      "address": "526 shorty ln",
+      "pickupInfo": "come to back porch",
       "available": true,
       "id": 1
     },
     {
       "userId": 2,
       "plantId": 2,
-      "address": "",
-      "pickupInfo": "",
+      "address": "789 boogie down rd",
+      "pickupInfo": "on front porch",
       "available": true,
       "id": 2
     },
     {
       "userId": 3,
       "plantId": 3,
-      "address": "",
-      "pickupInfo": "",
+      "address": "239 boot scoot terrace",
+      "pickupInfo": "under patio",
       "available": true,
       "id": 3
     }
