@@ -1,8 +1,10 @@
 import { Route, Redirect } from "react-router-dom"
 import { userStorageKey } from "./components/auth/authSettings"
-import { NavBar } from "./components/nav/NavBar";
 import { ApplicationViews } from "./components/ApplicationViews";
-import { Identify } from "./components/plants/Identify";
+import { Login } from "./components/auth/Login"
+import { Register } from "./components/auth/Register"
+import { IdentifyForm } from "./components/plants/IdentifyForm";
+
 
 export const App = () => (
   <>
@@ -10,16 +12,20 @@ export const App = () => (
       if (sessionStorage.getItem(userStorageKey)) {
         return (
           <>
-            <NavBar />
             <ApplicationViews />
-            <Identify />
           </>
         )
       } else {
         return <Redirect to="/login" />;
       }
     }} />
+    <Route path="/login">
+      <Login />
 
-    
+    </Route>
+    <Route path="/register">
+      <Register />
+    </Route>
+
   </>
 )

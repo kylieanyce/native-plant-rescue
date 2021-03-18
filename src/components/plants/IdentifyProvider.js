@@ -1,9 +1,19 @@
 import { React } from "react";
 import { testAPI } from "../../Settings.js";
+import { useState, createContext } from "react"
+import { useHistory } from "react-router-dom"
+
+
 
 const apiKey = testAPI.apiKey
 
-export const Identify = () => {
+export const IdentifyContext = createContext()
+
+export const IdentifyProvider = (props) => {
+    const [plants, setPlants] = useState([])
+
+    const history = useHistory()
+
     const sendIdentification = () => {
         const files = [...document.querySelector("input[type=file]").files];
         const promises = files.map((file) => {
@@ -46,17 +56,22 @@ export const Identify = () => {
                 .then((response) => response.json())
                 .then((data) => {
                     console.log("Success:", data);
+                    setPlants(data.suggestions)
                 })
+                .then(() => history.push("/select"))
                 .catch((error) => {
                     console.error("Error:", error);
                 });
         });
     };
 
-        return (
-            <form>
-                <input type="file" multiple />
-                <button onClick={sendIdentification} type="button">OK</button>
-            </form>
-        )
+    return (
+        <>
+            <IdentifyContext.Provider value={{
+                plants, sendIdentification
+            }}>
+                {props.children}
+            </IdentifyContext.Provider>
+        </>
+    )
 }
