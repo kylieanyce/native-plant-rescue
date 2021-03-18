@@ -1,14 +1,17 @@
-import React, {useContext} from "react"
+import React, { useContext } from "react"
 import { IdentifyContext } from "./IdentifyProvider";
-import { SelectPlantCard} from "./SelectPlant"
+import { SelectPlantCard } from "./SelectPlant"
 
 
 export const PlantSelection = () => {
-    const {plants} = useContext(IdentifyContext)
+    const { plants } = useContext(IdentifyContext)
 
     return (
-        <section>{plants.map(plant => {
-            return <SelectPlantCard key={plant.id} plant={plant} />
-        })}</section>
+        <div>
+            <h2>Choose Your Plant</h2>
+            <section>{plants.map(plant => {
+                return <SelectPlantCard key={plant.id} plant={plant} />
+            })}</section>
+        </div>
     )
 }

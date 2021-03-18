@@ -7,6 +7,10 @@ export const SelectPlantCard = ({ plant }) => {
 
     const plantCommonNames = plant.plant_details.common_names
 
+    const handleCreatePost = () => {
+        
+    }
+
     return (
         <div className="selectPlantCard" value={plant.id}>
             <h4>Scientific Name: {plant.plant_details.scientific_name}</h4>
