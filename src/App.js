@@ -1,9 +1,10 @@
 import { Route, Redirect } from "react-router-dom"
 import { userStorageKey } from "./components/auth/authSettings"
-import { NavBar } from "./components/nav/NavBar";
 import { ApplicationViews } from "./components/ApplicationViews";
-import { IdentifyProvider } from "./components/plants/IdentifyProvider";
-import { IdentifyCard } from "./components/plants/IdentifyPlant";
+import { Login } from "./components/auth/Login"
+import { Register } from "./components/auth/Register"
+import { IdentifyForm } from "./components/plants/IdentifyForm";
+
 
 export const App = () => (
   <>
@@ -11,7 +12,6 @@ export const App = () => (
       if (sessionStorage.getItem(userStorageKey)) {
         return (
           <>
-            <NavBar />
             <ApplicationViews />
           </>
         )
@@ -19,7 +19,13 @@ export const App = () => (
         return <Redirect to="/login" />;
       }
     }} />
+    <Route path="/login">
+      <Login />
 
-    
+    </Route>
+    <Route path="/register">
+      <Register />
+    </Route>
+
   </>
 )

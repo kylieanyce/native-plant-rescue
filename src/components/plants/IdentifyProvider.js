@@ -68,7 +68,7 @@ export const IdentifyProvider = (props) => {
     return (
         <>
             <IdentifyContext.Provider value={{
-                plants
+                plants, sendIdentification
             }}>
                 {props.children}
             </IdentifyContext.Provider>

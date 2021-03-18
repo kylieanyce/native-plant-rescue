@@ -1,8 +1,10 @@
-import { React } from "react";
-import { IdentifyForm } from "./IdentifyForm";
+import React, { useContext } from "react";
+import { IdentifyContext } from "./IdentifyProvider";
 
 
 export const IdentifyForm = () => {
+    const { sendIdentification } = useContext(IdentifyContext)
+
     return (
         <form>
             <input type="file" multiple />

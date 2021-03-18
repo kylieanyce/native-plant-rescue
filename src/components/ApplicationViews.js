@@ -4,6 +4,7 @@ import { Home } from "./Home"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { IdentifyCard } from "./plants/IdentifyPlant"
+import { IdentifyForm } from "./plants/IdentifyForm"
 import { IdentifyProvider } from "./plants/IdentifyProvider"
 
 export const ApplicationViews = () => {
@@ -21,6 +22,9 @@ export const ApplicationViews = () => {
             <IdentifyProvider>
                 <Route path="/identify">
                     <IdentifyCard />
+                </Route>
+                <Route path="/identifyForm">
+                    <IdentifyForm />
                 </Route>
             </IdentifyProvider>
 
