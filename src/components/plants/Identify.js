@@ -1,5 +1,7 @@
 import { React } from "react";
+import { testAPI } from "../../Settings.js";
 
+const apiKey = testAPI.apiKey
 
 export const Identify = () => {
     const sendIdentification = () => {
@@ -20,7 +22,7 @@ export const Identify = () => {
 
             const data = {
                 api_key:
-                    "qd2QLSXO43bvmemiZz2DCK9hwChs19OeFU96aZI8NS91T3dKuv",
+                    `${apiKey}`,
                 images: base64files,
                 modifiers: ["crops_fast", "similar_images"],
                 plant_language: "en",
