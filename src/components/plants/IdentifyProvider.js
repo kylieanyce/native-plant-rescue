@@ -67,10 +67,6 @@ export const IdentifyProvider = (props) => {
 
     return (
         <>
-            <form>
-                <input type="file" multiple />
-                <button onClick={sendIdentification} type="button">OK</button>
-            </form>
             <IdentifyContext.Provider value={{
                 plants
             }}>

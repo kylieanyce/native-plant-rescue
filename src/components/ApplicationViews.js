@@ -3,7 +3,7 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
-import { IdentifyCard } from "./plants/SelectCard"
+import { IdentifyCard } from "./plants/IdentifyPlant"
 import { IdentifyProvider } from "./plants/IdentifyProvider"
 
 export const ApplicationViews = () => {

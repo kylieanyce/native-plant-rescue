@@ -3,7 +3,7 @@ import { userStorageKey } from "./components/auth/authSettings"
 import { NavBar } from "./components/nav/NavBar";
 import { ApplicationViews } from "./components/ApplicationViews";
 import { IdentifyProvider } from "./components/plants/IdentifyProvider";
-import { IdentifyCard } from "./components/plants/SelectCard";
+import { IdentifyCard } from "./components/plants/IdentifyPlant";
 
 export const App = () => (
   <>
