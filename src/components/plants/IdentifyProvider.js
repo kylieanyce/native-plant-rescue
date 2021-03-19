@@ -11,6 +11,7 @@ export const IdentifyContext = createContext()
 
 export const IdentifyProvider = (props) => {
     const [plants, setPlants] = useState([])
+    const [plantImages, setPlantImages] = useState([])
 
     const history = useHistory()
 
@@ -29,7 +30,7 @@ export const IdentifyProvider = (props) => {
         });
         Promise.all(promises).then((base64files) => {
             console.log(base64files);
-
+            
             const data = {
                 api_key:
                     `${apiKey}`,
@@ -44,6 +45,9 @@ export const IdentifyProvider = (props) => {
                     "taxonomy",
                     "synonyms",
                 ],
+                similar_images: [
+                    "url"
+                ],
             };
 
             fetch("https://api.plant.id/v2/identify", {
@@ -53,11 +57,14 @@ export const IdentifyProvider = (props) => {
                 },
                 body: JSON.stringify(data),
             })
-                .then((response) => response.json())
-                .then((data) => {
-                    console.log("Success:", data);
+            .then((response) => response.json())
+            .then((data) => {
+                    console.log("Success:", data.suggestions);
                     setPlants(data.suggestions)
+                    // console.log("success:", data.modifiers.similar_images)
+                    // setPlantImages(data.modifiers.similar_images)
                 })
+                
                 .then(() => history.push("/select"))
                 .catch((error) => {
                     console.error("Error:", error);
