@@ -12,10 +12,10 @@ export const PostProvider = (props) => {
     }
 
     return (
-        <PostProvider.Provider value={{
+        <PostContext.Provider value={{
             posts, getPosts
         }}>
             {props.children}
-        </PostProvider.Provider>
+        </PostContext.Provider>
     )
 }
