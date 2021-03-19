@@ -6,7 +6,7 @@ export const PostProvider = (props) => {
     const [posts, setPosts] = useState([])
 
     const getPosts = () => {
-        return fetch("http://localhost:8088/users?_embed=posts")
+        return fetch("http://localhost:8088/posts?_expand=plant")
         .then(res => res.json())
         .then(setPosts)
     }

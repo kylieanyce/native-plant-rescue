@@ -1,21 +1,21 @@
 import React, { useState, useContext, useEffect } from "react"
 import { useHistory } from "react-router-dom"
 import { PlantContext } from "../plants/PlantProvider";
-import { UserContext } from "../users/UserProvider";
-import { PlantPostCard } from "./LibraryPost"
+import { PostContext } from "../posts/PostProvider";
+import { LibraryPostCard } from "./LibraryPost"
 
 
 export const LibraryList = () => {
     const { plants, getPlants } = useContext(PlantContext)
-    const { users, getUsers } = useContext(UserContext)
+    const { posts, getPosts } = useContext(PostContext)
 
     // const [filteredPosts, setFiltered] = useState([])
 
     const history = useHistory()
 
     useEffect(() => {
-        getUsers()
-            .then(getPlants)
+        getPlants()
+            .then(getPosts)
     }, [])
 
     return (
@@ -23,14 +23,14 @@ export const LibraryList = () => {
             <h2>Plant Library</h2>
             <div>
                 {
-                    plants.map(plantObj => {
-                        const user = users.find(userObj => userObj.id === plantObj.userId)
-                        return <PlantPostCard key={plantObj.id} post={plantObj} user={user}/>
+                    posts.map(postObj => {
+                        const plant = plants.find(plantObj => postObj.id === plantObj.postId)
+                        return <LibraryPostCard key={postObj.id} post={postObj} plant={plant}/>
                     })
                 }
             </div>
-            <button></button>
-            <button></button>
+            <button>Create Post</button>
+            <button>Identify Plant</button>
         </div>
     )
 }
