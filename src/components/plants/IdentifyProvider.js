@@ -11,7 +11,6 @@ export const IdentifyContext = createContext()
 
 export const IdentifyProvider = (props) => {
     const [plants, setPlants] = useState([])
-    const [plantImages, setPlantImages] = useState([])
 
     const history = useHistory()
 
@@ -44,10 +43,7 @@ export const IdentifyProvider = (props) => {
                     "wiki_description",
                     "taxonomy",
                     "synonyms",
-                ],
-                similar_images: [
-                    "url"
-                ],
+                ]
             };
 
             fetch("https://api.plant.id/v2/identify", {
@@ -59,7 +55,7 @@ export const IdentifyProvider = (props) => {
             })
             .then((response) => response.json())
             .then((data) => {
-                    console.log("Success:", data.suggestions);
+                    console.log("Success:", data);
                     setPlants(data.suggestions)
                     // console.log("success:", data.modifiers.similar_images)
                     // setPlantImages(data.modifiers.similar_images)
