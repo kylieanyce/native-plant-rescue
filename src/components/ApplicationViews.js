@@ -6,6 +6,8 @@ import { Register } from "./auth/Register"
 import { PlantSelection } from "./plants/PlantSelection"
 import { IdentifyForm } from "./plants/IdentifyForm"
 import { IdentifyProvider } from "./plants/IdentifyProvider"
+import { PlantProvider } from "./plants/PlantProvider"
+import { CreatePost } from "./plants/CreateForm"
 
 export const ApplicationViews = () => {
     return (
@@ -19,14 +21,20 @@ export const ApplicationViews = () => {
             <Route path="/register">
                 <Register />
             </Route>
-            <IdentifyProvider>
-                <Route path="/select">
-                    <PlantSelection />
-                </Route>
-                <Route path="/identifyForm">
-                    <IdentifyForm />
-                </Route>
-            </IdentifyProvider>
+
+            <PlantProvider>
+                <IdentifyProvider>
+                    <Route path="/select">
+                        <PlantSelection />
+                    </Route>
+                    <Route path="/identifyForm">
+                        <IdentifyForm />
+                    </Route>
+                    {/* <Route path="/create">
+                        <CreatePost />
+                    </Route> */}
+                </IdentifyProvider>
+            </PlantProvider>
 
         </>
     )
