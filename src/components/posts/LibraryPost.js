@@ -4,10 +4,11 @@ import { Link } from "react-router-dom"
 
 export const PlantPostCard = ({plant}) => {
     return (
-        <section className="plantPosts">
+        <section className="plantPosts" id={plant.id}>
             <h3>
-                {plant.name}
+                {plant.commonName}
             </h3>
+            <p>{plant.description}</p>
         </section>
     )
 }
