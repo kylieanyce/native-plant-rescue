@@ -1,5 +1,17 @@
 .selectPlantCard {
-    border: 2px teal solid;
-    margin: 10px;
+    border: 2px solid teal;
     padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 3 3;
+    max-width: 400px;
+    text-align: center;
+}
+.selectPlantList {
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    max-width: 400px;
 }

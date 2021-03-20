@@ -1,0 +1,22 @@
+form {
+    border: teal 2px solid;
+    background-color: teal;
+    padding: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+.identifyForm {
+    /* display: flex;
+    align-content: center; */
+    display: table-cell;
+    vertical-align: middle;
+}
+.outerIdentifyForm {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}

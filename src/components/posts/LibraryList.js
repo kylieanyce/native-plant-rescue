@@ -22,7 +22,7 @@ export const LibraryList = () => {
     return (
         <div className="libraryPosts">
             <h2>Plant Library</h2>
-            <div>
+            <div className="postList">
                 {
                     posts.map(postObj => {
                         const plant = plants.find(plantObj => postObj.id === plantObj.postId)

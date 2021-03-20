@@ -9,7 +9,7 @@ export const PlantSelection = () => {
     return (
         <div>
             <h2>Choose Your Plant</h2>
-            <section>{plants.map(plant => {
+            <section className="selectPlantList">{plants.map(plant => {
                 return <SelectPlantCard key={plant.id} plant={plant} />
             })}</section>
         </div>

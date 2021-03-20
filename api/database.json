@@ -30,23 +30,37 @@
     {
       "id": 1,
       "commonName": "Rhododendron",
-      "scientificName": null,
+      "scientificName": "Rhododendron",
       "description": "Rhododendron (from Ancient Greek ῥόδον rhódon \"rose\" and δένδρον déndron \"tree\") is a genus of 1,024 species of woody plants in the heath family (Ericaceae), either evergreen or deciduous, and found mainly in Asia, although it is also widespread throughout lowland and montane forests in the Pacific Northwest, California, the Northeastern United States, and especially in the highlands of the Appalachian Mountains of North America. It is the national flower of Nepal, the state flower of Washington and West Virginia in the United States, the provincial flower of Jiangxi in China and the state tree of Sikkim and Uttarakhand in India. Most species have brightly colored flowers which bloom from late winter through to early summer.\nAzaleas make up two subgenera of Rhododendron. They are distinguished from \"true\" rhododendrons by having only five anthers per flower.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/b97/66e3ca13772a09246ad560780870a.jpg"
     },
     {
       "id": 2,
       "commonName": "Azalea",
-      "scientificName": null,
+      "scientificName": "Azalea",
       "description": "Rhododendron (from Ancient Greek ῥόδον rhódon \"rose\" and δένδρον déndron \"tree\") is a genus of 1,024 species of woody plants in the heath family (Ericaceae), either evergreen or deciduous, and found mainly in Asia, although it is also widespread throughout lowland and montane forests in the Pacific Northwest, California, the Northeastern United States, and especially in the highlands of the Appalachian Mountains of North America. It is the national flower of Nepal, the state flower of Washington and West Virginia in the United States, the provincial flower of Jiangxi in China and the state tree of Sikkim and Uttarakhand in India. Most species have brightly colored flowers which bloom from late winter through to early summer.\nAzaleas make up two subgenera of Rhododendron. They are distinguished from \"true\" rhododendrons by having only five anthers per flower.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/b97/66e3ca13772a09246ad560780870a.jpg"
     },
     {
       "id": 3,
       "commonName": "Lavender",
-      "scientificName": null,
+      "scientificName": "Lavender",
       "description": "Rhododendron (from Ancient Greek ῥόδον rhódon \"rose\" and δένδρον déndron \"tree\") is a genus of 1,024 species of woody plants in the heath family (Ericaceae), either evergreen or deciduous, and found mainly in Asia, although it is also widespread throughout lowland and montane forests in the Pacific Northwest, California, the Northeastern United States, and especially in the highlands of the Appalachian Mountains of North America. It is the national flower of Nepal, the state flower of Washington and West Virginia in the United States, the provincial flower of Jiangxi in China and the state tree of Sikkim and Uttarakhand in India. Most species have brightly colored flowers which bloom from late winter through to early summer.\nAzaleas make up two subgenera of Rhododendron. They are distinguished from \"true\" rhododendrons by having only five anthers per flower.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/b97/66e3ca13772a09246ad560780870a.jpg"
+    },
+    {
+      "id": 4,
+      "commonName": "Lavandula angustifolia",
+      "scientificName": [
+        "lavender",
+        "true lavender",
+        "English lavender",
+        "garden lavender",
+        "common lavender",
+        "narrow-leaved lavender"
+      ],
+      "description": "Lavandula angustifolia, formerly L. officinalis, is a flowering plant in the family Lamiaceae, native to the Mediterranean (Spain, France, Italy, Croatia etc.). Its common names include lavender, true lavender or English lavender (though not native to England); also garden lavender, common lavender, and narrow-leaved lavender.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/84e/b22b391cb476c714a89c10b4b7ccb.jpg"
     }
   ],
   "posts": [
