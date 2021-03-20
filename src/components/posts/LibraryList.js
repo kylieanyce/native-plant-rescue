@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom"
 import { PlantContext } from "../plants/PlantProvider";
 import { PostContext } from "../posts/PostProvider";
 import { LibraryPostCard } from "./LibraryPost"
+import "./Library.css";
 
 
 export const LibraryList = () => {
