@@ -26,12 +26,14 @@ export const LibraryList = () => {
                 {
                     posts.map(postObj => {
                         const plant = plants.find(plantObj => postObj.id === plantObj.postId)
-                        return <LibraryPostCard key={postObj.id} post={postObj} plant={plant}/>
+                        return <LibraryPostCard key={postObj.id} post={postObj} plant={plant} />
                     })
                 }
             </div>
             <button>Create Post</button>
-            <button>Identify Plant</button>
+            <button onClick={() => {
+                history.push("/identifyForm")
+            }}>Identify Your Plant</button>
         </div>
     )
 }
