@@ -105,6 +105,19 @@
       "description": "Rhododendron ponticum, called common rhododendron or pontic rhododendron, is a species of Rhododendron native to the Iberian Peninsula in southwest Europe and the Caucasus region in northern West Asia.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2d2/63fd79eb9102f3f0348563cd2fffe.jpg",
       "id": 8
+    },
+    {
+      "commonName": [
+        "Pacific rhododendron",
+        "California rosebay",
+        "California rhododendron",
+        "coast rhododendron",
+        "big leaf rhododendron"
+      ],
+      "scientificName": "Rhododendron macrophyllum",
+      "description": "Rhododendron macrophyllum, the Pacific rhododendron, California rosebay, California rhododendron, coast rhododendron or big leaf rhododendron, is a large-leaved species of Rhododendron native to the Pacific Coast of North America. It is the state flower of Washington.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/ae1/6a4d434ba3957b764aca9f38704ac.jpg",
+      "id": 9
     }
   ],
   "posts": [
@@ -118,7 +131,7 @@
     },
     {
       "userId": 2,
-      "plantId": 2,
+      "plantId": 7,
       "address": "789 boogie down rd",
       "pickupInfo": "on front porch",
       "available": true,
@@ -126,7 +139,7 @@
     },
     {
       "userId": 3,
-      "plantId": 3,
+      "plantId": 9,
       "address": "239 boot scoot terrace",
       "pickupInfo": "under patio",
       "available": true,

@@ -11,14 +11,37 @@ export const PostProvider = (props) => {
         .then(setPosts)
     }
 
+    const addPost = (postObj) => {
+        return fetch(`http://localhost:8088/posts`, {
+        method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(postObj)
+        })
+        .then(res => res.json())
+        .then(getPosts)
+    }
+
     const getPostById = (id) => {
         return fetch(`http://localhost:8088/posts/${id}?_expand=plant`)
         .then(res => res.json())
     }
 
+    const updatePost = post => {
+        return fetch(`http://localhost:8088/animals/${post.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(post)
+        })
+            .then(getPosts)
+    }
+
     return (
         <PostContext.Provider value={{
-            posts, getPosts, getPostById
+            posts, getPosts, getPostById, addPost, updatePost
         }}>
             {props.children}
         </PostContext.Provider>
