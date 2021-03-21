@@ -24,11 +24,11 @@ export const PostDetails = () => {
             {post.plant?.commonName === post.plant?.commonName ? <h4>{post.plant?.commonName}</h4> : ""}
             <img src={post.plant?.image}></img>
             <p>{post.plant?.description}</p>
+            <button className="btn claimButton">Claim This Plant</button>
+
             <p>Address: {post.address}</p>
             {post.pickupInfo === post.pickupInfo ? <p>Pickup Details: {post.pickupInfo}</p> : ""}
             <p>Available: {post.available === true ? "Yes" : "No"}</p>
-            <p></p>
-
         </section>
     )
 

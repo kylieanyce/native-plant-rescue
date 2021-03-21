@@ -10,7 +10,9 @@ export const LibraryPostCard = ({ post }) => {
                 <h3>
                     {post.plant?.scientificName}
                 </h3>
-                <img className="image" src={post.plant?.image}></img>
+                <Link to={`/library/detail/${post.id}`}>
+                    <img className="image" src={post.plant?.image}></img>
+                </Link>
             </div>
             <div>
                 <h5>Available: {post.available === true ? "Yes" : "No"}</h5>
