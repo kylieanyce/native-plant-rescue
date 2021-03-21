@@ -52,14 +52,14 @@ export const CreatePost = () => {
     }
 
     useEffect(() => {
-        getPlantById(post.plantId)
+
     }, [])
 
     return (
         <form className="createPostForm">
             <h2 className="createForm__title">{postId ? "Edit Post" : "Create Post"}</h2>
             <div className="createPostAutofill">
-                <h3>{post.plant?.scientificName}</h3>
+                <h3>{plants.find(plant => {plant.id = plant.id})}</h3>
             </div>
 
             <fieldset>

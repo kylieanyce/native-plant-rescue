@@ -6,8 +6,8 @@ import { PlantContext } from "./PlantProvider"
 export const SelectPlantCard = ({ plant }) => {
     const history = useHistory()
 
-    const { addPlant } = useContext(PlantContext)
-
+    const { addPlant, getPlantById, getPlants } = useContext(PlantContext)
+    const plantArray = []
     const plantCommonNames = plant.plant_details.common_names
 
     const handleCreatePost = () => {
@@ -16,7 +16,12 @@ export const SelectPlantCard = ({ plant }) => {
             scientificName: plant.plant_details.scientific_name,
             description: plant.plant_details.wiki_description.value,
             image: plant?.similar_images[0].url,
+            id: plant.id
         })
+        .then(getPlants().then(res => plantArray.push(res)))
+            .then(plantArray.find(item => {
+                console.log(item.plantId === plant.id)
+            }))
             .then(() => { history.push("/create") })
     }
 
