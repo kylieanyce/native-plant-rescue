@@ -11,6 +11,12 @@ export const PlantProvider = (props) => {
         .then(setPlants)
     }
 
+    const getPlantById = (id) => {
+        return fetch(`http://localhost:8088/plants/${id}`)
+        .then(res => res.json())
+        .then(() => console.log(id))
+    }
+
     const addPlant = (plantObj) => {
         return fetch(`http://localhost:8088/plants`, {
         method: "POST",
@@ -25,7 +31,7 @@ export const PlantProvider = (props) => {
 
     return (
         <PlantContext.Provider value={{
-            plants, getPlants, addPlant
+            plants, getPlants, addPlant, getPlantById
         }}>
             {props.children}
         </PlantContext.Provider>
