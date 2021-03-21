@@ -12,9 +12,8 @@ export const SelectPlantCard = ({ plant }) => {
 
     const handleCreatePost = () => {
         addPlant({
-            id: plant.id,
-            commonName: plant.plant_details.scientific_name,
-            scientificName: plantCommonNames,
+            commonName: plantCommonNames,
+            scientificName: plant.plant_details.scientific_name,
             description: plant.plant_details.wiki_description.value,
             image: plant?.similar_images[0].url,
         })

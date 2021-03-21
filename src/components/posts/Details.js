@@ -21,13 +21,13 @@ export const PostDetails = () => {
     return (
         <section className="details">
             <h2>{post.plant?.scientificName}</h2>
-            {post.plant?.commonName === post.plant?.commonName ? <h4>{post.plant?.commonName}</h4> : ""}
+            {post.plant?.commonName === post.plant?.commonName ? <div><h3>Common Names: </h3><p>{post.plant?.commonName.map(item => item).join(", ")}</p></div> : ""}
             <img src={post.plant?.image}></img>
             <p>{post.plant?.description}</p>
             <button className="btn claimButton">Claim This Plant</button>
 
             <p>Address: {post.address}</p>
-            {post.pickupInfo === post.pickupInfo ? <p>Pickup Details: {post.pickupInfo}</p> : ""}
+            {post.pickupInfo !== "" ? <p>Pickup Details: {post.pickupInfo}</p> : ""}
             <p>Available: {post.available === true ? "Yes" : "No"}</p>
         </section>
     )
