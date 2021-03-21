@@ -3,7 +3,6 @@ import { userStorageKey } from "./components/auth/authSettings"
 import { ApplicationViews } from "./components/ApplicationViews";
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
-import { IdentifyForm } from "./components/plants/IdentifyForm";
 
 
 export const App = () => (
@@ -19,9 +18,9 @@ export const App = () => (
         return <Redirect to="/login" />;
       }
     }} />
+    
     <Route path="/login">
       <Login />
-
     </Route>
     <Route path="/register">
       <Register />

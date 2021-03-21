@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+.postList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.postCards {
+    border: 2px solid teal;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 3 3;
+    max-width: 400px;
+    text-align: center;
+}
+.image {
+    max-width: 400px;
+}
