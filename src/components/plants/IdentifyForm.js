@@ -9,7 +9,7 @@ export const IdentifyForm = () => {
     return (
         <div className="outerIdentifyForm">
             <div className="identifyForm">
-                <form>
+                <form className="innerIdentifyForm">
                     <input type="file" multiple />
                     <button onClick={sendIdentification} type="button">OK</button>
                 </form>

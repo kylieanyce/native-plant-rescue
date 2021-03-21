@@ -12,6 +12,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-img {
+.selectImage {
     max-width: 400px;
 }
