@@ -10,6 +10,7 @@ import { PostProvider } from "./posts/PostProvider"
 import { UserProvider } from "./users/UserProvider"
 // import { CreatePost } from "./plants/CreateForm"
 import { LibraryList } from "./posts/LibraryList"
+import { PostDetails } from "./posts/Details"
 
 export const ApplicationViews = () => {
     return (
@@ -21,8 +22,11 @@ export const ApplicationViews = () => {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route path="/library">
+                        <Route exact path="/library">
                             <LibraryList />
+                        </Route>
+                        <Route exact path="/library/detail/:postId(\d+)">
+                            <PostDetails />
                         </Route>
                     </UserProvider>
                 </PostProvider>

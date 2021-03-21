@@ -1,3 +1,6 @@
+body {
+    text-align: center;
+}
 .postList {
     display: flex;
     flex-wrap: wrap;

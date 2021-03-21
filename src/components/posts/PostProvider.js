@@ -11,9 +11,14 @@ export const PostProvider = (props) => {
         .then(setPosts)
     }
 
+    const getPostById = (id) => {
+        return fetch(`http://localhost:8088/posts/${id}?_expand=plant`)
+        .then(res => res.json())
+    }
+
     return (
         <PostContext.Provider value={{
-            posts, getPosts
+            posts, getPosts, getPostById
         }}>
             {props.children}
         </PostContext.Provider>

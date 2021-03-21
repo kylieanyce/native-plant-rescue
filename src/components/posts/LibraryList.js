@@ -22,6 +22,9 @@ export const LibraryList = () => {
     return (
         <div className="libraryPosts">
             <h2>Plant Library</h2>
+            <button className="btn identifyButton" onClick={() => {
+                history.push("/identifyForm")
+            }}>Identify Your Plant</button>
             <div className="postList">
                 {
                     posts.map(postObj => {
@@ -30,10 +33,6 @@ export const LibraryList = () => {
                     })
                 }
             </div>
-            <button>Create Post</button>
-            <button onClick={() => {
-                history.push("/identifyForm")
-            }}>Identify Your Plant</button>
         </div>
     )
 }
