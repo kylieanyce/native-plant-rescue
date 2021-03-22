@@ -134,6 +134,19 @@
       "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
       "id": 11
+    },
+    {
+      "commonName": [
+        "Pacific rhododendron",
+        "California rosebay",
+        "California rhododendron",
+        "coast rhododendron",
+        "big leaf rhododendron"
+      ],
+      "scientificName": "Rhododendron macrophyllum",
+      "description": "Rhododendron macrophyllum, the Pacific rhododendron, California rosebay, California rhododendron, coast rhododendron or big leaf rhododendron, is a large-leaved species of Rhododendron native to the Pacific Coast of North America. It is the state flower of Washington.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/ae1/6a4d434ba3957b764aca9f38704ac.jpg",
+      "id": 12
     }
   ],
   "posts": [

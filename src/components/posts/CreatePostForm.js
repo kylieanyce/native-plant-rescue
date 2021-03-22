@@ -5,7 +5,7 @@ import { UserContext } from "../users/UserProvider";
 import { PlantContext } from "../plants/PlantProvider";
 
 export const CreatePost = () => {
-    const { addPost, getPostById, updatePost } = useContext(PostContext)
+    const { addPost, getPostById, updatePost, getPosts } = useContext(PostContext)
     const { users, getUsers } = useContext(UserContext)
     const { plants, getPlants, getPlantById } = useContext(PlantContext)
 
@@ -14,8 +14,17 @@ export const CreatePost = () => {
         plantId: 0,
         address: "",
         pickupInfo: "",
-        available: true
+        available: true,
+        id: 0
     });
+
+    const [plant, setPlant] = useState({
+        commonName: "",
+        scientificName: "",
+        description: "",
+        image: "",
+        id: 0
+    })
 
     const [isLoading, setIsLoading] = useState(true);
     const { postId } = useParams();
@@ -51,18 +60,32 @@ export const CreatePost = () => {
                 .then(() => history.push("/library"))
         }
     }
-//figure out how to get plant response back 
     useEffect(() => {
-        getPlantById(plantId)
-        .then()
+        getPosts().then(() => {
+            if (plantId) {
+                getPlantById(plantId)
+                    .then(plant => {
+                        setPlant(plant)
+                        setIsLoading(false)
+                    })
+            } else {
+                if (postId) {
+                    getPostById(postId)
+                        .then(post => {
+                            setPost(post)
+                            setIsLoading(false)
+                        })
+                }
+            }
+        })
     }, [])
 
     return (
         <form className="createPostForm">
             <h2 className="createForm__title">{postId ? "Edit Post" : "Create Post"}</h2>
-            
+
             <div className="createPostAutofill">
-                <h3>{}</h3>
+                <h3>{plant.commonName}</h3>
             </div>
 
             <fieldset>
