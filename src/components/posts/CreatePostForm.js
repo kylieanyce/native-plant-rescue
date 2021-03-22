@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react"
 import { useHistory, useParams } from 'react-router-dom';
 import { PostContext } from "./PostProvider";
-import { UserContext } from "../users/UserProvider";
 import { PlantContext } from "../plants/PlantProvider";
 
 export const CreatePost = () => {
@@ -48,7 +47,7 @@ export const CreatePost = () => {
                 available: post.available,
                 id: post.id
             })
-                .then(() => history.push(`/library/`))
+                .then(() => history.push(`/claim`))
         } else {
             addPost({
                 userId: currentUserId,

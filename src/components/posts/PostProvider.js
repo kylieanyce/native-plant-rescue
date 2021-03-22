@@ -39,9 +39,19 @@ export const PostProvider = (props) => {
             .then(getPosts)
     }
 
+    const claimPost = post => {
+        return fetch(`http://localhost:8088/posts/${post.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(post)
+        })
+    }
+
     return (
         <PostContext.Provider value={{
-            posts, getPosts, getPostById, addPost, updatePost
+            posts, getPosts, getPostById, addPost, updatePost, claimPost
         }}>
             {props.children}
         </PostContext.Provider>

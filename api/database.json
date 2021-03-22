@@ -144,7 +144,7 @@
   ],
   "posts": [
     {
-      "userId": 1,
+      "userId": 4,
       "plantId": 1,
       "address": "526 shorty ln",
       "pickupInfo": "come to back porch",
@@ -152,15 +152,15 @@
       "id": 1
     },
     {
-      "userId": 2,
+      "userId": 4,
       "plantId": 2,
       "address": "789 boogie down rd",
       "pickupInfo": "on front porch",
-      "available": true,
+      "available": false,
       "id": 2
     },
     {
-      "userId": 3,
+      "userId": 4,
       "plantId": 3,
       "address": "239 boot scoot terrace",
       "pickupInfo": "under patio",
@@ -176,11 +176,11 @@
       "id": 4
     },
     {
-      "userId": 5,
+      "userId": 4,
       "plantId": 5,
       "address": "432 Grundy County Way",
       "pickupInfo": "",
-      "available": true,
+      "available": false,
       "id": 5
     },
     {

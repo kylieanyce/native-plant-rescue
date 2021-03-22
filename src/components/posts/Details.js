@@ -6,11 +6,31 @@ import "./Library.css";
 
 
 export const PostDetails = () => {
-    const { getPostById } = useContext(PostContext)
-    const [post, setPost] = useState({})
+    const { claimPost, getPostById } = useContext(PostContext)
     const currentUserId = parseInt(sessionStorage.getItem("app_user_id"))
     const { postId } = useParams();
     const history = useHistory();
+
+    const [post, setPost] = useState({
+        userId: currentUserId,
+        plantId: 0,
+        address: "",
+        pickupInfo: "",
+        available: true,
+        id: 0
+    });
+
+    const handleClaimPost = () => {
+        claimPost({
+            userId: currentUserId,
+            plantId: parseInt(post.plantId),
+            address: post.address,
+            pickupInfo: post.pickupInfo,
+            available: false,
+            id: post.id
+        })
+            .then(() => history.push(`/claim`))
+    }
 
     useEffect(() => {
         getPostById(postId)
@@ -25,7 +45,7 @@ export const PostDetails = () => {
             {post.plant?.commonName !== null ? <div><h3>Common Names: </h3><p>{post.plant?.commonName.map(item => item).join(", ")}</p></div> : ""}
             <img src={post.plant?.image}></img>
             <p>{post.plant?.description}</p>
-            {currentUserId === post.userId ? "" : <button className="btn claimButton">Claim This Plant</button>}
+            {currentUserId === post.userId ? "" : <div><label>Have you picked up this plant? </label><button className="btn claimButton" onClick={handleClaimPost}>Yes!</button></div>}
             {currentUserId === post.userId ? <button onClick={() => history.push(`/${postId}/${post.plant?.id}/edit`)}>
                 Edit
             </button> : "" } 
