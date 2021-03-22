@@ -6,11 +6,11 @@ import { PlantContext } from "../plants/PlantProvider";
 
 export const CreatePost = () => {
     const { addPost, getPostById, updatePost, getPosts } = useContext(PostContext)
-    const { users, getUsers } = useContext(UserContext)
+    const currentUserId = parseInt(sessionStorage.getItem("app_user_id"))
     const { plants, getPlants, getPlantById } = useContext(PlantContext)
 
     const [post, setPost] = useState({
-        userId: 0,
+        userId: currentUserId,
         plantId: 0,
         address: "",
         pickupInfo: "",
@@ -41,7 +41,7 @@ export const CreatePost = () => {
         setIsLoading(true);
         if (postId) {
             updatePost({
-                userId: parseInt(post.userId),
+                userId: currentUserId,
                 plantId: parseInt(post.plantId),
                 address: post.address,
                 pickupInfo: post.pickupInfo,
@@ -51,7 +51,7 @@ export const CreatePost = () => {
                 .then(() => history.push(`/library/detail/${post.id}`))
         } else {
             addPost({
-                userId: parseInt(post.userId),
+                userId: currentUserId,
                 plantId: parseInt(plantId),
                 address: post.address,
                 pickupInfo: post.pickupInfo,

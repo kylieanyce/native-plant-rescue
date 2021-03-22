@@ -29,8 +29,7 @@
   "plants": [
     {
       "id": 1,
-      "commonName": "Lavandula angustifolia",
-      "scientificName": [
+      "commonName": [
         "lavender",
         "true lavender",
         "English lavender",
@@ -38,16 +37,17 @@
         "common lavender",
         "narrow-leaved lavender"
       ],
+      "scientificName": "Lavandula angustifolia",
       "description": "Lavandula angustifolia, formerly L. officinalis, is a flowering plant in the family Lamiaceae, native to the Mediterranean (Spain, France, Italy, Croatia etc.). Its common names include lavender, true lavender or English lavender (though not native to England); also garden lavender, common lavender, and narrow-leaved lavender.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/84e/b22b391cb476c714a89c10b4b7ccb.jpg"
     },
     {
       "id": 2,
-      "commonName": "Rhododendron occidentale",
-      "scientificName": [
+      "commonName": [
         "western azalea",
         "California azalea"
       ],
+      "scientificName": "Rhododendron occidentale",
       "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg"
     },
@@ -82,6 +82,13 @@
       "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
       "id": 5
+    },
+    {
+      "commonName": null,
+      "scientificName": "Rhododendron simsii",
+      "description": "Rhododendron simsii (杜鵑) is a rhododendron species native to East Asia, where it grows at altitudes of 500–2700 meters.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/623/e57b4364566c439a5d8a9dfa0a9f2.jpg",
+      "id": 6
     }
   ],
   "posts": [
@@ -118,12 +125,20 @@
       "id": 4
     },
     {
-      "userId": 0,
-      "plantId": "5",
+      "userId": 5,
+      "plantId": 5,
       "address": "432 Grundy County Way",
       "pickupInfo": "",
       "available": true,
       "id": 5
+    },
+    {
+      "userId": 4,
+      "plantId": 6,
+      "address": "49 Cuesta Ct",
+      "pickupInfo": "on street",
+      "available": true,
+      "id": 6
     }
   ]
 }
