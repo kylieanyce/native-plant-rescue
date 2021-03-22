@@ -15,6 +15,7 @@ export const IdentifyProvider = (props) => {
     const history = useHistory()
 
     const sendIdentification = () => {
+        // const files = (event) => event.target.id.includes("input[type=file]").files;
         const files = [...document.querySelector("input[type=file]").files];
         const promises = files.map((file) => {
             return new Promise((resolve, reject) => {

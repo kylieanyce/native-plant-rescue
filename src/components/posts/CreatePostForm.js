@@ -48,7 +48,7 @@ export const CreatePost = () => {
                 available: post.available,
                 id: post.id
             })
-                .then(() => history.push(`/library/detail/${post.id}`))
+                .then(() => history.push(`/library/`))
         } else {
             addPost({
                 userId: currentUserId,
@@ -93,8 +93,8 @@ export const CreatePost = () => {
 
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="createPost">Address: </label>
-                    <input type="text" id="address" required autoFocus onChange={handleControlledInputChange} value={post.address} />
+                    <label htmlFor="createPost">Full Address: </label>
+                    <input type="text" id="address" required autoFocus placeholder="123 Flower Way, Washington, DC 90210" onChange={handleControlledInputChange} value={post.address} />
                 </div>
             </fieldset>
 
