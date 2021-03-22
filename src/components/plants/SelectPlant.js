@@ -17,7 +17,6 @@ export const SelectPlantCard = ({ plant }) => {
             description: plant.plant_details.wiki_description.value,
             image: plant?.similar_images[0].url,
         })
-        .then(history.push(`${plant.id}/create`))
     }
 
     return (

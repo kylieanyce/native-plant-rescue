@@ -53,7 +53,8 @@ export const CreatePost = () => {
     }
 
     useEffect(() => {
-
+        getPlantById(plantId)
+        .then()
     }, [])
 
     return (
@@ -61,7 +62,7 @@ export const CreatePost = () => {
             <h2 className="createForm__title">{postId ? "Edit Post" : "Create Post"}</h2>
             
             <div className="createPostAutofill">
-                <h3>{plants.find(plant => {plant.id = plant.id})}</h3>
+                <h3>{}</h3>
             </div>
 
             <fieldset>
