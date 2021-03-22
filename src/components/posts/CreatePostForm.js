@@ -68,14 +68,14 @@ export const CreatePost = () => {
                         setPlant(plant)
                         setIsLoading(false)
                     })
-            } else {
-                if (postId) {
-                    getPostById(postId)
-                        .then(post => {
-                            setPost(post)
-                            setIsLoading(false)
-                        })
-                }
+            }
+            if (postId) {
+                getPostById(postId)
+                    .then(post => {
+                        setPost(post)
+                        setIsLoading(false)
+                    })
+
             }
         })
     }, [])
