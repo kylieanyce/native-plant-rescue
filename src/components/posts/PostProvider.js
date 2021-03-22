@@ -4,6 +4,8 @@ export const PostContext = createContext()
 
 export const PostProvider = (props) => {
     const [posts, setPosts] = useState([])
+    const [ searchTerms, setSearchTerms ] = useState("")
+
 
     const getPosts = () => {
         return fetch("http://localhost:8088/posts?_expand=plant")
@@ -58,7 +60,8 @@ export const PostProvider = (props) => {
 
     return (
         <PostContext.Provider value={{
-            posts, getPosts, getPostById, addPost, updatePost, claimPost, deletePost
+            posts, getPosts, getPostById, addPost, updatePost, claimPost, deletePost,
+            searchTerms, setSearchTerms
         }}>
             {props.children}
         </PostContext.Provider>
