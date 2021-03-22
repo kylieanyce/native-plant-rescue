@@ -13,6 +13,7 @@ import { PostProvider } from "./posts/PostProvider"
 import { LibraryList } from "./posts/LibraryList"
 import { PostDetails } from "./posts/Details"
 import { CreatePost } from "./posts/CreatePostForm"
+import { ClaimPost } from "./posts/ClaimPost"
 
 export const ApplicationViews = () => {
     return (
@@ -25,6 +26,9 @@ export const ApplicationViews = () => {
                         </Route>
                         <Route exact path="/library">
                             <LibraryList />
+                        </Route>
+                        <Route exact path="/claim">
+                            <ClaimPost />
                         </Route>
                         <Route exact path="/library/detail/:postId(\d+)">
                             <PostDetails />
