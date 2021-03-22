@@ -136,7 +136,7 @@
       "userId": 4,
       "plantId": 6,
       "address": "49 Cuesta Ct",
-      "pickupInfo": "on street",
+      "pickupInfo": "on street by mailbox",
       "available": true,
       "id": 6
     }

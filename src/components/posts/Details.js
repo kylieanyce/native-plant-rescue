@@ -22,7 +22,7 @@ export const PostDetails = () => {
     return (
         <section className="details">
             <h2>{post.plant?.scientificName}</h2>
-            {post.plant?.commonName === post.plant?.commonName ? <div><h3>Common Names: </h3><p>{post.plant?.commonName.map(item => item).join(", ")}</p></div> : ""}
+            {post.plant?.commonName !== null ? <div><h3>Common Names: </h3><p>{post.plant?.commonName.map(item => item).join(", ")}</p></div> : ""}
             <img src={post.plant?.image}></img>
             <p>{post.plant?.description}</p>
             <button className="btn claimButton">Claim This Plant</button>

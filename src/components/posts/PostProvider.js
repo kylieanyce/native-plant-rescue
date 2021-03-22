@@ -29,7 +29,7 @@ export const PostProvider = (props) => {
     }
 
     const updatePost = post => {
-        return fetch(`http://localhost:8088/animals/${post.id}`, {
+        return fetch(`http://localhost:8088/posts/${post.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
