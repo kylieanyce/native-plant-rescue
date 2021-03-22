@@ -14,6 +14,7 @@ import { LibraryList } from "./posts/LibraryList"
 import { PostDetails } from "./posts/Details"
 import { CreatePost } from "./posts/CreatePostForm"
 import { ClaimPost } from "./posts/ClaimPost"
+import { SearchPost } from "./posts/SearchPost"
 
 export const ApplicationViews = () => {
     return (
@@ -25,6 +26,7 @@ export const ApplicationViews = () => {
                             <Home />
                         </Route>
                         <Route exact path="/library">
+                            <SearchPost />
                             <LibraryList />
                         </Route>
                         <Route exact path="/claim">

@@ -27,12 +27,11 @@ export const LibraryList = () => {
         } else {
             setFiltered(posts)
         }
-    }, [  ])
+    }, [ searchTerms, posts ])
 
     return (
         <div className="libraryPosts">
             <h2>Plant Library</h2>
-            <SearchPost />
 
             <p><button className="btn identifyButton" onClick={() => {
                 history.push("/identifyForm")
