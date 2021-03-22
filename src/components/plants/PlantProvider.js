@@ -1,31 +1,42 @@
 import React, { useState, createContext } from "react"
+import { useHistory } from "react-router-dom";
 
 export const PlantContext = createContext()
 
 export const PlantProvider = (props) => {
     const [plants, setPlants] = useState([])
+    const history = useHistory()
 
     const getPlants = () => {
         return fetch("http://localhost:8088/plants")
-        .then(res => res.json())
-        .then(setPlants)
+            .then(res => res.json())
+            .then(setPlants)
+    }
+
+    const getPlantById = (id) => {
+        return fetch(`http://localhost:8088/plants/${id}`)
+            .then(res => res.json())
     }
 
     const addPlant = (plantObj) => {
         return fetch(`http://localhost:8088/plants`, {
-        method: "POST",
+            method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(plantObj)
         })
-        .then(res => res.json())
-        .then(getPlants)
+            .then(res => res.json())
+            .then(createdPlant => {
+                if (createdPlant.hasOwnProperty("id")) {
+                    history.push(`/${createdPlant.id}/create`)
+                }
+            })
     }
 
     return (
         <PlantContext.Provider value={{
-            plants, getPlants, addPlant
+            plants, getPlants, addPlant, getPlantById
         }}>
             {props.children}
         </PlantContext.Provider>
