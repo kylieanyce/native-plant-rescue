@@ -3,6 +3,8 @@ import { userStorageKey } from "./components/auth/authSettings"
 import { ApplicationViews } from "./components/ApplicationViews";
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 
 export const App = () => (
@@ -11,7 +13,9 @@ export const App = () => (
       if (sessionStorage.getItem(userStorageKey)) {
         return (
           <>
+            <Header />
             <ApplicationViews />
+            <Footer />
           </>
         )
       } else {
