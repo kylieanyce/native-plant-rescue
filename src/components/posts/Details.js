@@ -25,7 +25,7 @@ export const PostDetails = () => {
             {post.plant?.commonName !== null ? <div><h3>Common Names: </h3><p>{post.plant?.commonName.map(item => item).join(", ")}</p></div> : ""}
             <img src={post.plant?.image}></img>
             <p>{post.plant?.description}</p>
-            <button className="btn claimButton">Claim This Plant</button>
+            {currentUserId === post.userId ? "" : <button className="btn claimButton">Claim This Plant</button>}
             {currentUserId === post.userId ? <button onClick={() => history.push(`/${postId}/${post.plant?.id}/edit`)}>
                 Edit
             </button> : "" } 
