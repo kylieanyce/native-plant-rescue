@@ -185,14 +185,6 @@
     },
     {
       "userId": 4,
-      "plantId": 6,
-      "address": "49 Cuesta Ct",
-      "pickupInfo": "on street by mailbox",
-      "available": true,
-      "id": 6
-    },
-    {
-      "userId": 4,
       "plantId": 7,
       "address": "78 Wildflower Way",
       "pickupInfo": "plants are in the alleyway",

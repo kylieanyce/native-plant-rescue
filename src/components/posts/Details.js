@@ -6,7 +6,7 @@ import "./Library.css";
 
 
 export const PostDetails = () => {
-    const { claimPost, getPostById } = useContext(PostContext)
+    const { claimPost, getPostById, deletePost } = useContext(PostContext)
     const currentUserId = parseInt(sessionStorage.getItem("app_user_id"))
     const { postId } = useParams();
     const history = useHistory();
@@ -32,6 +32,11 @@ export const PostDetails = () => {
             .then(() => history.push(`/claim`))
     }
 
+    const handleDeletePost = () => {
+        deletePost(postId)
+        .then(() => history.push("/library"))
+    }
+
     useEffect(() => {
         getPostById(postId)
         .then((res) => {
@@ -48,6 +53,9 @@ export const PostDetails = () => {
             {currentUserId === post.userId ? "" : <div><label>Have you picked up this plant? </label><button className="btn claimButton" onClick={handleClaimPost}>Yes!</button></div>}
             {currentUserId === post.userId ? <button onClick={() => history.push(`/${postId}/${post.plant?.id}/edit`)}>
                 Edit
+            </button> : "" } 
+            {currentUserId === post.userId ? <button onClick={handleDeletePost}>
+                Delete
             </button> : "" } 
             
             <p>Address: {post.address}</p>
