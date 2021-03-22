@@ -4,6 +4,7 @@ body {
 .postList {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .postCards {
     border: 2px solid teal;
