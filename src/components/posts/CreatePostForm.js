@@ -19,6 +19,7 @@ export const CreatePost = () => {
 
     const [isLoading, setIsLoading] = useState(true);
     const { postId } = useParams();
+    const { plantId } = useParams();
     const history = useHistory();
 
     const handleControlledInputChange = (event) => {
@@ -58,6 +59,7 @@ export const CreatePost = () => {
     return (
         <form className="createPostForm">
             <h2 className="createForm__title">{postId ? "Edit Post" : "Create Post"}</h2>
+            
             <div className="createPostAutofill">
                 <h3>{plants.find(plant => {plant.id = plant.id})}</h3>
             </div>
@@ -80,6 +82,9 @@ export const CreatePost = () => {
                 event.preventDefault()
                 handleAddPost()
             }}>{postId ? "Save Edits" : "Add Post"}</button>
+            <div>
+                {JSON.stringify(post)}
+            </div>
         </form>
     )
 }

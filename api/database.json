@@ -120,47 +120,11 @@
       "id": 9
     },
     {
-      "commonName": [
-        "flame azalea"
-      ],
-      "scientificName": "Rhododendron calendulaceum",
-      "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
+      "commonName": null,
+      "scientificName": "Rhododendron",
+      "description": "Rhododendron (from Ancient Greek ῥόδον rhódon \"rose\" and δένδρον déndron \"tree\") is a genus of 1,024 species of woody plants in the heath family (Ericaceae), either evergreen or deciduous, and found mainly in Asia, although it is also widespread throughout lowland and montane forests in the Pacific Northwest, California, the Northeastern United States, and especially in the highlands of the Appalachian Mountains of North America. It is the national flower of Nepal, the state flower of Washington and West Virginia in the United States, the provincial flower of Jiangxi in China and the state tree of Sikkim and Uttarakhand in India. Most species have brightly colored flowers which bloom from late winter through to early summer.\nAzaleas make up two subgenera of Rhododendron. They are distinguished from \"true\" rhododendrons by having only five anthers per flower.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/b97/66e3ca13772a09246ad560780870a.jpg",
       "id": 10
-    },
-    {
-      "commonName": null,
-      "scientificName": "Rhododendron simsii",
-      "description": "Rhododendron simsii (杜鵑) is a rhododendron species native to East Asia, where it grows at altitudes of 500–2700 meters.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/623/e57b4364566c439a5d8a9dfa0a9f2.jpg",
-      "id": 84676542
-    },
-    {
-      "commonName": null,
-      "scientificName": "Rhododendron simsii",
-      "description": "Rhododendron simsii (杜鵑) is a rhododendron species native to East Asia, where it grows at altitudes of 500–2700 meters.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/623/e57b4364566c439a5d8a9dfa0a9f2.jpg",
-      "id": 84682480
-    },
-    {
-      "commonName": [
-        "common rhododendron",
-        "pontic rhododendron"
-      ],
-      "scientificName": "Rhododendron ponticum",
-      "description": "Rhododendron ponticum, called common rhododendron or pontic rhododendron, is a species of Rhododendron native to the Iberian Peninsula in southwest Europe and the Caucasus region in northern West Asia.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2d2/63fd79eb9102f3f0348563cd2fffe.jpg",
-      "id": 84685919
-    },
-    {
-      "commonName": [
-        "western azalea",
-        "California azalea"
-      ],
-      "scientificName": "Rhododendron occidentale",
-      "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg",
-      "id": 84688393
     }
   ],
   "posts": [

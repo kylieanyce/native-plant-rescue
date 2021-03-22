@@ -29,7 +29,7 @@ export const ApplicationViews = () => {
                         <Route exact path="/library/detail/:postId(\d+)">
                             <PostDetails />
                         </Route>
-                        <Route path="/create">
+                        <Route path="/create/">
                             <CreatePost />
                         </Route>
 

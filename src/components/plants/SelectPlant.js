@@ -16,13 +16,8 @@ export const SelectPlantCard = ({ plant }) => {
             scientificName: plant.plant_details.scientific_name,
             description: plant.plant_details.wiki_description.value,
             image: plant?.similar_images[0].url,
-            id: plant.id
         })
-        .then(getPlants().then(res => plantArray.push(res)))
-            .then(plantArray.find(item => {
-                console.log(item.plantId === plant.id)
-            }))
-            .then(() => { history.push("/create") })
+        .then(history.push(`${plant.id}/create`))
     }
 
     return (
