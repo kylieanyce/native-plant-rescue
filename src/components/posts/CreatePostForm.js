@@ -52,7 +52,7 @@ export const CreatePost = () => {
         } else {
             addPost({
                 userId: parseInt(post.userId),
-                plantId: plantId,
+                plantId: parseInt(plantId),
                 address: post.address,
                 pickupInfo: post.pickupInfo,
                 available: post.available
