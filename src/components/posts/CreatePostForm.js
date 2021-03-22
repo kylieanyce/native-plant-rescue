@@ -51,7 +51,7 @@ export const CreatePost = () => {
                 .then(() => history.push("/library"))
         }
     }
-
+//figure out how to get plant response back 
     useEffect(() => {
         getPlantById(plantId)
         .then()
