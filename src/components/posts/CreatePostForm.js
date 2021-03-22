@@ -7,7 +7,7 @@ import { PlantContext } from "../plants/PlantProvider";
 export const CreatePost = () => {
     const { addPost, getPostById, updatePost, getPosts } = useContext(PostContext)
     const currentUserId = parseInt(sessionStorage.getItem("app_user_id"))
-    const { plants, getPlants, getPlantById } = useContext(PlantContext)
+    const { getPlantById } = useContext(PlantContext)
 
     const [post, setPost] = useState({
         userId: currentUserId,

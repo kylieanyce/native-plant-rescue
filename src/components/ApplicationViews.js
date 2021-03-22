@@ -32,6 +32,9 @@ export const ApplicationViews = () => {
                         <Route exact path="/:plantId(\d+)/create/">
                             <CreatePost />
                         </Route>
+                        <Route exact path="/:postId(\d+)/:plantId(\d+)/edit/">
+                            <CreatePost />
+                        </Route>
 
 
                         <IdentifyProvider>
