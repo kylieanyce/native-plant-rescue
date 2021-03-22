@@ -130,6 +130,16 @@
       "description": "Lavandula angustifolia, formerly L. officinalis, is a flowering plant in the family Lamiaceae, native to the Mediterranean (Spain, France, Italy, Croatia etc.). Its common names include lavender, true lavender or English lavender (though not native to England); also garden lavender, common lavender, and narrow-leaved lavender.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/84e/b22b391cb476c714a89c10b4b7ccb.jpg",
       "id": 9
+    },
+    {
+      "commonName": [
+        "western azalea",
+        "California azalea"
+      ],
+      "scientificName": "Rhododendron occidentale",
+      "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg",
+      "id": 10
     }
   ],
   "posts": [

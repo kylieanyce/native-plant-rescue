@@ -109,6 +109,8 @@ export const CreatePost = () => {
                 event.preventDefault()
                 handleAddPost()
             }}>{postId ? "Save Edits" : "Add Post"}</button>
+                        <button onClick={() => history.push(`/library`)}>Back to Plant Library</button>
+
             {/* USE THIS DIV TO TEST STATE VARIABLE-----------
             <div>
                 {JSON.stringify(post)}
