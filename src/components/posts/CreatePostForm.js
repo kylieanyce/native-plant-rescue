@@ -85,7 +85,10 @@ export const CreatePost = () => {
             <h2 className="createForm__title">{postId ? "Edit Post" : "Create Post"}</h2>
 
             <div className="createPostAutofill">
-                <h3>{plant.commonName}</h3>
+                <h3>{plant.scientificName}</h3>
+                {plant.commonName ? <h4>Common Name(s): {plant.commonName.map(item => item).join(", ")}</h4> : ""}
+                <p>{plant.description}</p>
+                <img src={plant.image}></img>
             </div>
 
             <fieldset>
@@ -106,9 +109,10 @@ export const CreatePost = () => {
                 event.preventDefault()
                 handleAddPost()
             }}>{postId ? "Save Edits" : "Add Post"}</button>
+            {/* USE THIS DIV TO TEST STATE VARIABLE-----------
             <div>
                 {JSON.stringify(post)}
-            </div>
+            </div> */}
         </form>
     )
 }
