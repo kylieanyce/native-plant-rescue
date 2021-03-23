@@ -73,82 +73,15 @@
       "description": "Rhododendron macrophyllum, the Pacific rhododendron, California rosebay, California rhododendron, coast rhododendron or big leaf rhododendron, is a large-leaved species of Rhododendron native to the Pacific Coast of North America. It is the state flower of Washington.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/ae1/6a4d434ba3957b764aca9f38704ac.jpg",
       "id": 4
-    },
-    {
-      "commonName": [
-        "flame azalea"
-      ],
-      "scientificName": "Rhododendron calendulaceum",
-      "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
-      "id": 5
-    },
-    {
-      "commonName": null,
-      "scientificName": "Rhododendron simsii",
-      "description": "Rhododendron simsii (杜鵑) is a rhododendron species native to East Asia, where it grows at altitudes of 500–2700 meters.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/623/e57b4364566c439a5d8a9dfa0a9f2.jpg",
-      "id": 6
-    },
-    {
-      "commonName": [
-        "Brauneria purpurea (L.) Britton",
-        "Rudbeckia purpurea L.",
-        "Echinacea purpurea (L.) Moench var. arkansana Steyerm.",
-        "Helichroa purpurea (L.) Raf. ex B.D. Jacks.",
-        "eastern purple coneflower",
-        "purple coneflower",
-        "hedgehog coneflower",
-        "echinacea"
-      ],
-      "scientificName": "Echinacea purpurea",
-      "description": "Echinacea purpurea (eastern purple coneflower, purple coneflower, hedgehog coneflower, or echinacea) is a North American species of flowering plant in the sunflower family. It is native to parts of eastern North America and present to some extent in the wild in much of the eastern, southeastern and midwestern United States as well as in the Canadian Province of Ontario. It is most common in the Ozarks and in the Mississippi/Ohio Valley. Its habitats include dry open woods, prairies and barrens.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2f5/f103e268d9b4ae6f0233c48d81630.jpg",
-      "id": 7
-    },
-    {
-      "commonName": [
-        "peace lily",
-        "white sails",
-        "spathe flower"
-      ],
-      "scientificName": "Spathiphyllum wallisii",
-      "description": "Spathiphyllum wallisii, commonly known as peace lily, white sails, or spathe flower is a very popular indoor house plant of the family Araceae. The genus name means \"spathe-leaf\", and the specific epithet is named after Gustav Wallis, the German plant collector.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/890/5006659da4e004fa27ec3e7bc3f6d.jpg",
-      "id": 8
-    },
-    {
-      "commonName": [
-        "lavender",
-        "true lavender",
-        "English lavender",
-        "garden lavender",
-        "common lavender",
-        "narrow-leaved lavender"
-      ],
-      "scientificName": "Lavandula angustifolia",
-      "description": "Lavandula angustifolia, formerly L. officinalis, is a flowering plant in the family Lamiaceae, native to the Mediterranean (Spain, France, Italy, Croatia etc.). Its common names include lavender, true lavender or English lavender (though not native to England); also garden lavender, common lavender, and narrow-leaved lavender.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/84e/b22b391cb476c714a89c10b4b7ccb.jpg",
-      "id": 9
-    },
-    {
-      "commonName": [
-        "western azalea",
-        "California azalea"
-      ],
-      "scientificName": "Rhododendron occidentale",
-      "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg",
-      "id": 10
     }
   ],
   "posts": [
     {
-      "userId": 4,
+      "userId": 1,
       "plantId": 1,
       "address": "526 shorty ln",
       "pickupInfo": "come around back",
-      "available": false,
+      "available": true,
       "id": 1
     },
     {
@@ -156,7 +89,7 @@
       "plantId": 2,
       "address": "789 boogie down rd",
       "pickupInfo": "on front porch",
-      "available": false,
+      "available": true,
       "id": 2
     },
     {
@@ -168,28 +101,12 @@
       "id": 3
     },
     {
-      "userId": 5,
-      "plantId": 5,
+      "userId": 4,
+      "plantId": 4,
       "address": "432 Grundy County Way",
       "pickupInfo": "",
-      "available": false,
-      "id": 5
-    },
-    {
-      "userId": 4,
-      "plantId": 7,
-      "address": "78 Wildflower Way",
-      "pickupInfo": "in the driveway",
       "available": true,
-      "id": 7
-    },
-    {
-      "userId": 4,
-      "plantId": 8,
-      "address": "790 petal place",
-      "pickupInfo": "",
-      "available": true,
-      "id": 8
+      "id": 4
     }
   ]
 }
