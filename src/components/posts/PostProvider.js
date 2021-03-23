@@ -4,6 +4,8 @@ export const PostContext = createContext()
 
 export const PostProvider = (props) => {
     const [posts, setPosts] = useState([])
+    const [ searchTerms, setSearchTerms ] = useState("")
+
 
     const getPosts = () => {
         return fetch("http://localhost:8088/posts?_expand=plant")
@@ -49,9 +51,17 @@ export const PostProvider = (props) => {
         })
     }
 
+    const deletePost = postId => {
+        return fetch(`http://localhost:8088/posts/${postId}`, {
+            method: "DELETE"
+        })
+            .then(getPosts)
+    }
+
     return (
         <PostContext.Provider value={{
-            posts, getPosts, getPostById, addPost, updatePost, claimPost
+            posts, getPosts, getPostById, addPost, updatePost, claimPost, deletePost,
+            searchTerms, setSearchTerms
         }}>
             {props.children}
         </PostContext.Provider>

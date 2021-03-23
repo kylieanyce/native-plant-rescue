@@ -4,13 +4,14 @@ import { PlantContext } from "../plants/PlantProvider";
 import { PostContext } from "../posts/PostProvider";
 import { LibraryPostCard } from "./LibraryPost"
 import "./Library.css";
+import { SearchPost } from "./SearchPost";
 
 
 export const LibraryList = () => {
     const { plants, getPlants } = useContext(PlantContext)
-    const { posts, getPosts } = useContext(PostContext)
+    const { posts, getPosts, searchTerms } = useContext(PostContext)
 
-    // const [filteredPosts, setFiltered] = useState([])
+    const [filteredPosts, setFiltered] = useState([])
 
     const history = useHistory()
 
@@ -19,19 +20,28 @@ export const LibraryList = () => {
             .then(getPosts)
     }, [])
 
+    useEffect(() => {
+        if (searchTerms !== "") {
+            console.log(posts)
+            const subset = posts.filter(post => post.plant?.scientificName.toLowerCase().includes(searchTerms))
+            setFiltered(subset)
+        } else {
+            setFiltered(posts)
+        }
+    }, [ searchTerms, posts])
+
     return (
         <div className="libraryPosts">
             <h2>Plant Library</h2>
-            <button className="btn identifyButton" onClick={() => {
+
+            <p><button className="btn identifyButton" onClick={() => {
                 history.push("/identifyForm")
-            }}>Identify Your Plant</button>
+            }}>Identify Your Plant</button></p>
+            
             <div className="postList">
-                {
-                    posts.map(postObj => {
-                        const plant = plants.find(plantObj => postObj.id === plantObj.postId)
-                        return <LibraryPostCard key={postObj.id} post={postObj} plant={plant} />
-                    })
-                }
+                {filteredPosts.map(post => {
+                    return <LibraryPostCard key={post.id} post={post}  />
+                })}
             </div>
         </div>
     )

@@ -144,7 +144,7 @@
   ],
   "posts": [
     {
-      "userId": 4,
+      "userId": 1,
       "plantId": 1,
       "address": "526 shorty ln",
       "pickupInfo": "come to back porch",
@@ -160,7 +160,7 @@
       "id": 2
     },
     {
-      "userId": 4,
+      "userId": 3,
       "plantId": 3,
       "address": "239 boot scoot terrace",
       "pickupInfo": "under patio",
@@ -176,7 +176,7 @@
       "id": 4
     },
     {
-      "userId": 4,
+      "userId": 5,
       "plantId": 5,
       "address": "432 Grundy County Way",
       "pickupInfo": "",
@@ -185,17 +185,9 @@
     },
     {
       "userId": 4,
-      "plantId": 6,
-      "address": "49 Cuesta Ct",
-      "pickupInfo": "on street by mailbox",
-      "available": true,
-      "id": 6
-    },
-    {
-      "userId": 4,
       "plantId": 7,
       "address": "78 Wildflower Way",
-      "pickupInfo": "plants are in the alleyway",
+      "pickupInfo": "in the driveway",
       "available": true,
       "id": 7
     },
