@@ -85,7 +85,7 @@ export const CreatePost = () => {
 
             <div className="createPostAutofill">
                 <h3>{plant.scientificName}</h3>
-                {plant.commonName ? <h4>Common Name(s): {plant.commonName.map(item => item).join(", ")}</h4> : ""}
+                {plant.commonName ? <h4>Common Name(s): {plant.commonName}</h4> : ""}
                 <p>{plant.description}</p>
                 <img src={plant.image}></img>
             </div>

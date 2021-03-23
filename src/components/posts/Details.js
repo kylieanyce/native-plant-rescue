@@ -47,7 +47,7 @@ export const PostDetails = () => {
     return (
         <section className="details">
             <h2>{post.plant?.scientificName}</h2>
-            {post.plant?.commonName !== null ? <div><h3>Common Names: </h3><p>{post.plant?.commonName.map(item => item).join(", ")}</p></div> : ""}
+            {post.plant?.commonName !== null ? <div><h3>Common Names: </h3><p>{post.plant?.commonName}</p></div> : ""}
             <img src={post.plant?.image}></img>
             <p>{post.plant?.description}</p>
             {currentUserId === post.userId ? "" : <div><label>Have you picked up this plant? </label><button className="btn claimButton" onClick={handleClaimPost}>Yes!</button></div>}

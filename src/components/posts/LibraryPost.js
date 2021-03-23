@@ -12,7 +12,7 @@ export const LibraryPostCard = ({ post }) => {
                             <h3>
                                 {post.plant?.scientificName}
                             </h3>
-                            <h4>{post.plant?.commonName[0]}</h4>
+                            <h4 style={{textTransform: 'capitalize'}}>{post.plant?.commonName}</h4>
                             <Link to={`/library/detail/${post.id}`}>
                                 <img className="image" src={post.plant?.image}></img>
                             </Link>

@@ -4,18 +4,19 @@ import { useState, createContext } from "react"
 import { useHistory } from "react-router-dom"
 
 
-
+//grabbing the api key from hidden file
 const apiKey = testAPI.apiKeyIdentify
 
 export const IdentifyContext = createContext()
 
+//identify a plant 
 export const IdentifyProvider = (props) => {
     const [plants, setPlants] = useState([])
 
     const history = useHistory()
 
     const sendIdentification = () => {
-        // const files = (event) => event.target.id.includes("input[type=file]").files;
+        // finds file on the dom and uses FileReader to read the file as a URL
         const files = [...document.querySelector("input[type=file]").files];
         const promises = files.map((file) => {
             return new Promise((resolve, reject) => {
@@ -28,9 +29,11 @@ export const IdentifyProvider = (props) => {
                 reader.readAsDataURL(file);
             });
         });
+        // then once all promises are fulfilled, turns file into base64
         Promise.all(promises).then((base64files) => {
-            console.log(base64files);
-
+            // data must be posted so we can deliver info in header
+            // need to deliver api key, image, modifiers to grab certain things,
+            // language so we can read it when it comes back, and plant details. 
             const data = {
                 api_key:
                     `${apiKey}`,
@@ -46,7 +49,7 @@ export const IdentifyProvider = (props) => {
                     "synonyms",
                 ],
             };
-
+            // API post call here
             fetch("https://api.plant.id/v2/identify", {
                 method: "POST",
                 headers: {

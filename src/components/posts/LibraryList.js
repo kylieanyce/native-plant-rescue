@@ -23,12 +23,12 @@ export const LibraryList = () => {
     useEffect(() => {
         if (searchTerms !== "") {
             console.log(posts)
-            const subset = posts.filter(post => post.plant?.scientificName.toLowerCase().includes(searchTerms))
+            const subset = posts.filter(post => post.plant?.scientificName.toLowerCase().includes(searchTerms) && post.plant?.commonName[0].toLowerCase().includes(searchTerms))
             setFiltered(subset)
         } else {
             setFiltered(posts)
         }
-    }, [ searchTerms, posts])
+    }, [searchTerms, posts])
 
     return (
         <div className="libraryPosts">
@@ -37,10 +37,10 @@ export const LibraryList = () => {
             <p><button className="btn identifyButton" onClick={() => {
                 history.push("/identifyForm")
             }}>Identify Your Plant</button></p>
-            
+
             <div className="postList">
                 {filteredPosts.map(post => {
-                    return <LibraryPostCard key={post.id} post={post}  />
+                    return <LibraryPostCard key={post.id} post={post} />
                 })}
             </div>
         </div>
