@@ -144,15 +144,15 @@
   ],
   "posts": [
     {
-      "userId": 1,
+      "userId": 4,
       "plantId": 1,
       "address": "526 shorty ln",
-      "pickupInfo": "come to back porch",
-      "available": true,
+      "pickupInfo": "come around back",
+      "available": false,
       "id": 1
     },
     {
-      "userId": 4,
+      "userId": 2,
       "plantId": 2,
       "address": "789 boogie down rd",
       "pickupInfo": "on front porch",
@@ -166,14 +166,6 @@
       "pickupInfo": "under patio",
       "available": true,
       "id": 3
-    },
-    {
-      "userId": 4,
-      "plantId": 4,
-      "address": "8 wacky way",
-      "pickupInfo": "its on the porch",
-      "available": true,
-      "id": 4
     },
     {
       "userId": 5,

@@ -47,7 +47,7 @@ export const CreatePost = () => {
                 available: post.available,
                 id: post.id
             })
-                .then(() => history.push(`/claim`))
+                .then(() => history.push(`/library`))
         } else {
             addPost({
                 userId: currentUserId,
@@ -108,7 +108,8 @@ export const CreatePost = () => {
                 event.preventDefault()
                 handleAddPost()
             }}>{postId ? "Save Edits" : "Add Post"}</button>
-                        <button onClick={() => history.push(`/library`)}>Back to Plant Library</button>
+
+            <button onClick={() => history.push(`/library`)}>Back to Plant Library</button>
 
             {/* USE THIS DIV TO TEST STATE VARIABLE-----------
             <div>
