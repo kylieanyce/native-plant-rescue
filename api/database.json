@@ -43,19 +43,13 @@
     },
     {
       "id": 2,
-      "commonName": [
-        "western azalea",
-        "California azalea"
-      ],
+      "commonName": ["western azalea", "California azalea"],
       "scientificName": "Rhododendron occidentale",
       "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg"
     },
     {
-      "commonName": [
-        "common rhododendron",
-        "pontic rhododendron"
-      ],
+      "commonName": ["common rhododendron", "pontic rhododendron"],
       "scientificName": "Rhododendron ponticum",
       "description": "Rhododendron ponticum, called common rhododendron or pontic rhododendron, is a species of Rhododendron native to the Iberian Peninsula in southwest Europe and the Caucasus region in northern West Asia.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2d2/63fd79eb9102f3f0348563cd2fffe.jpg",
@@ -75,9 +69,7 @@
       "id": 4
     },
     {
-      "commonName": [
-        "flame azalea"
-      ],
+      "commonName": ["flame azalea"],
       "scientificName": "Rhododendron calendulaceum",
       "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
@@ -107,11 +99,7 @@
       "id": 7
     },
     {
-      "commonName": [
-        "peace lily",
-        "white sails",
-        "spathe flower"
-      ],
+      "commonName": ["peace lily", "white sails", "spathe flower"],
       "scientificName": "Spathiphyllum wallisii",
       "description": "Spathiphyllum wallisii, commonly known as peace lily, white sails, or spathe flower is a very popular indoor house plant of the family Araceae. The genus name means \"spathe-leaf\", and the specific epithet is named after Gustav Wallis, the German plant collector.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/890/5006659da4e004fa27ec3e7bc3f6d.jpg",
@@ -132,10 +120,7 @@
       "id": 9
     },
     {
-      "commonName": [
-        "western azalea",
-        "California azalea"
-      ],
+      "commonName": ["western azalea", "California azalea"],
       "scientificName": "Rhododendron occidentale",
       "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg",
@@ -198,6 +183,13 @@
       "pickupInfo": "",
       "available": true,
       "id": 8
+    }
+  ],
+  "natives": [
+    {
+      "TnNatives": {
+        "scientificName": ["rhododendron calendulaceum", "echinacea purpurea", "mertensia virginica", "liriodendron tulipifera", "hemerocallis fulva", "cercis canadensis", "aronia arbutifolia"]
+      }
     }
   ]
 }

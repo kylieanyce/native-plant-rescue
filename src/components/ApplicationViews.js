@@ -15,6 +15,7 @@ import { PostDetails } from "./posts/Details"
 import { CreatePost } from "./posts/CreatePostForm"
 import { ClaimPost } from "./posts/ClaimPost"
 import { SearchPost } from "./posts/SearchPost"
+import { NativeProvider } from "./natives/NativeProvider"
 
 export const ApplicationViews = () => {
     return (
@@ -43,15 +44,16 @@ export const ApplicationViews = () => {
                             <CreatePost />
                         </Route>
 
-
-                        <IdentifyProvider>
-                            <Route path="/select">
-                                <PlantSelection />
-                            </Route>
-                            <Route path="/identifyForm">
-                                <IdentifyForm />
-                            </Route>
-                        </IdentifyProvider>
+                        <NativeProvider>
+                            <IdentifyProvider>
+                                <Route path="/select">
+                                    <PlantSelection />
+                                </Route>
+                                <Route path="/identifyForm">
+                                    <IdentifyForm />
+                                </Route>
+                            </IdentifyProvider>
+                        </NativeProvider>
                     </UserProvider>
                 </PostProvider>
             </PlantProvider>

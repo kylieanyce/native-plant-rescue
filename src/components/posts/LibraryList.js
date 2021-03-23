@@ -4,7 +4,6 @@ import { PlantContext } from "../plants/PlantProvider";
 import { PostContext } from "../posts/PostProvider";
 import { LibraryPostCard } from "./LibraryPost"
 import "./Library.css";
-import { SearchPost } from "./SearchPost";
 
 
 export const LibraryList = () => {
