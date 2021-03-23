@@ -6,7 +6,7 @@ export const SearchPost = () => {
 
     return (
         <>
-            Post Search:
+            Search Plants : 
             <input type="text"
                 className="input--wide"
                 onKeyUp={(event) => setSearchTerms(event.target.value)}

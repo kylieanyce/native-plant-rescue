@@ -23,6 +23,7 @@ export const ApplicationViews = () => {
                 <PostProvider>
                     <UserProvider>
                         <Route exact path="/">
+                            <SearchPost />
                             <Home />
                         </Route>
                         <Route exact path="/library">
