@@ -18,7 +18,8 @@ export const PlantSelection = () => {
             <h2>Choose Your Plant</h2>
             <section className="selectPlantList">
                 {plants.map(plant => {
-                    const filteredNatives = natives.filter(nativeItem => nativeItem.TnNatives.scientificName === plant.plant_details.scientific_name)
+                    debugger
+                    const filteredNatives = natives.TnNatives.scientificName.filter(nativeItem => nativeItem.TnNatives.scientificName === plant.plant_details.scientific_name)
                     return <SelectPlantCard key={plant.id} plant={plant} native={filteredNatives}/>
                 })}
             </section>
