@@ -1,9 +1,11 @@
 import React, { useContext } from "react"
 import { PostContext } from "../posts/PostProvider";
 
+// displays search bar
 export const SearchPost = () => {
     const { setSearchTerms } = useContext(PostContext)
 
+    // on key up, grabs value from target and sets search terms with it
     return (
         <>
             Search Plants : 
