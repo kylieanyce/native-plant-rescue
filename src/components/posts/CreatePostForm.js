@@ -3,11 +3,14 @@ import { useHistory, useParams } from 'react-router-dom';
 import { PostContext } from "./PostProvider";
 import { PlantContext } from "../plants/PlantProvider";
 
+
+// creates and updates posts
 export const CreatePost = () => {
     const { addPost, getPostById, updatePost, getPosts } = useContext(PostContext)
     const currentUserId = parseInt(sessionStorage.getItem("app_user_id"))
     const { getPlantById } = useContext(PlantContext)
 
+    // sets state for post
     const [post, setPost] = useState({
         userId: currentUserId,
         plantId: 0,
@@ -17,6 +20,7 @@ export const CreatePost = () => {
         id: 0
     });
 
+    // sets state for plant
     const [plant, setPlant] = useState({
         commonName: "",
         scientificName: "",
@@ -25,17 +29,21 @@ export const CreatePost = () => {
         id: 0
     })
 
+    // keeps user from clicking buttons multiple times
     const [isLoading, setIsLoading] = useState(true);
+    // grab post and plant id from params to determine add or create
     const { postId } = useParams();
     const { plantId } = useParams();
     const history = useHistory();
 
+    // this updates state variables whenever dom is changed
     const handleControlledInputChange = (event) => {
         const newPost = { ...post }
         newPost[event.target.id] = event.target.value
         setPost(newPost)
     }
 
+    // if the URL has a post id
     const handleAddPost = () => {
         setIsLoading(true);
         if (postId) {
