@@ -87,6 +87,13 @@
       "description": "Mertensia virginica (common names Virginia bluebells, Virginia cowslip, lungwort oysterleaf, Roanoke bells) is a spring ephemeral plant with bell-shaped sky-blue flowers, native to eastern North America.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a07/5eabc90005adad6b591e29144aed8.jpg",
       "id": 8
+    },
+    {
+      "commonName": "chokeberries",
+      "scientificName": "Aronia",
+      "description": "Aronia is a genus of deciduous shrubs, the chokeberries, in the family Rosaceae native to eastern North America and most commonly found in wet woods and swamps. The genus is usually considered to contain two or three species, one of which is naturalized in Europe. A fourth form that has long been cultivated under the name Aronia is now considered to be an intergeneric hybrid, × Sorbaronia mitschurinii.\nChokeberries are cultivated as ornamental plants and as food products. The sour berries, or aronia berries, can be eaten raw off the bush, but are more frequently processed. They can be found in wine, jam, syrup, juice, soft spreads, tea, salsa, extracts, beer, ice cream, gummies, and tinctures. The name \"chokeberry\" comes from the astringency of the fruits, which create the sensation of making one's mouth pucker.\nChokeberries are often mistakenly called chokecherries, the common name for Prunus virginiana. Further adding to the ambiguity, a variety of Prunus virginiana is melanocarpa, and readily confused with black chokeberry because it is commonly referred to as \"black chokeberry\" or \"aronia\". Aronia berries and chokecherries both contain polyphenolic compounds, such as anthocyanins, yet the two plants are only distantly related within the Rosaceae.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/880/6d146d05168c886ce66224a55f179.jpg",
+      "id": 9
     }
   ],
   "posts": [
@@ -137,6 +144,14 @@
       "pickupInfo": "",
       "available": true,
       "id": 6
+    },
+    {
+      "userId": 6,
+      "plantId": 9,
+      "address": "890 gray ave",
+      "pickupInfo": "",
+      "available": true,
+      "id": 7
     }
   ]
 }

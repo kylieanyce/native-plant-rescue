@@ -12,24 +12,33 @@ export const IdentifyContext = createContext()
 //identify a plant then send user to select plant menu
 export const IdentifyProvider = (props) => {
     const [plants, setPlants] = useState([])
-
     const history = useHistory()
-    // identifies the plant
-    const sendIdentification = () => {
-        // finds file on the dom and uses FileReader to read the file as a URL
-        const files = [...document.querySelector("input[type=file]").files];
+
+    // identifies the plant and takes the image from useRef as parameter
+    const sendIdentification = (imageFiles) => {
+        // creates variable to make a copy of file and put in an array so it can be mapped
+        const files = [...imageFiles]
+        // creates variable that will contain mapped files
         const promises = files.map((file) => {
+            // create a promise, when it has been fulfilled it will trigger resolve
+            // if not, reject
             return new Promise((resolve, reject) => {
+                // FileReader creates a reader 
                 const reader = new FileReader();
+                // a handler that is fired when the reader has successfully read the file  
                 reader.onload = (event) => {
+                    // grabs the target result of the event and sets to variable
                     const res = event.target.result;
                     console.log(res);
+                    // result of target is passed into resolve to signify that it worked
                     resolve(res);
                 }
+                // starts reading the file, once completed the result is
+                // a URL that represents the data (a base64 string)
                 reader.readAsDataURL(file);
             });
         });
-        // then once all promises are fulfilled, turns file into base64
+        // then once all promises are fulfilled, the result is passed to the API as a base64 file
         Promise.all(promises).then((base64files) => {
             // data must be posted so we can deliver info in header
             // need to deliver api key, image, modifiers to grab certain things,
