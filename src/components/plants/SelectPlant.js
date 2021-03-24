@@ -3,12 +3,15 @@ import { useHistory } from "react-router-dom"
 import "./SelectPlant.css";
 import { PlantContext } from "./PlantProvider"
 
+
+// renders individual matching plants on DOM and handles the select plant function
 export const SelectPlantCard = ({ plant }) => {
+    const { addPlant } = useContext(PlantContext)
     const history = useHistory()
 
-    const { addPlant } = useContext(PlantContext)
-    const plantCommonNames = plant.plant_details.common_names
-
+    // when the user selects whichever plant is theirs, the data is sent to my 
+    // API and a plantId is created. When the data comes back, we grab the plant id
+    // and they are sent to the create post form for that specific plant.
     const handleCreatePost = () => {
         addPlant({
             commonName: plant.plant_details.common_names[0],
@@ -20,8 +23,8 @@ export const SelectPlantCard = ({ plant }) => {
 
     return (
         <div className="selectPlantCard" value={plant.id}>
-            {console.log(plant)}
             <h4>Scientific Name: {plant.plant_details.scientific_name}</h4>
+            {/* if the plant has no common names, this area will not display on DOM */}
             {plant.plant_details.common_names !== null ? <p>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
             <p>{plant.plant_details.wiki_description.value}</p>
             <img className="selectImage" src={plant?.similar_images[0].url}></img>

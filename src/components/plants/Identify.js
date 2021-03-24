@@ -9,12 +9,12 @@ const apiKey = testAPI.apiKeyIdentify
 
 export const IdentifyContext = createContext()
 
-//identify a plant 
+//identify a plant then send user to select plant menu
 export const IdentifyProvider = (props) => {
     const [plants, setPlants] = useState([])
 
     const history = useHistory()
-
+    // identifies the plant
     const sendIdentification = () => {
         // finds file on the dom and uses FileReader to read the file as a URL
         const files = [...document.querySelector("input[type=file]").files];
@@ -62,6 +62,7 @@ export const IdentifyProvider = (props) => {
                     console.log("Success:", data);
                     setPlants(data.suggestions)
                 })
+                //then send user to select plant menu
                 .then(() => history.push("/select"))
                 .catch((error) => {
                     console.error("Error:", error);
