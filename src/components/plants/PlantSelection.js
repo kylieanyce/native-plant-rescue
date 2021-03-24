@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { IdentifyContext } from "./Identify";
 import { SelectPlantCard } from "./SelectPlant"
 
-
+// gives user a selection of plants that were found to match theirs
 export const PlantSelection = () => {
     const { plants } = useContext(IdentifyContext)
 

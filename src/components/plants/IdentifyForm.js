@@ -3,7 +3,7 @@ import { IdentifyContext } from "./Identify";
 import "./Identify.css";
 import { useHistory } from "react-router-dom";
 
-
+// creates identification form 
 export const IdentifyForm = () => {
     const { sendIdentification } = useContext(IdentifyContext)
     const history = useHistory()

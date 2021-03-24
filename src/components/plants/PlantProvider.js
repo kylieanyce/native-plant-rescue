@@ -27,6 +27,8 @@ export const PlantProvider = (props) => {
             body: JSON.stringify(plantObj)
         })
             .then(res => res.json())
+            // post always brings data back so grab id of data 
+            // and send user to create form based on new plant id
             .then(createdPlant => {
                 if (createdPlant.hasOwnProperty("id")) {
                     history.push(`/${createdPlant.id}/create`)

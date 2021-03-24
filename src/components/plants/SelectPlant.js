@@ -3,16 +3,18 @@ import { useHistory } from "react-router-dom"
 import "./SelectPlant.css";
 import { PlantContext } from "./PlantProvider"
 
+
+// renders individual matching plants on DOM and handles the select plant function
 export const SelectPlantCard = ({ plant }) => {
+    const { addPlant } = useContext(PlantContext)
     const history = useHistory()
 
-    const { addPlant, getPlantById, getPlants } = useContext(PlantContext)
-    const plantArray = []
-    const plantCommonNames = plant.plant_details.common_names
-
+    // when the user selects whichever plant is theirs, the data is sent to my 
+    // API and a plantId is created. When the data comes back, we grab the plant id
+    // and they are sent to the create post form for that specific plant.
     const handleCreatePost = () => {
         addPlant({
-            commonName: plantCommonNames,
+            commonName: plant.plant_details.common_names[0],
             scientificName: plant.plant_details.scientific_name,
             description: plant.plant_details.wiki_description.value,
             image: plant?.similar_images[0].url,
@@ -21,9 +23,9 @@ export const SelectPlantCard = ({ plant }) => {
 
     return (
         <div className="selectPlantCard" value={plant.id}>
-            {console.log(plant)}
             <h4>Scientific Name: {plant.plant_details.scientific_name}</h4>
-            {plantCommonNames !== null ? <p>Common Name: {plantCommonNames.map(item => item.toUpperCase()).join(", ")}</p> : ""}
+            {/* if the plant has no common names, this area will not display on DOM */}
+            {plant.plant_details.common_names !== null ? <p>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
             <p>{plant.plant_details.wiki_description.value}</p>
             <img className="selectImage" src={plant?.similar_images[0].url}></img>
             <button onClick={handleCreatePost}>This is my plant!</button>
