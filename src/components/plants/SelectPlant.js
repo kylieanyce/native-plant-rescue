@@ -23,9 +23,9 @@ export const SelectPlantCard = ({ plant }) => {
 
     return (
         <div className="selectPlantCard" value={plant.id}>
-            <h4>Scientific Name: {plant.plant_details.scientific_name}</h4>
+            <h4 style={{ textTransform: 'capitalize' }}>Scientific Name: {plant.plant_details.scientific_name}</h4>
             {/* if the plant has no common names, this area will not display on DOM */}
-            {plant.plant_details.common_names !== null ? <p>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
+            {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
             <p>{plant.plant_details.wiki_description.value}</p>
             <img className="selectImage" src={plant?.similar_images[0].url}></img>
             <button onClick={handleCreatePost}>This is my plant!</button>
