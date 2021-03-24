@@ -25,7 +25,7 @@ export const LibraryList = () => {
     // common names that match the what's in the search terms. 
     useEffect(() => {
         if (searchTerms !== "") {
-            const subset = posts.filter(post => post.plant?.scientificName.toLowerCase().includes(searchTerms) && post.plant?.commonName[0].toLowerCase().includes(searchTerms))
+            const subset = posts.filter(post => post.plant?.scientificName.toLowerCase().includes(searchTerms) || post.plant?.commonName.toLowerCase().includes(searchTerms))
             // sets filteredPost state var with subset array
             setFiltered(subset)
         } else {

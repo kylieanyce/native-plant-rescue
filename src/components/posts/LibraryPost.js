@@ -7,7 +7,7 @@ export const LibraryPostCard = ({ post }) => {
     return (
         <>
             {/* if the plant is not available, it will not render at all */}
-            {post.available === true ?
+            {post.available === true &&
                 <section className="postCards" id={post.id}>
                     <div>
                         <h3>
@@ -24,7 +24,7 @@ export const LibraryPostCard = ({ post }) => {
                         <h5>Available: {post.available === true ? "Yes" : "No"}</h5>
                     </div>
                 </section>
-                : ""}
+                }
         </>
     )
 }

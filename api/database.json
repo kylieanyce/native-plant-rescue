@@ -24,6 +24,11 @@
       "email": "pbrady@gmail.com",
       "name": "Partia Brady",
       "id": 5
+    },
+    {
+      "email": "betty@gmail.com",
+      "name": "Betty White",
+      "id": 6
     }
   ],
   "plants": [
@@ -75,6 +80,13 @@
       "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg",
       "id": 7
+    },
+    {
+      "commonName": "lungwort oysterleaf",
+      "scientificName": "Mertensia virginica",
+      "description": "Mertensia virginica (common names Virginia bluebells, Virginia cowslip, lungwort oysterleaf, Roanoke bells) is a spring ephemeral plant with bell-shaped sky-blue flowers, native to eastern North America.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a07/5eabc90005adad6b591e29144aed8.jpg",
+      "id": 8
     }
   ],
   "posts": [
@@ -87,11 +99,11 @@
       "id": 1
     },
     {
-      "userId": 2,
+      "userId": 6,
       "plantId": 2,
       "address": "789 boogie down rd",
       "pickupInfo": "on front porch",
-      "available": true,
+      "available": false,
       "id": 2
     },
     {
