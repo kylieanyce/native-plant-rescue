@@ -10,7 +10,7 @@ export const LibraryPostCard = ({ post }) => {
             {post.available === true &&
                 <section className="postCards" id={post.id}>
                     <div>
-                        <h3>
+                        <h3 style={{ textTransform: 'capitalize' }}>
                             {post.plant?.scientificName}
                         </h3>
                         <h4 style={{ textTransform: 'capitalize' }}>{post.plant?.commonName}</h4>

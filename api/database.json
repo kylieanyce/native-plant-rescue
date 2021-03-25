@@ -94,15 +94,22 @@
       "description": "Aronia is a genus of deciduous shrubs, the chokeberries, in the family Rosaceae native to eastern North America and most commonly found in wet woods and swamps. The genus is usually considered to contain two or three species, one of which is naturalized in Europe. A fourth form that has long been cultivated under the name Aronia is now considered to be an intergeneric hybrid, × Sorbaronia mitschurinii.\nChokeberries are cultivated as ornamental plants and as food products. The sour berries, or aronia berries, can be eaten raw off the bush, but are more frequently processed. They can be found in wine, jam, syrup, juice, soft spreads, tea, salsa, extracts, beer, ice cream, gummies, and tinctures. The name \"chokeberry\" comes from the astringency of the fruits, which create the sensation of making one's mouth pucker.\nChokeberries are often mistakenly called chokecherries, the common name for Prunus virginiana. Further adding to the ambiguity, a variety of Prunus virginiana is melanocarpa, and readily confused with black chokeberry because it is commonly referred to as \"black chokeberry\" or \"aronia\". Aronia berries and chokecherries both contain polyphenolic compounds, such as anthocyanins, yet the two plants are only distantly related within the Rosaceae.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/880/6d146d05168c886ce66224a55f179.jpg",
       "id": 9
+    },
+    {
+      "commonName": "",
+      "scientificName": "Rhododendron",
+      "description": "Rhododendron (from Ancient Greek ῥόδον rhódon \"rose\" and δένδρον déndron \"tree\") is a genus of 1,024 species of woody plants in the heath family (Ericaceae), either evergreen or deciduous, and found mainly in Asia, although it is also widespread throughout lowland and montane forests in the Pacific Northwest, California, the Northeastern United States, and especially in the highlands of the Appalachian Mountains of North America. It is the national flower of Nepal, the state flower of Washington and West Virginia in the United States, the provincial flower of Jiangxi in China and the state tree of Sikkim and Uttarakhand in India. Most species have brightly colored flowers which bloom from late winter through to early summer.\nAzaleas make up two subgenera of Rhododendron. They are distinguished from \"true\" rhododendrons by having only five anthers per flower.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/b97/66e3ca13772a09246ad560780870a.jpg",
+      "id": 10
     }
   ],
   "posts": [
     {
-      "userId": 1,
+      "userId": 4,
       "plantId": 1,
       "address": "526 shorty ln",
       "pickupInfo": "come around back",
-      "available": true,
+      "available": false,
       "id": 1
     },
     {
@@ -114,11 +121,11 @@
       "id": 2
     },
     {
-      "userId": 3,
+      "userId": 4,
       "plantId": 3,
       "address": "239 boot scoot terrace",
       "pickupInfo": "under patio",
-      "available": true,
+      "available": false,
       "id": 3
     },
     {
@@ -152,6 +159,14 @@
       "pickupInfo": "",
       "available": true,
       "id": 7
+    },
+    {
+      "userId": 4,
+      "plantId": 10,
+      "address": "7890 patty place",
+      "pickupInfo": "",
+      "available": true,
+      "id": 8
     }
   ]
 }

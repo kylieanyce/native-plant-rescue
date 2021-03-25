@@ -115,8 +115,8 @@ export const CreatePost = () => {
 
             {/* This div grabs information from plant that was selected and posted to API to be displayed */}
             <div className="createPostAutofill">
-                <h3>{plant.scientificName}</h3>
-                {plant.commonName ? <h4>Common Name(s): {plant.commonName}</h4> : ""}
+                <h3 style={{ textTransform: 'capitalize' }}>{plant.scientificName}</h3>
+                {plant.commonName ? <h4 style={{ textTransform: 'capitalize' }}>Common Name(s): {plant.commonName}</h4> : ""}
                 <p>{plant.description}</p>
                 <img src={plant.image}></img>
             </div>

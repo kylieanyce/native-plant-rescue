@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    color: #049698;
 }
 .postList {
     display: flex;
@@ -7,7 +8,8 @@ body {
     justify-content: center;
 }
 .postCards {
-    border: 2px solid teal;
+    background-color: #13636e;
+    color: #1e2745;
     padding: 10px;
     margin: 10px;
     display: flex;

@@ -52,7 +52,7 @@ export const PostDetails = () => {
     return (
         <section className="details">
             {/* Scientific Name */}
-            <h2>{post.plant?.scientificName}</h2>
+            <h2 style={{ textTransform: 'capitalize' }}>{post.plant?.scientificName}</h2>
 
             {/* Common Names (if they exist) */}
             {post.plant?.commonName !== null ? <div><h3>Common Names: </h3><p>{post.plant?.commonName}</p></div> : ""}
@@ -77,10 +77,10 @@ export const PostDetails = () => {
             </button> : "" } 
             
             {/* Address */}
-            <p>Address: {post.address}</p>
+            <p style={{ textTransform: 'capitalize' }}>Address: {post.address}</p>
             
             {/* Pickup Info */}
-            {post.pickupInfo !== "" ? <p>Pickup Details: {post.pickupInfo}</p> : ""}
+            {post.pickupInfo !== "" ? <p style={{ textTransform: 'capitalize' }}>Pickup Details: {post.pickupInfo}</p> : ""}
 
             {/* Availablity */}
             <p>Available: {post.available === true ? "Yes" : "No"}</p>
