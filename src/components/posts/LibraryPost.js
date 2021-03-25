@@ -5,10 +5,8 @@ import "./Library.css";
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
@@ -19,8 +17,16 @@ const useStyles = makeStyles({
     },
     media: {
         height: 140,
-        background: "1e2745",
     },
+    box: {
+        display: "flex",
+        border: "black 2px solid",
+        height: 50
+    },
+    buttonBox: {
+        justifyContent: "center",
+        alignItems: "flex-end"
+    }
 });
 // renders each individual library post on the library page
 export const LibraryPostCard = ({ post }) => {
@@ -30,15 +36,17 @@ export const LibraryPostCard = ({ post }) => {
         <>
             {/* if the plant is not available, it will not render at all */}
             {post.available === true &&
-                <Card className="postCards" style={{backgroundColor: "#13636e"}}>
+                <Card className="postCards" style={{ backgroundColor: "#13636e" }}>
                     <CardActionArea>
-                        <CardMedia
-                            className={classes.media}
-                            image={post.plant?.image}
-                        />
+                        <Link to={`/library/detail/${post.id}`}>
+                            <CardMedia
+                                className={classes.media}
+                                image={post.plant?.image}
+                            />
+                        </Link>
 
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
+                            <Typography gutterBottom variant="h5" component="h2" style={{ color: "#1e2745" }}>
                                 {post.plant?.scientificName}
                             </Typography>
 
@@ -47,12 +55,6 @@ export const LibraryPostCard = ({ post }) => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                    
-                    <CardActions>
-                        <Button size="small" color="#1e2745">
-                            Learn More
-                        </Button>
-                    </CardActions>
                 </Card>
             }
         </>
