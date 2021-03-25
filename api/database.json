@@ -98,11 +98,11 @@
   ],
   "posts": [
     {
-      "userId": 1,
+      "userId": 4,
       "plantId": 1,
       "address": "526 shorty ln",
       "pickupInfo": "come around back",
-      "available": true,
+      "available": false,
       "id": 1
     },
     {
