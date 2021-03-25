@@ -1,7 +1,8 @@
 header {
     margin: 0;
     padding: 0;
-    background-color: darkslateblue;
+    background-color: #1e2745;
+    color: #049698;
     position: fixed;
     left: 0;
     top: 0;
