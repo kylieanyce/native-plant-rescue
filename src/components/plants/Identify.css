@@ -12,11 +12,9 @@
     opacity: 0.8;
 }
 .outerIdentifyForm {
-    background-image: url(../../images/form.jpg);
-    background-position: center center;
-    display: table;
+    display: table; 
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     height: 100%;
     width: 100%;

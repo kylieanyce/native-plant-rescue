@@ -4,6 +4,7 @@ footer {
     padding: 0;
     justify-content: space-evenly;
     background-color: #1e2745;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -13,6 +14,5 @@ footer {
     opacity: 0.6;
 }
 .footer {
-    position: relative;
     min-height: 10vh;
 }
