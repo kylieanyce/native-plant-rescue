@@ -29,7 +29,6 @@ export const IdentifyProvider = (props) => {
                 reader.onload = (event) => {
                     // grabs the target result of the event and sets to variable
                     const res = event.target.result;
-                    console.log(res);
                     // result of target is passed into resolve to signify that it worked
                     resolve(res);
                 }
