@@ -96,11 +96,18 @@
       "id": 9
     },
     {
-      "commonName": "",
+      "commonName": null,
       "scientificName": "Rhododendron",
       "description": "Rhododendron (from Ancient Greek ῥόδον rhódon \"rose\" and δένδρον déndron \"tree\") is a genus of 1,024 species of woody plants in the heath family (Ericaceae), either evergreen or deciduous, and found mainly in Asia, although it is also widespread throughout lowland and montane forests in the Pacific Northwest, California, the Northeastern United States, and especially in the highlands of the Appalachian Mountains of North America. It is the national flower of Nepal, the state flower of Washington and West Virginia in the United States, the provincial flower of Jiangxi in China and the state tree of Sikkim and Uttarakhand in India. Most species have brightly colored flowers which bloom from late winter through to early summer.\nAzaleas make up two subgenera of Rhododendron. They are distinguished from \"true\" rhododendrons by having only five anthers per flower.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/b97/66e3ca13772a09246ad560780870a.jpg",
       "id": 10
+    },
+    {
+      "commonName": null,
+      "scientificName": "Rhododendron",
+      "description": "Rhododendron (from Ancient Greek ῥόδον rhódon \"rose\" and δένδρον déndron \"tree\") is a genus of 1,024 species of woody plants in the heath family (Ericaceae), either evergreen or deciduous, and found mainly in Asia, although it is also widespread throughout lowland and montane forests in the Pacific Northwest, California, the Northeastern United States, and especially in the highlands of the Appalachian Mountains of North America. It is the national flower of Nepal, the state flower of Washington and West Virginia in the United States, the provincial flower of Jiangxi in China and the state tree of Sikkim and Uttarakhand in India. Most species have brightly colored flowers which bloom from late winter through to early summer.\nAzaleas make up two subgenera of Rhododendron. They are distinguished from \"true\" rhododendrons by having only five anthers per flower.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/b97/66e3ca13772a09246ad560780870a.jpg",
+      "id": 11
     }
   ],
   "posts": [
@@ -162,8 +169,8 @@
     },
     {
       "userId": 4,
-      "plantId": 10,
-      "address": "7890 patty place",
+      "plantId": 11,
+      "address": "8422 Johnson Pike",
       "pickupInfo": "",
       "available": true,
       "id": 8

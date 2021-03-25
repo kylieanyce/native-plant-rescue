@@ -7,7 +7,7 @@ import { PlantContext } from "./PlantProvider"
 // renders individual matching plants on DOM and handles the select plant function
 export const SelectPlantCard = ({ plant }) => {
     const { addPlant } = useContext(PlantContext)
-    const newPlant = plant.commonName ? plant.commonName : ""
+    const newPlant = plant.commonName ? plant.commonName : null
 
     // when the user selects whichever plant is theirs, the data is sent to my 
     // API and a plantId is created. When the data comes back, we grab the plant id
