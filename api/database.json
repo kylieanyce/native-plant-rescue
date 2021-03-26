@@ -59,6 +59,34 @@
       "description": "Echinacea purpurea (eastern purple coneflower, purple coneflower, hedgehog coneflower, or echinacea) is a North American species of flowering plant in the sunflower family. It is native to parts of eastern North America and present to some extent in the wild in much of the eastern, southeastern and midwestern United States as well as in the Canadian Province of Ontario. It is most common in the Ozarks and in the Mississippi/Ohio Valley. Its habitats include dry open woods, prairies and barrens.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2f5/f103e268d9b4ae6f0233c48d81630.jpg",
       "id": 4
+    },
+    {
+      "commonName": "Tulip Tree",
+      "scientificName": "Liriodendron tulipifera",
+      "description": "Liriodendron tulipifera—known as the tulip tree, American tulip tree, tulipwood, tuliptree, tulip poplar, whitewood, fiddletree, and yellow-poplar—is the North American representative of the two-species genus Liriodendron (the other member is Liriodendron chinense), and the tallest eastern hardwood. It is native to eastern North America from Southern Ontario and possibly southern Quebec to Illinois eastward to southwestern Massachusetts and Rhode Island, and south to central Florida and Louisiana. It can grow to more than 50 m (160 ft) in virgin cove forests of the Appalachian Mountains, often with no limbs until it reaches 25–30 m (80–100 ft) in height, making it a very valuable timber tree.\nIt is fast-growing, without the common problems of weak wood strength and short lifespan often seen in fast-growing species. April marks the start of the flowering period in the Southern United States (except as noted below); trees at the northern limit of cultivation begin to flower in June. The flowers are pale green or yellow (rarely white), with an orange band on the tepals; they yield large quantities of nectar. The tulip tree is the state tree of Indiana, Kentucky, and Tennessee.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/289/d14793c888948abec8cc5ddb21d61.jpg",
+      "id": 5
+    },
+    {
+      "commonName": "red chokeberry",
+      "scientificName": "Aronia arbutifolia",
+      "description": "Aronia arbutifolia, called the red chokeberry, is a North American species of shrubs in the rose family. It is native to eastern Canada and to the eastern and central United States, from eastern Texas to Nova Scotia inland to Ontario, Ohio, Kentucky, and Oklahoma.\nAronia arbutifolia is a branching shrub forming clumps by means of stems forming from the roots. Flowers are white or pink, producing black or bright red fruits. Many people consider the fruits to be foul-tasting.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/06c/46f931c7d5bf299efd73aa3db23df.jpg",
+      "id": 6
+    },
+    {
+      "commonName": "lungwort oysterleaf",
+      "scientificName": "Mertensia virginica",
+      "description": "Mertensia virginica (common names Virginia bluebells, Virginia cowslip, lungwort oysterleaf, Roanoke bells) is a spring ephemeral plant with bell-shaped sky-blue flowers, native to eastern North America.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a07/5eabc90005adad6b591e29144aed8.jpg",
+      "id": 7
+    },
+    {
+      "commonName": "Judas tree",
+      "scientificName": "Cercis siliquastrum",
+      "description": "Cercis siliquastrum, commonly known as the Judas tree or Judas-tree, is a small deciduous tree from Southern Europe and Western Asia which is noted for its prolific display of deep pink flowers in spring.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/cb4/8afd8f49c995e4b45fcbd5bc193a1.jpg",
+      "id": 8
     }
   ],
   "posts": [
@@ -93,6 +121,38 @@
       "pickupInfo": "",
       "available": true,
       "id": 4
+    },
+    {
+      "userId": 4,
+      "plantId": 5,
+      "address": "789 Tulip Way",
+      "pickupInfo": "",
+      "available": true,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "plantId": 6,
+      "address": "9 chokeberry st",
+      "pickupInfo": "",
+      "available": true,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "plantId": 7,
+      "address": "32 berry place",
+      "pickupInfo": "",
+      "available": true,
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "plantId": 8,
+      "address": "231 forrest hills",
+      "pickupInfo": "",
+      "available": true,
+      "id": 8
     }
   ]
 }

@@ -4,6 +4,8 @@ import { PlantContext } from "../plants/PlantProvider";
 import { PostContext } from "../posts/PostProvider";
 import { LibraryPostCard } from "./LibraryPost"
 import "./Library.css";
+import { Grid } from '@material-ui/core';
+
 
 
 // renders plant library
@@ -45,12 +47,17 @@ export const LibraryList = () => {
                 history.push("/identifyForm")
             }}>Identify Your Plant</button></p>
 
-            {/* map through filtered posts and send to library post card to be rendered*/}
-            <div className="postList">
-                {filteredPosts.map(post => {
-                    return <LibraryPostCard key={post.id} post={post} />
-                })}
-            </div>
+
+            <Grid container>
+
+                {/* map through filtered posts and send to library post card to be rendered*/}
+                <div className="postList">
+                    {filteredPosts.map(post => {
+                        return <LibraryPostCard key={post.id} post={post} />
+                    })}
+                </div>
+            </Grid>
+
         </div>
     )
 }
