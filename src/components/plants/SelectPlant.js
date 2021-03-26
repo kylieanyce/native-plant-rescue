@@ -43,7 +43,7 @@ export const SelectPlantCard = ({ plant }) => {
     }
 
     return (
-        <Grid item xs={3}>
+        <Grid item xs={6} sm={4} md={3} lg={2}>
             <Card className="selectPlantCard" value={plant.id} style={{ backgroundColor: "#13636e" }}>
                 <CardActionArea>
                     <CardMedia
