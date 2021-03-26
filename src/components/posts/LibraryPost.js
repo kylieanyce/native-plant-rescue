@@ -29,28 +29,27 @@ export const LibraryPostCard = ({ post }) => {
         <>
             {/* if the plant is not available, it will not render at all */}
             {post.available === true &&
-                    <Grid item xs={2}>
-                        <Card className="postCards" style={{ backgroundColor: "#13636e" }}>
-                            <CardActionArea>
-                                <Link to={`/library/detail/${post.id}`}>
-                                    <CardMedia
-                                        className={classes.media}
-                                        image={post.plant?.image}
-                                    />
-                                </Link>
+                <Grid item xs={2}>
+                    <Card className="postCards" style={{ backgroundColor: "#13636e" }}>
+                        <CardActionArea>
+                            <Link to={`/library/detail/${post.id}`}>
+                                <CardMedia
+                                    className={classes.media}
+                                    image={post.plant?.image}
+                                />
+                            </Link>
 
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
-                                        {post.plant?.scientificName}
-                                    </Typography>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
+                                    {post.plant?.scientificName}
+                                </Typography>
 
-                                    <Typography variant="body2" color="textSecondary" style={{ textTransform: 'capitalize' }} component="p">
-                                        {post.plant?.commonName}
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                        
+                                <Typography variant="body2" color="textSecondary" style={{ textTransform: 'capitalize' }} component="p">
+                                    {post.plant?.commonName}
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 </Grid>
             }
         </>
