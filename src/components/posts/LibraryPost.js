@@ -18,15 +18,6 @@ const useStyles = makeStyles({
     media: {
         height: 140,
     },
-    box: {
-        display: "flex",
-        border: "black 2px solid",
-        height: 50
-    },
-    buttonBox: {
-        justifyContent: "center",
-        alignItems: "flex-end"
-    }
 });
 // renders each individual library post on the library page
 export const LibraryPostCard = ({ post }) => {

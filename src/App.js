@@ -13,7 +13,6 @@ export const App = () => (
       if (sessionStorage.getItem(userStorageKey)) {
         return (
           <>
-            <Header />
             <ApplicationViews />
             <Footer />
           </>

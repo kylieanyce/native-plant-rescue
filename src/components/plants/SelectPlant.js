@@ -17,6 +17,8 @@ import CardActions from '@material-ui/core/CardActions';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        display: "flex",
+        flexWrap: "wrap",
     },
     media: {
         height: 250,
@@ -26,7 +28,7 @@ const useStyles = makeStyles({
 // renders individual matching plants on DOM and handles the select plant function
 export const SelectPlantCard = ({ plant }) => {
     const { addPlant } = useContext(PlantContext)
-    const newPlant = plant.commonName ? plant.commonName : null
+    const newPlant = plant.plant_details.common_names ? plant.plant_details.common_names[0] : null
     const classes = useStyles();
 
     // when the user selects whichever plant is theirs, the data is sent to my 

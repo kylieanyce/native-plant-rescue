@@ -38,7 +38,7 @@ export const LibraryList = () => {
     // renders plant library
     return (
         <div className="libraryPosts">
-            <h2>Plant Library</h2>
+            <h2>Available Plants</h2>
 
             {/* identify button sends user to identify plant form */}
             <p><button className="btn identifyButton" onClick={() => {
