@@ -11,17 +11,16 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import CardActions from '@material-ui/core/CardActions';
+import { Grid } from '@material-ui/core';
 
 
 
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-        display: "flex",
-        flexWrap: "wrap",
     },
     media: {
-        height: 250,
+        height: 140,
     }
 });
 
@@ -44,34 +43,36 @@ export const SelectPlantCard = ({ plant }) => {
     }
 
     return (
-        <Card className="selectPlantCard" value={plant.id} style={{ backgroundColor: "#13636e" }}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={plant?.similar_images[0].url}
-                />
+        <Grid item xs={3}>
+            <Card className="selectPlantCard" value={plant.id} style={{ backgroundColor: "#13636e" }}>
+                <CardActionArea>
+                    <CardMedia
+                        className={classes.media}
+                        image={plant?.similar_images[0].url}
+                    />
 
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
-                    Scientific Name: {plant.plant_details.scientific_name}
-                    </Typography>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
+                            Scientific Name: {plant.plant_details.scientific_name}
+                        </Typography>
 
-                    <Typography variant="h6" color="textSecondary" component="p">
-                    {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
-                    </Typography>
+                        <Typography variant="h6" color="textSecondary" component="p">
+                            {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
+                        </Typography>
 
-                    <Typography variant="body3" color="textSecondary" component="p">
-                        {plant.plant_details.wiki_description.value}
-                    </Typography>
-                </CardContent>
+                        <Typography variant="body3" color="textSecondary" component="p">
+                            {plant.plant_details.wiki_description.value}
+                        </Typography>
+                    </CardContent>
 
-                <CardActions>
-                    <Button onClick={handleCreatePost} size="small" color="primary">
-                        This is my plant!
+                    <CardActions>
+                        <Button onClick={handleCreatePost} size="small" color="primary">
+                            This is my plant!
                     </Button>
-                </CardActions>
-            </CardActionArea>
-        </Card>
+                    </CardActions>
+                </CardActionArea>
+            </Card>
+        </Grid>
     )
 }
 
