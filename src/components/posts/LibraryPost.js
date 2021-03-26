@@ -37,11 +37,11 @@ export const LibraryPostCard = ({ post }) => {
                         </Link>
 
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2" style={{ color: "#1e2745" }}>
+                            <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
                                 {post.plant?.scientificName}
                             </Typography>
 
-                            <Typography variant="body2" color="textSecondary" component="p">
+                            <Typography variant="body2" color="textSecondary" style={{ textTransform: 'capitalize'}} component="p">
                                 {post.plant?.commonName}
                             </Typography>
                         </CardContent>
