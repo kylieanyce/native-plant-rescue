@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     flex: 3 3;
     max-width: 400px;
-    text-align: center;
+    text-align: left;
 }
 .image {
     max-width: 400px;

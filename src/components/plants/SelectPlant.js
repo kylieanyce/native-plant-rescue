@@ -66,7 +66,7 @@ export const SelectPlantCard = ({ plant }) => {
                     </CardContent>
 
                     <CardActions>
-                        <Button onClick={handleCreatePost} size="small" color="primary">
+                        <Button onClick={handleCreatePost} variant="contained" size="small" style={{color: "#1e2745"}} >
                             This is my plant!
                     </Button>
                     </CardActions>
