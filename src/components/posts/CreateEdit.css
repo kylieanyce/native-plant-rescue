@@ -1,24 +1,34 @@
-.formContainer {
+.createform {
     display: flex;
     justify-content: center;
 }
-.createPostForm {
-    max-width: 500px;
-    text-align: left;
+.formContainer {
+    max-width: 70%;
     background-color: #13636e;
     color: black;
-    padding: 20px;
+    padding: 30px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    flex: 3 3;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
+}
+.createPostForm {
+    text-align: left;
+}
+.createPostContainer {
+    display: flex;
+    justify-content: center;
 }
 .buttons {
     display: flex;
     justify-content: space-between;
 }
+.imageContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .editImage {
-    max-width: 100%;
+    max-width: 75%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1e2745;
 }

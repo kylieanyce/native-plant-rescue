@@ -4,9 +4,6 @@ import { PostContext } from "./PostProvider";
 import { PlantContext } from "../plants/PlantProvider";
 import "./CreateEdit.css";
 
-import Container from '@material-ui/core/Container';
-
-
 
 // creates and updates posts
 export const CreatePost = () => {
@@ -97,48 +94,52 @@ export const CreatePost = () => {
 
     // renders create/update post form
     return (
-        <form>
-            {/* The title changes: if their is a postId, it will say Edit, if not, it says Create */}
-            <h2 className="createForm__title">{postId ? "Edit Post" : "Create Post"}</h2>
+        <form className="createForm">
             <div className="formContainer">
                 <div className="createPostForm">
-                    <div className="formStyle">
+                    <div className="createPostContainer">
+                        <div className="imageContainer">
+                            {/* The title changes: if their is a postId, it will say Edit, if not, it says Create */}
+                            <div className="title"><h2>{postId ? "Edit Post" : "Create Post"}</h2></div>
+                            <img className="editImage" src={plant.image}></img>
+                        </div>
+                        <div>
+                            <div className="formStyle">
 
-                        {/* enter address */}
-                        <fieldset>
-                            <div className="form-group">
-                                <label htmlFor="createPost">Full Address: </label>
-                                <input type="text" id="address" required autoFocus placeholder="123 Flower Way, Washington, DC 90210" onChange={handleControlledInputChange} value={post.address} />
+                                {/* enter address */}
+                                <fieldset>
+                                    <div className="form-group">
+                                        <label htmlFor="createPost">Full Address: </label>
+                                        <input type="text" id="address" required autoFocus placeholder="123 Flower Way, Washington, DC 90210" onChange={handleControlledInputChange} value={post.address} />
+                                    </div>
+                                </fieldset>
+
+                                {/* enter pickup details */}
+                                <fieldset>
+                                    <div className="form-group">
+                                        <label htmlFor="createPost">Pickup Details: </label>
+                                        <input type="text" id="pickupInfo" autoFocus onChange={handleControlledInputChange} value={post.pickupInfo} />
+                                    </div>
+                                </fieldset>
                             </div>
-                        </fieldset>
 
-                        {/* enter pickup details */}
-                        <fieldset>
-                            <div className="form-group">
-                                <label htmlFor="createPost">Pickup Details: </label>
-                                <input type="text" id="pickupInfo" autoFocus onChange={handleControlledInputChange} value={post.pickupInfo} />
+                            {/* either edit or create post */}
+                            <div className="buttons">
+                                <p><button className="btn" disabled={isLoading} onClick={event => {
+                                    event.preventDefault()
+                                    handleAddPost()
+                                }}>{postId ? "Save Edits" : "Add Post"}</button></p>
+
+                                {/* go back to plant library */}
+                                <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p>
                             </div>
-                        </fieldset>
-                    </div>
-
-                    {/* either edit or create post */}
-                    <div className="buttons">
-                        <p><button className="btn" disabled={isLoading} onClick={event => {
-                            event.preventDefault()
-                            handleAddPost()
-                        }}>{postId ? "Save Edits" : "Add Post"}</button></p>
-
-                        {/* go back to plant library */}
-                        <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p>
-                    </div>
 
 
-                    {/* This div grabs information from plant that was selected and posted to API to be displayed */}
-                    <div className="createPostAutofill">
-                        <h3 style={{ textTransform: 'capitalize' }}>{plant.scientificName}</h3>
-                        {plant.commonName ? <h4 style={{ textTransform: 'capitalize' }}>Common Name(s): {plant.commonName}</h4> : ""}
-                        <p>{plant.description}</p>
-                        <img className="editImage" src={plant.image}></img>
+                            {/* This div grabs information from plant that was selected and posted to API to be displayed */}
+                            <h3 style={{ textTransform: 'capitalize' }}>{plant.scientificName}</h3>
+                            {plant.commonName ? <h4 style={{ textTransform: 'capitalize' }}>Common Name: {plant.commonName}</h4> : ""}
+                            <p>{plant.description}</p>
+                        </div>
                     </div>
                 </div>
             </div>

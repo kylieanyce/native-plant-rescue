@@ -59,7 +59,7 @@ export const PostDetails = () => {
                     <h2 style={{ textTransform: 'capitalize' }}>{post.plant?.scientificName}</h2>
 
                     {/* Common Names (if they exist) */}
-                    {post.plant?.commonName !== null ? <div><p style={{ textTransform: 'capitalize' }}><strong>Common Names: </strong>{post.plant?.commonName}</p></div> : ""}
+                    {post.plant?.commonName !== null ? <div><p style={{ textTransform: 'capitalize' }}><strong>Common Name: </strong>{post.plant?.commonName}</p></div> : ""}
 
                     {/* Description */}
                     <p><strong>About: </strong>{post.plant?.description}</p>
