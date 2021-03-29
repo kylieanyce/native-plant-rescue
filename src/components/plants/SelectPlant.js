@@ -43,45 +43,54 @@ export const SelectPlantCard = ({ plant }) => {
     }
 
     return (
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-            <Card className="selectPlantCard" value={plant.id} style={{ backgroundColor: "#13636e" }}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image={plant?.similar_images[0].url}
-                    />
 
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
-                            Scientific Name: {plant.plant_details.scientific_name}
-                        </Typography>
+        <div className="selectPlantCard" value={plant.id}>
+            <h4 style={{ textTransform: 'capitalize' }}>Scientific Name: {plant.plant_details.scientific_name}</h4>
+            <div className="imageAlign">
+                <img className="selectImage" src={plant?.similar_images[0].url}></img>
+            </div>
+            <p className="alignButton">
+                <button onClick={handleCreatePost}>This is my plant!</button>
+            </p>
+            {/* if the plant has no common names, this area will not display on DOM */}
+            {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
+            <p>{plant.plant_details.wiki_description.value}</p>
+            
+            
+        </div>
 
-                        <Typography variant="h6" color="textSecondary" component="p">
-                            {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
-                        </Typography>
 
-                        <Typography variant="body3" color="textSecondary" component="p">
-                            {plant.plant_details.wiki_description.value}
-                        </Typography>
-                    </CardContent>
 
-                    <CardActions>
-                        <Button onClick={handleCreatePost} variant="contained" size="small" style={{color: "#1e2745"}} >
-                            This is my plant!
-                    </Button>
-                    </CardActions>
-                </CardActionArea>
-            </Card>
-        </Grid>
+        // <Grid item xs={6} sm={4} md={3} lg={2}>
+        //     <Card className="selectPlantCard" value={plant.id} style={{ backgroundColor: "#13636e" }}>
+        //         <CardActionArea>
+        //             <CardMedia
+        //                 className={classes.media}
+        //                 image={plant?.similar_images[0].url}
+        //             />
+
+        //             <CardContent>
+        //                 <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
+        //                     Scientific Name: {plant.plant_details.scientific_name}
+        //                 </Typography>
+
+        //                 <Typography variant="h6" color="textSecondary" component="p">
+        //                     {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
+        //                 </Typography>
+
+        //                 <Typography variant="body3" color="textSecondary" component="p">
+        //                     {plant.plant_details.wiki_description.value}
+        //                 </Typography>
+        //             </CardContent>
+
+        //             <CardActions>
+        //                 <Button onClick={handleCreatePost} variant="contained" size="small" style={{color: "#1e2745"}} >
+        //                     This is my plant!
+        //             </Button>
+        //             </CardActions>
+        //         </CardActionArea>
+        //     </Card>
+        // </Grid>
     )
 }
 
-
-// <div className="selectPlantCard" value={plant.id}>
-//     <h4 style={{ textTransform: 'capitalize' }}>Scientific Name: {plant.plant_details.scientific_name}</h4>
-//     {/* if the plant has no common names, this area will not display on DOM */}
-//     {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
-//     <p>{plant.plant_details.wiki_description.value}</p>
-//     <img className="selectImage" src={plant?.similar_images[0].url}></img>
-//     <button onClick={handleCreatePost}>This is my plant!</button>
-// </div>

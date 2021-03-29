@@ -5,7 +5,6 @@ body {
 .postList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
 }
 .postCards {
     background-color: #13636e;
