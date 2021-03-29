@@ -27,7 +27,7 @@ export const IdentifyForm = () => {
                     assigned with the input is added as a property */}
                     <input type="file" ref={fileElement} multiple />
                     <button onClick={handleFile} type="button">OK</button>
-                <button onClick={() => history.push(`/library`)}>Back to Plant Library</button>
+                <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p>
                 </form>
 
             </div>
