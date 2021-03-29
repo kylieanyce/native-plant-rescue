@@ -2,28 +2,9 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Library.css";
 
-// import { makeStyles } from '@material-ui/core/styles';
-// import Card from '@material-ui/core/Card';
-// import CardActionArea from '@material-ui/core/CardActionArea';
-// import CardContent from '@material-ui/core/CardContent';
-// import CardMedia from '@material-ui/core/CardMedia';
-// import Typography from '@material-ui/core/Typography';
-// import { Grid } from '@material-ui/core';
 
-
-
-
-// const useStyles = makeStyles({
-//     root: {
-//         maxWidth: 345,
-//     },
-//     media: {
-//         height: 140,
-//     },
-// });
 // renders each individual library post on the library page
 export const LibraryPostCard = ({ post }) => {
-    // const classes = useStyles();
 
     return (
         <section className="postCards" id={post.id}>
@@ -44,40 +25,6 @@ export const LibraryPostCard = ({ post }) => {
                 </div>
             </div>
         </section>
-
-
-
-
-        // <>
-        //     {/* if the plant is not available, it will not render at all */}
-        //     {post.available === true &&
-        //         <Grid item xs={6} sm={4} md={3} lg={2}>
-        //             <div className="postCards">
-        //                 <Card>
-        //             {/* <Card style={{ backgroundColor: "#13636e" }}> */}
-        //                 <CardActionArea>
-        //                     <Link to={`/library/detail/${post.id}`}>
-        //                         <CardMedia
-        //                             className={classes.media}
-        //                             image={post.plant?.image}
-        //                         />
-        //                     </Link>
-
-        //                     <CardContent>
-        //                         <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
-        //                             {post.plant?.scientificName}
-        //                         </Typography>
-
-        //                         <Typography variant="body2" color="textSecondary" style={{ textTransform: 'capitalize' }} component="p">
-        //                             {post.plant?.commonName}
-        //                         </Typography>
-        //                     </CardContent>
-        //                 </CardActionArea>
-        //             </Card>
-        //             </div>
-        //         </Grid>
-        //     }
-        // </>
     )
 }
 

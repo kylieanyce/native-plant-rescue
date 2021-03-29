@@ -4,7 +4,6 @@ import { PlantContext } from "../plants/PlantProvider";
 import { PostContext } from "../posts/PostProvider";
 import { LibraryPostCard } from "./LibraryPost"
 import "./Library.css";
-import { Grid } from '@material-ui/core';
 
 
 
@@ -46,7 +45,6 @@ export const LibraryList = () => {
             <p><button className="btn identifyButton" onClick={() => {
                 history.push("/identifyForm")
             }}>Identify Your Plant</button></p>
-
 
                 {/* map through filtered posts and send to library post card to be rendered*/}
                 <div className="postList">
