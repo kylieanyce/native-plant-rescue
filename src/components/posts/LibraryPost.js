@@ -2,74 +2,83 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Library.css";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
-import { Grid } from '@material-ui/core';
+// import { makeStyles } from '@material-ui/core/styles';
+// import Card from '@material-ui/core/Card';
+// import CardActionArea from '@material-ui/core/CardActionArea';
+// import CardContent from '@material-ui/core/CardContent';
+// import CardMedia from '@material-ui/core/CardMedia';
+// import Typography from '@material-ui/core/Typography';
+// import { Grid } from '@material-ui/core';
 
 
 
 
-const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-    },
-    media: {
-        height: 140,
-    },
-});
+// const useStyles = makeStyles({
+//     root: {
+//         maxWidth: 345,
+//     },
+//     media: {
+//         height: 140,
+//     },
+// });
 // renders each individual library post on the library page
 export const LibraryPostCard = ({ post }) => {
-    const classes = useStyles();
+    // const classes = useStyles();
 
     return (
-        <>
-            {/* if the plant is not available, it will not render at all */}
-            {post.available === true &&
-                <Grid item xs={6} sm={4} md={3} lg={2}>
-                    <Card className="postCards" style={{ backgroundColor: "#13636e" }}>
-                        <CardActionArea>
-                            <Link to={`/library/detail/${post.id}`}>
-                                <CardMedia
-                                    className={classes.media}
-                                    image={post.plant?.image}
-                                />
-                            </Link>
+        <section className="postCards" id={post.id}>
+            <div className="alignCard">
+                <div className="postImage">
+                    {/* This makes the image a clickable link to take user to details page */}
+                    <Link to={`/library/detail/${post.id}`}>
+                        <img className="image" src={post.plant?.image}></img>
+                    </Link>
+                </div>
 
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
-                                    {post.plant?.scientificName}
-                                </Typography>
+                <div>
+                    <h3 style={{ textTransform: 'capitalize' }}>
+                        {post.plant?.scientificName}
+                    </h3>
+                    <h4 style={{ textTransform: 'capitalize' }}>{post.plant?.commonName}</h4>
+                    <p>Available: {post.available === true ? "Yes" : "No"}</p>
+                </div>
+            </div>
+        </section>
 
-                                <Typography variant="body2" color="textSecondary" style={{ textTransform: 'capitalize' }} component="p">
-                                    {post.plant?.commonName}
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </Grid>
-            }
-        </>
+
+
+
+        // <>
+        //     {/* if the plant is not available, it will not render at all */}
+        //     {post.available === true &&
+        //         <Grid item xs={6} sm={4} md={3} lg={2}>
+        //             <div className="postCards">
+        //                 <Card>
+        //             {/* <Card style={{ backgroundColor: "#13636e" }}> */}
+        //                 <CardActionArea>
+        //                     <Link to={`/library/detail/${post.id}`}>
+        //                         <CardMedia
+        //                             className={classes.media}
+        //                             image={post.plant?.image}
+        //                         />
+        //                     </Link>
+
+        //                     <CardContent>
+        //                         <Typography gutterBottom variant="h5" component="h2" style={{ textTransform: 'capitalize', color: "#1e2745" }}>
+        //                             {post.plant?.scientificName}
+        //                         </Typography>
+
+        //                         <Typography variant="body2" color="textSecondary" style={{ textTransform: 'capitalize' }} component="p">
+        //                             {post.plant?.commonName}
+        //                         </Typography>
+        //                     </CardContent>
+        //                 </CardActionArea>
+        //             </Card>
+        //             </div>
+        //         </Grid>
+        //     }
+        // </>
     )
 }
 
 
-// <section className="postCards" id={post.id}>
-//     <div>
-//         <h3 style={{ textTransform: 'capitalize' }}>
-//             {post.plant?.scientificName}
-//         </h3>
-//         <h4 style={{ textTransform: 'capitalize' }}>{post.plant?.commonName}</h4>
-
-//         {/* This makes the image a clickable link to take user to details page */}
-//         <Link to={`/library/detail/${post.id}`}>
-//             <img className="image" src={post.plant?.image}></img>
-//         </Link>
-//     </div>
-//     <div>
-//         <h5>Available: {post.available === true ? "Yes" : "No"}</h5>
-//     </div>
-// </section> 

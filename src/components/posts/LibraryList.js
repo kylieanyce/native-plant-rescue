@@ -48,14 +48,12 @@ export const LibraryList = () => {
             }}>Identify Your Plant</button></p>
 
 
-            <Grid container>
                 {/* map through filtered posts and send to library post card to be rendered*/}
                 <div className="postList">
                     {filteredPosts.map(post => {
                         return <LibraryPostCard key={post.id} post={post} />
                     })}
                 </div>
-            </Grid>
         </div>
     )
 }
