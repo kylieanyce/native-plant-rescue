@@ -84,6 +84,7 @@ export const IdentifyProvider = (props) => {
                         })
                         setPlants(filteredArray)
                     })
+                    
                         //then send user to select plant menu
                         .then(() => history.push("/select"))
                         .catch((error) => {

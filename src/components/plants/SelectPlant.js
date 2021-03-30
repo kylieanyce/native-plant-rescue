@@ -4,6 +4,7 @@ import { PlantContext } from "./PlantProvider"
 
 
 
+
 // renders individual matching plants on DOM and handles the select plant function
 export const SelectPlantCard = ({ plant }) => {
     console.log(plant)
