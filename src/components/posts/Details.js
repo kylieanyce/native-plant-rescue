@@ -52,12 +52,13 @@ export const PostDetails = () => {
     return (
         <section className="details">
             <div className="detailItem">
-                {/* Image */}
-                <div className="imageContainer"><img className="detailImage" src={post.plant?.image}></img></div>
-                <div>
+                <div className="imageContainer">
                     {/* Scientific Name */}
                     <h2 style={{ textTransform: 'capitalize' }}>{post.plant?.scientificName}</h2>
-
+                    {/* Image */}
+                    <img className="detailImage" src={post.plant?.image}></img>
+                </div>
+                <div className="contentContainer">
                     {/* Common Names (if they exist) */}
                     {post.plant?.commonName !== null ? <div><p style={{ textTransform: 'capitalize' }}><strong>Common Name: </strong>{post.plant?.commonName}</p></div> : ""}
 

@@ -1,8 +1,6 @@
 .details {
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 .detailItem {
     max-width: 70%;
@@ -16,13 +14,19 @@
     border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
+.contentContainer {
+    padding-left: 30px;
+}
 .imageContainer {
     display: flex;
     min-width: 300px;
-    padding-right: 30px;
+    align-items: left;
 }
 .detailImage {
     max-width: 90%;
     border-radius: 10px;
     box-shadow: 0 0 10px #1e2745;
+}
+h2 {
+    text-align: center;
 }

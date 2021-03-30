@@ -1,8 +1,8 @@
-.createform {
+.formContainer {
     display: flex;
     justify-content: center;
 }
-.formContainer {
+.createPostContainer {
     max-width: 70%;
     background-color: #13636e;
     color: black;
@@ -10,13 +10,11 @@
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
-}
-.createPostForm {
     text-align: left;
-}
-.createPostContainer {
     display: flex;
-    justify-content: center;
+}
+.contentContainer {
+    padding-left: 30px;
 }
 .buttons {
     display: flex;
@@ -24,8 +22,8 @@
 }
 .imageContainer {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 .editImage {
     max-width: 75%;
