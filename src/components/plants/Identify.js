@@ -1,7 +1,8 @@
-import { React } from "react";
+import React, { useEffect } from "react";
 import { testAPI } from "../../Settings.js";
-import { useState, createContext } from "react"
+import { useState, useContext, createContext } from "react"
 import { useHistory } from "react-router-dom"
+import { NativeContext } from "../natives/NativeProvider";
 
 
 //grabbing the api key from hidden file
@@ -13,6 +14,11 @@ export const IdentifyContext = createContext()
 export const IdentifyProvider = (props) => {
     const [plants, setPlants] = useState([])
     const history = useHistory()
+    const { TnNatives, getTnNatives } = useContext(NativeContext)
+
+    useEffect(() => {
+        getTnNatives()
+    }, [])
 
     // identifies the plant and takes the image from useRef as parameter
     const sendIdentification = (imageFiles) => {
@@ -57,6 +63,7 @@ export const IdentifyProvider = (props) => {
                     "synonyms",
                 ],
             };
+
             // API post call here
             fetch("https://api.plant.id/v2/identify", {
                 method: "POST",
@@ -68,23 +75,31 @@ export const IdentifyProvider = (props) => {
                 .then((response) => response.json())
                 .then((data) => {
                     console.log("Success:", data);
-                    setPlants(data.suggestions)
-                })
-                //then send user to select plant menu
-                .then(() => history.push("/select"))
-                .catch((error) => {
-                    console.error("Error:", error);
+                    let filteredArray = []
+                    data.suggestions.map(plant => {
+                        TnNatives.forEach(nativeItem => {
+                            if (nativeItem.scientificName === plant.plant_name) {
+                                filteredArray.push(plant)
+                            }})
+                        })
+                        setPlants(filteredArray)
+                    })
+                    
+                        //then send user to select plant menu
+                        .then(() => history.push("/select"))
+                        .catch((error) => {
+                            console.error("Error:", error);
+                        });
                 });
-        });
-    };
+        };
 
-    return (
-        <>
-            <IdentifyContext.Provider value={{
-                plants, sendIdentification
-            }}>
-                {props.children}
-            </IdentifyContext.Provider>
-        </>
-    )
-}
+        return (
+            <>
+                <IdentifyContext.Provider value={{
+                    plants, sendIdentification
+                }}>
+                    {props.children}
+                </IdentifyContext.Provider>
+            </>
+        )
+    }
