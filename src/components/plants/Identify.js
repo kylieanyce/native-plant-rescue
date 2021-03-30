@@ -4,11 +4,7 @@ import { useState, createContext } from "react"
 import { useHistory } from "react-router-dom"
 
 
-<<<<<<< HEAD
-
-=======
 //grabbing the api key from hidden file
->>>>>>> main
 const apiKey = testAPI.apiKeyIdentify
 
 export const IdentifyContext = createContext()

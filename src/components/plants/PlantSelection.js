@@ -4,11 +4,7 @@ import { NativeContext } from "../natives/NativeProvider"
 import { SelectPlantCard } from "./SelectPlant"
 
 
-<<<<<<< HEAD
-
-=======
 // gives user a selection of plants that were found to match theirs
->>>>>>> main
 export const PlantSelection = () => {
     const { plants } = useContext(IdentifyContext)
     const { natives, getNatives } = useContext(NativeContext)
@@ -20,7 +16,6 @@ export const PlantSelection = () => {
     return (
         <div>
             <h2>Choose Your Plant</h2>
-<<<<<<< HEAD
             <section className="selectPlantList">
                 {plants.map(plant => {
                     debugger
@@ -28,11 +23,6 @@ export const PlantSelection = () => {
                     return <SelectPlantCard key={plant.id} plant={plant} native={filteredNatives}/>
                 })}
             </section>
-=======
-                <section className="selectPlantList">{plants.map(plant => {
-                    return <SelectPlantCard key={plant.id} plant={plant} />
-                })}</section>
->>>>>>> main
         </div>
     )
 }
