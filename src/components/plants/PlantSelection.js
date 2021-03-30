@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import { IdentifyContext } from "./Identify";
 import { SelectPlantCard } from "./SelectPlant"
 
+
 // gives user a selection of plants that were found to match theirs
 export const PlantSelection = () => {
     const { plants } = useContext(IdentifyContext)
@@ -9,9 +10,9 @@ export const PlantSelection = () => {
     return (
         <div>
             <h2>Choose Your Plant</h2>
-            <section className="selectPlantList">{plants.map(plant => {
-                return <SelectPlantCard key={plant.id} plant={plant} />
-            })}</section>
+                <section className="selectPlantList">{plants.map(plant => {
+                    return <SelectPlantCard key={plant.id} plant={plant} />
+                })}</section>
         </div>
     )
 }

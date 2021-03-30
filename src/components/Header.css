@@ -3,7 +3,8 @@ header {
     padding: 0;
     background-color: #1e2745;
     color: #049698;
-    position: fixed;
+    position: sticky;
+    display: block;
     left: 0;
     top: 0;
     width: 100%;
@@ -11,7 +12,7 @@ header {
     border: double 3px #13636e;
 }
 .headerOverlay {
-    opacity: 0.6;
+    opacity: 0.9;
 }
 .header {
     position: relative;

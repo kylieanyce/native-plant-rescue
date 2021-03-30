@@ -6,6 +6,7 @@ import { LibraryPostCard } from "./LibraryPost"
 import "./Library.css";
 
 
+
 // renders plant library
 export const LibraryList = () => {
     const { getPlants } = useContext(PlantContext)
@@ -38,19 +39,19 @@ export const LibraryList = () => {
     // renders plant library
     return (
         <div className="libraryPosts">
-            <h2>Plant Library</h2>
+            <h2>Available Plants</h2>
 
             {/* identify button sends user to identify plant form */}
             <p><button className="btn identifyButton" onClick={() => {
                 history.push("/identifyForm")
             }}>Identify Your Plant</button></p>
 
-            {/* map through filtered posts and send to library post card to be rendered*/}
-            <div className="postList">
-                {filteredPosts.map(post => {
-                    return <LibraryPostCard key={post.id} post={post} />
-                })}
-            </div>
+                {/* map through filtered posts and send to library post card to be rendered*/}
+                <div className="postList">
+                    {filteredPosts.map(post => {
+                        return <LibraryPostCard key={post.id} post={post} />
+                    })}
+                </div>
         </div>
     )
 }

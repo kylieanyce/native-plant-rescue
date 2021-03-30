@@ -1,0 +1,32 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+.createPostContainer {
+    max-width: 70%;
+    background-color: #13636e;
+    color: black;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    text-align: left;
+    display: flex;
+}
+.contentContainer {
+    padding-left: 30px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.editImage {
+    max-width: 75%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1e2745;
+}
