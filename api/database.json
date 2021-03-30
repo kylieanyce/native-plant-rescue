@@ -115,6 +115,13 @@
       "description": "Rhododendron macrophyllum, the Pacific rhododendron, California rosebay, California rhododendron, coast rhododendron or big leaf rhododendron, is a large-leaved species of Rhododendron native to the Pacific Coast of North America. It is the state flower of Washington.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/ae1/6a4d434ba3957b764aca9f38704ac.jpg",
       "id": 12
+    },
+    {
+      "commonName": "Brauneria purpurea (L.) Britton",
+      "scientificName": "Echinacea purpurea",
+      "description": "Echinacea purpurea (eastern purple coneflower, purple coneflower, hedgehog coneflower, or echinacea) is a North American species of flowering plant in the sunflower family. It is native to parts of eastern North America and present to some extent in the wild in much of the eastern, southeastern and midwestern United States as well as in the Canadian Province of Ontario. It is most common in the Ozarks and in the Mississippi/Ohio Valley. Its habitats include dry open woods, prairies and barrens.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2f5/f103e268d9b4ae6f0233c48d81630.jpg",
+      "id": 13
     }
   ],
   "posts": [
@@ -197,6 +204,14 @@
       "pickupInfo": "on street by mailbox",
       "available": true,
       "id": 10
+    },
+    {
+      "userId": 4,
+      "plantId": 13,
+      "address": "54221 cokeberry lane",
+      "pickupInfo": "",
+      "available": true,
+      "id": 11
     }
   ],
   "TnNatives": [

@@ -10,7 +10,7 @@ export const PlantSelection = () => {
 
     return (
         <>
-        {console.log(plants)}
+            {console.log(plants)}
             {plants.length ?
                 <div>
                     <h2>Choose Your Plant</h2>
@@ -21,10 +21,12 @@ export const PlantSelection = () => {
                     </section>
                 </div>
                 :
-                <div className="selectPlantCard">
-                    <h2>Non-Native</h2>
-                    <p>The plant you have uploaded is unfortunately a non-native species to the Nashville Area.</p>
-                    <p>To continue to identify and post native plants, return to the <Link to={'/identifyForm'}> Identify Form</Link>  or head back to the <Link to={'/library'}> Available Plant Library.</Link></p>
+                <div className="nonNativeContainer">
+                    <div className="nonNativeSubContainer">
+                        <h2>Non-Native</h2>
+                        <p>The plant you have uploaded is unfortunately a non-native species to the Nashville Area.</p>
+                        <p>To continue to identify and post native plants, return to the <Link to={'/identifyForm'}> Identify Form</Link>  or head back to the <Link to={'/library'}> Available Plant Library.</Link></p>
+                    </div>
                 </div>}
         </>
     )

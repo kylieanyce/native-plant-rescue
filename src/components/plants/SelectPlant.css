@@ -1,29 +1,49 @@
+.selectPlantContainer {
+    display: flex;
+    justify-content: center;
+}
 .selectPlantCard {
+    max-width: 70%;
+    text-align: left;
     background-color: #13636e;
     color: black;
-    padding: 20px;
+    padding: 30px 30px 60px;
     margin: 10px;
     display: flex;
-    flex-direction: column;
     flex: 3 3;
-    text-align: left;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
-.selectPlantList {
+.selectImageContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
 }
 .selectImage {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 10px;
     box-shadow: 0 0 10px #1e2745;
 }
-.imageAlign {
-    display: flex;
-    justify-content: center;
+.selectContentContainer {
+    padding-left: 30px;
 }
 .alignButton {
     display: flex;
     justify-content: center;
+}
+.nonNativeContainer {
+    display: flex;
+    justify-content: center;
+}
+.nonNativeSubContainer {
+    max-width: 70%;
+    text-align: left;
+    background-color: #13636e;
+    color: black;
+    padding: 30px 30px 60px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
 }

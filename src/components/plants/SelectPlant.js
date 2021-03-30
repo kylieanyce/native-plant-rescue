@@ -24,18 +24,24 @@ export const SelectPlantCard = ({ plant }) => {
     }
 
     return (
-        <div className="selectPlantCard" value={plant.id}>
-            <h4 style={{ textTransform: 'capitalize' }}>Scientific Name: {plant.plant_details.scientific_name}</h4>
-            <div className="imageAlign">
-                <img className="selectImage" src={plant?.similar_images[0].url}></img>
+        <section className="selectPlantContainer">
+            <div className="selectPlantCard" value={plant.id}>
+                <div className="selectImageContainer">
+                    <h3 style={{ textTransform: 'capitalize' }}>{plant.plant_details.scientific_name}</h3>
+                    <div>
+                        <img className="selectImage" src={plant?.similar_images[0].url}></img>
+                    </div>
+                    <p className="alignButton">
+                        <button onClick={handleCreatePost}>This is my plant!</button>
+                    </p>
+                </div>
+                <div className="selectContentContainer">
+                    {/* if the plant has no common names, this area will not display on DOM */}
+                    {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}><strong>Common Name: </strong>{plant.plant_details.common_names[0]}</p> : ""}
+                    <p><strong>About: </strong>{plant.plant_details.wiki_description.value}</p>
+                </div>
             </div>
-            <p className="alignButton">
-                <button onClick={handleCreatePost}>This is my plant!</button>
-            </p>
-            {/* if the plant has no common names, this area will not display on DOM */}
-            {plant.plant_details.common_names !== null ? <p style={{ textTransform: 'capitalize' }}>Common Name: {plant.plant_details.common_names[0]}</p> : ""}
-            <p>{plant.plant_details.wiki_description.value}</p>
-        </div>
+        </section>
     )
 }
 
