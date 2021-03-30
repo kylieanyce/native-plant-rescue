@@ -101,6 +101,20 @@
       "description": "Aronia is a genus of deciduous shrubs, the chokeberries, in the family Rosaceae native to eastern North America and most commonly found in wet woods and swamps. The genus is usually considered to contain two or three species, one of which is naturalized in Europe. A fourth form that has long been cultivated under the name Aronia is now considered to be an intergeneric hybrid, × Sorbaronia mitschurinii.\nChokeberries are cultivated as ornamental plants and as food products. The sour berries, or aronia berries, can be eaten raw off the bush, but are more frequently processed. They can be found in wine, jam, syrup, juice, soft spreads, tea, salsa, extracts, beer, ice cream, gummies, and tinctures. The name \"chokeberry\" comes from the astringency of the fruits, which create the sensation of making one's mouth pucker.\nChokeberries are often mistakenly called chokecherries, the common name for Prunus virginiana. Further adding to the ambiguity, a variety of Prunus virginiana is melanocarpa, and readily confused with black chokeberry because it is commonly referred to as \"black chokeberry\" or \"aronia\". Aronia berries and chokecherries both contain polyphenolic compounds, such as anthocyanins, yet the two plants are only distantly related within the Rosaceae.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/880/6d146d05168c886ce66224a55f179.jpg",
       "id": 10
+    },
+    {
+      "commonName": "common rhododendron",
+      "scientificName": "Rhododendron ponticum",
+      "description": "Rhododendron ponticum, called common rhododendron or pontic rhododendron, is a species of Rhododendron native to the Iberian Peninsula in southwest Europe and the Caucasus region in northern West Asia.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2d2/63fd79eb9102f3f0348563cd2fffe.jpg",
+      "id": 11
+    },
+    {
+      "commonName": "Pacific rhododendron",
+      "scientificName": "Rhododendron macrophyllum",
+      "description": "Rhododendron macrophyllum, the Pacific rhododendron, California rosebay, California rhododendron, coast rhododendron or big leaf rhododendron, is a large-leaved species of Rhododendron native to the Pacific Coast of North America. It is the state flower of Washington.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/ae1/6a4d434ba3957b764aca9f38704ac.jpg",
+      "id": 12
     }
   ],
   "posts": [
@@ -167,6 +181,22 @@
       "pickupInfo": "",
       "available": true,
       "id": 8
+    },
+    {
+      "userId": 4,
+      "plantId": 11,
+      "address": "789 Tulip Way",
+      "pickupInfo": "",
+      "available": true,
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "plantId": 12,
+      "address": "432 Rhododendron drive",
+      "pickupInfo": "",
+      "available": true,
+      "id": 10
     }
   ]
 }
