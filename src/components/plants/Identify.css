@@ -1,22 +1,21 @@
 .innerIdentifyForm {
-    border: teal 2px solid;
-    background-color: teal;
+    background-color: #13636e;
     padding: 75px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
 }
 .identifyForm {
     /* display: flex;
     align-content: center; */
     display: table-cell;
     vertical-align: middle;
+    opacity: 0.8;
 }
 .outerIdentifyForm {
-    display: table;
+    display: table; 
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     height: 100%;
     width: 100%;
-}
+} 

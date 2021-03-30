@@ -24,128 +24,118 @@
       "email": "pbrady@gmail.com",
       "name": "Partia Brady",
       "id": 5
+    },
+    {
+      "email": "betty@gmail.com",
+      "name": "Betty White",
+      "id": 6
     }
   ],
   "plants": [
     {
-      "id": 1,
-      "commonName": [
-        "lavender",
-        "true lavender",
-        "English lavender",
-        "garden lavender",
-        "common lavender",
-        "narrow-leaved lavender"
-      ],
-      "scientificName": "Lavandula angustifolia",
-      "description": "Lavandula angustifolia, formerly L. officinalis, is a flowering plant in the family Lamiaceae, native to the Mediterranean (Spain, France, Italy, Croatia etc.). Its common names include lavender, true lavender or English lavender (though not native to England); also garden lavender, common lavender, and narrow-leaved lavender.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/84e/b22b391cb476c714a89c10b4b7ccb.jpg"
+      "commonName": "Eastern Redbud",
+      "scientificName": "Cercis canadensis",
+      "description": "Cercis canadensis, the eastern redbud, is a large deciduous shrub or small tree, native to eastern North America from southern Michigan south to central Mexico, east to New Jersey. Species thrive as far west as California and as far north as southern Ontario, roughly corresponding to USDA hardiness zone 6b. It is the state tree of Oklahoma.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/64a/c58d81a376d40b012e64aca3aba72.jpg",
+      "id": 1
     },
     {
-      "id": 2,
-      "commonName": ["western azalea", "California azalea"],
-      "scientificName": "Rhododendron occidentale",
-      "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg"
-    },
-    {
-      "commonName": ["common rhododendron", "pontic rhododendron"],
-      "scientificName": "Rhododendron ponticum",
-      "description": "Rhododendron ponticum, called common rhododendron or pontic rhododendron, is a species of Rhododendron native to the Iberian Peninsula in southwest Europe and the Caucasus region in northern West Asia.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2d2/63fd79eb9102f3f0348563cd2fffe.jpg",
-      "id": 3
-    },
-    {
-      "commonName": [
-        "Pacific rhododendron",
-        "California rosebay",
-        "California rhododendron",
-        "coast rhododendron",
-        "big leaf rhododendron"
-      ],
-      "scientificName": "Rhododendron macrophyllum",
-      "description": "Rhododendron macrophyllum, the Pacific rhododendron, California rosebay, California rhododendron, coast rhododendron or big leaf rhododendron, is a large-leaved species of Rhododendron native to the Pacific Coast of North America. It is the state flower of Washington.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/ae1/6a4d434ba3957b764aca9f38704ac.jpg",
-      "id": 4
-    },
-    {
-      "commonName": ["flame azalea"],
+      "commonName": "flame azalea",
       "scientificName": "Rhododendron calendulaceum",
       "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
-      "id": 5
+      "id": 2
     },
     {
-      "commonName": null,
-      "scientificName": "Rhododendron simsii",
-      "description": "Rhododendron simsii (杜鵑) is a rhododendron species native to East Asia, where it grows at altitudes of 500–2700 meters.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/623/e57b4364566c439a5d8a9dfa0a9f2.jpg",
-      "id": 6
+      "commonName": "orange day-lily",
+      "scientificName": "Hemerocallis fulva",
+      "description": "Hemerocallis fulva, the orange day-lily, tawny daylily, corn lily, tiger daylily, fulvous daylily or ditch lily (also railroad daylily, roadside daylily, outhouse lily, and wash-house lily), is a species of daylily native to Asia. It is very widely grown as an ornamental plant in temperate climates for its showy flowers and ease of cultivation. It is not a true lily in the genus Lilium, but gets its name from the superficial similarity of its flowers to Lilium and from the fact that each flower lasts only one day.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/e1a/992facb7c979e945a1008ba20db25.jpg",
+      "id": 3
     },
     {
-      "commonName": [
-        "Brauneria purpurea (L.) Britton",
-        "Rudbeckia purpurea L.",
-        "Echinacea purpurea (L.) Moench var. arkansana Steyerm.",
-        "Helichroa purpurea (L.) Raf. ex B.D. Jacks.",
-        "eastern purple coneflower",
-        "purple coneflower",
-        "hedgehog coneflower",
-        "echinacea"
-      ],
+      "commonName": "Tennessee Coneflower",
       "scientificName": "Echinacea purpurea",
       "description": "Echinacea purpurea (eastern purple coneflower, purple coneflower, hedgehog coneflower, or echinacea) is a North American species of flowering plant in the sunflower family. It is native to parts of eastern North America and present to some extent in the wild in much of the eastern, southeastern and midwestern United States as well as in the Canadian Province of Ontario. It is most common in the Ozarks and in the Mississippi/Ohio Valley. Its habitats include dry open woods, prairies and barrens.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2f5/f103e268d9b4ae6f0233c48d81630.jpg",
+      "id": 4
+    },
+    {
+      "commonName": "Tulip Tree",
+      "scientificName": "Liriodendron tulipifera",
+      "description": "Liriodendron tulipifera—known as the tulip tree, American tulip tree, tulipwood, tuliptree, tulip poplar, whitewood, fiddletree, and yellow-poplar—is the North American representative of the two-species genus Liriodendron (the other member is Liriodendron chinense), and the tallest eastern hardwood. It is native to eastern North America from Southern Ontario and possibly southern Quebec to Illinois eastward to southwestern Massachusetts and Rhode Island, and south to central Florida and Louisiana. It can grow to more than 50 m (160 ft) in virgin cove forests of the Appalachian Mountains, often with no limbs until it reaches 25–30 m (80–100 ft) in height, making it a very valuable timber tree.\nIt is fast-growing, without the common problems of weak wood strength and short lifespan often seen in fast-growing species. April marks the start of the flowering period in the Southern United States (except as noted below); trees at the northern limit of cultivation begin to flower in June. The flowers are pale green or yellow (rarely white), with an orange band on the tepals; they yield large quantities of nectar. The tulip tree is the state tree of Indiana, Kentucky, and Tennessee.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/289/d14793c888948abec8cc5ddb21d61.jpg",
+      "id": 5
+    },
+    {
+      "commonName": "red chokeberry",
+      "scientificName": "Aronia arbutifolia",
+      "description": "Aronia arbutifolia, called the red chokeberry, is a North American species of shrubs in the rose family. It is native to eastern Canada and to the eastern and central United States, from eastern Texas to Nova Scotia inland to Ontario, Ohio, Kentucky, and Oklahoma.\nAronia arbutifolia is a branching shrub forming clumps by means of stems forming from the roots. Flowers are white or pink, producing black or bright red fruits. Many people consider the fruits to be foul-tasting.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/06c/46f931c7d5bf299efd73aa3db23df.jpg",
+      "id": 6
+    },
+    {
+      "commonName": "lungwort oysterleaf",
+      "scientificName": "Mertensia virginica",
+      "description": "Mertensia virginica (common names Virginia bluebells, Virginia cowslip, lungwort oysterleaf, Roanoke bells) is a spring ephemeral plant with bell-shaped sky-blue flowers, native to eastern North America.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a07/5eabc90005adad6b591e29144aed8.jpg",
       "id": 7
     },
     {
-      "commonName": ["peace lily", "white sails", "spathe flower"],
-      "scientificName": "Spathiphyllum wallisii",
-      "description": "Spathiphyllum wallisii, commonly known as peace lily, white sails, or spathe flower is a very popular indoor house plant of the family Araceae. The genus name means \"spathe-leaf\", and the specific epithet is named after Gustav Wallis, the German plant collector.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/890/5006659da4e004fa27ec3e7bc3f6d.jpg",
+      "commonName": "Judas tree",
+      "scientificName": "Cercis siliquastrum",
+      "description": "Cercis siliquastrum, commonly known as the Judas tree or Judas-tree, is a small deciduous tree from Southern Europe and Western Asia which is noted for its prolific display of deep pink flowers in spring.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/cb4/8afd8f49c995e4b45fcbd5bc193a1.jpg",
       "id": 8
     },
     {
-      "commonName": [
-        "lavender",
-        "true lavender",
-        "English lavender",
-        "garden lavender",
-        "common lavender",
-        "narrow-leaved lavender"
-      ],
-      "scientificName": "Lavandula angustifolia",
-      "description": "Lavandula angustifolia, formerly L. officinalis, is a flowering plant in the family Lamiaceae, native to the Mediterranean (Spain, France, Italy, Croatia etc.). Its common names include lavender, true lavender or English lavender (though not native to England); also garden lavender, common lavender, and narrow-leaved lavender.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/84e/b22b391cb476c714a89c10b4b7ccb.jpg",
+      "commonName": "Daylily",
+      "scientificName": "Hemerocallis",
+      "description": "A daylily or day lily is a flowering plant in the genus Hemerocallis , a member of the family Asphodelaceae, subfamily Hemerocallidoideae. Despite the common name, it is not in fact a lily. Gardening enthusiasts and horticulturists have long bred daylily species for their attractive flowers. Thousands of cultivars have been registered by local and international Hemerocallis societies.\nThe name Hemerocallis comes from the Greek words ἡμέρα (hēmera) \"day\" and καλός (kalos) \"beautiful\".",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/1fc/d2be54212c229b0c98aba1b64ba2a.jpg",
       "id": 9
     },
     {
-      "commonName": ["western azalea", "California azalea"],
-      "scientificName": "Rhododendron occidentale",
-      "description": "Rhododendron occidentale, the western azalea or California azalea, is one of two deciduous Rhododendron species native to western North America (the other is Rhododendron albiflorum). The western azalea is known to occur as far north as Lincoln and Douglas Counties in Oregon and as far south as the mountains of San Diego county. Typically found in the coastal ranges of western North America, it also grows in the Cascade and Sierra Nevada mountain ranges, but is not known east of them.",
-      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/a57/6a8c6034dc4799512347bd3f49043.jpg",
+      "commonName": "chokeberries",
+      "scientificName": "Aronia",
+      "description": "Aronia is a genus of deciduous shrubs, the chokeberries, in the family Rosaceae native to eastern North America and most commonly found in wet woods and swamps. The genus is usually considered to contain two or three species, one of which is naturalized in Europe. A fourth form that has long been cultivated under the name Aronia is now considered to be an intergeneric hybrid, × Sorbaronia mitschurinii.\nChokeberries are cultivated as ornamental plants and as food products. The sour berries, or aronia berries, can be eaten raw off the bush, but are more frequently processed. They can be found in wine, jam, syrup, juice, soft spreads, tea, salsa, extracts, beer, ice cream, gummies, and tinctures. The name \"chokeberry\" comes from the astringency of the fruits, which create the sensation of making one's mouth pucker.\nChokeberries are often mistakenly called chokecherries, the common name for Prunus virginiana. Further adding to the ambiguity, a variety of Prunus virginiana is melanocarpa, and readily confused with black chokeberry because it is commonly referred to as \"black chokeberry\" or \"aronia\". Aronia berries and chokecherries both contain polyphenolic compounds, such as anthocyanins, yet the two plants are only distantly related within the Rosaceae.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/880/6d146d05168c886ce66224a55f179.jpg",
       "id": 10
+    },
+    {
+      "commonName": "common rhododendron",
+      "scientificName": "Rhododendron ponticum",
+      "description": "Rhododendron ponticum, called common rhododendron or pontic rhododendron, is a species of Rhododendron native to the Iberian Peninsula in southwest Europe and the Caucasus region in northern West Asia.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2d2/63fd79eb9102f3f0348563cd2fffe.jpg",
+      "id": 11
+    },
+    {
+      "commonName": "Pacific rhododendron",
+      "scientificName": "Rhododendron macrophyllum",
+      "description": "Rhododendron macrophyllum, the Pacific rhododendron, California rosebay, California rhododendron, coast rhododendron or big leaf rhododendron, is a large-leaved species of Rhododendron native to the Pacific Coast of North America. It is the state flower of Washington.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/ae1/6a4d434ba3957b764aca9f38704ac.jpg",
+      "id": 12
     }
   ],
   "posts": [
     {
-      "userId": 1,
+      "userId": 2,
       "plantId": 1,
       "address": "526 shorty ln",
-      "pickupInfo": "come to back porch",
+      "pickupInfo": "come around back",
       "available": true,
       "id": 1
     },
     {
-      "userId": 4,
+      "userId": 6,
       "plantId": 2,
       "address": "789 boogie down rd",
       "pickupInfo": "on front porch",
-      "available": false,
+      "available": true,
       "id": 2
     },
     {
-      "userId": 3,
+      "userId": 1,
       "plantId": 3,
       "address": "239 boot scoot terrace",
       "pickupInfo": "under patio",
@@ -153,36 +143,60 @@
       "id": 3
     },
     {
-      "userId": 4,
+      "userId": 3,
       "plantId": 4,
-      "address": "8 wacky way",
-      "pickupInfo": "its on the porch",
+      "address": "87 sugar heights rd",
+      "pickupInfo": "",
       "available": true,
       "id": 4
     },
     {
       "userId": 5,
       "plantId": 5,
-      "address": "432 Grundy County Way",
+      "address": "789 Tulip Way",
       "pickupInfo": "",
-      "available": false,
+      "available": true,
       "id": 5
     },
     {
       "userId": 4,
+      "plantId": 6,
+      "address": "9 chokeberry st",
+      "pickupInfo": "",
+      "available": true,
+      "id": 6
+    },
+    {
+      "userId": 4,
       "plantId": 7,
-      "address": "78 Wildflower Way",
-      "pickupInfo": "in the driveway",
+      "address": "32 berry place",
+      "pickupInfo": "",
       "available": true,
       "id": 7
     },
     {
       "userId": 4,
       "plantId": 8,
-      "address": "790 petal place",
+      "address": "231 forrest hills",
       "pickupInfo": "",
       "available": true,
       "id": 8
+    },
+    {
+      "userId": 4,
+      "plantId": 11,
+      "address": "789 Tulip Way",
+      "pickupInfo": "",
+      "available": true,
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "plantId": 12,
+      "address": "432 Rhododendron drive",
+      "pickupInfo": "",
+      "available": true,
+      "id": 10
     }
   ],
   "natives": [

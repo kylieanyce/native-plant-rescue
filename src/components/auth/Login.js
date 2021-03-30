@@ -43,11 +43,11 @@ export const Login = () => {
                 <div>User does not exist</div>
                 <button className="button--close" onClick={e => setExistDialog(false)}>Close</button>
             </dialog>
-            <section>
-                <form className="form--login" onSubmit={handleLogin}>
+            <section className="outerForm">
+                <form className="midForm" onSubmit={handleLogin}>
                     <h1>Native Plant Rescue</h1>
                     <h2>Please sign in</h2>
-                    <fieldset>
+                    <div className="innerForm">
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
                             id="email"
@@ -56,16 +56,15 @@ export const Login = () => {
                             required autoFocus
                             value={loginUser.email}
                             onChange={handleInputChange} />
-                    </fieldset>
-                    <fieldset>
+
                         <button type="submit">
                             Sign in
                         </button>
-                    </fieldset>
+                        <div className="link--register">
+                            <Link to="/register">Register for an account</Link>
+                        </div>
+                    </div>
                 </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">Register for an account</Link>
             </section>
         </main>
     )

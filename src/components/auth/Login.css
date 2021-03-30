@@ -1,0 +1,34 @@
+.container--login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #049698;
+}
+.innerForm {
+    padding: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+.midForm {
+    display: table-cell;
+    vertical-align: middle;
+}
+.outerForm {
+    background-image: url(../../images/form.jpg);
+    background-position: center center;
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+

@@ -3,6 +3,8 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 
 import { UserProvider } from "./users/UserProvider"
+import { Header } from "./Header"
+import { Footer } from "./Footer"
 
 import { PlantSelection } from "./plants/PlantSelection"
 import { IdentifyForm } from "./plants/IdentifyForm"
@@ -23,6 +25,7 @@ export const ApplicationViews = () => {
             <PlantProvider>
                 <PostProvider>
                     <UserProvider>
+                        <Header />
                         <Route exact path="/">
                             <SearchPost />
                             <Home />

@@ -3,15 +3,16 @@ footer {
     margin: 0;
     padding: 0;
     justify-content: space-evenly;
-    background-color: darkslateblue;
+    background-color: #1e2745;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 50px;
 }
-
+.footerOverlay {
+    opacity: 0.6;
+}
 .footer {
-    position: relative;
     min-height: 10vh;
 }
