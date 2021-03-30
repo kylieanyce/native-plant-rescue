@@ -7,10 +7,10 @@ import { SelectPlantCard } from "./SelectPlant"
 // gives user a selection of plants that were found to match theirs
 export const PlantSelection = () => {
     const { plants } = useContext(IdentifyContext)
-    const { natives, getNatives } = useContext(NativeContext)
+    const { TnNatives, getTnNatives } = useContext(NativeContext)
 
     useEffect(() => {
-        getNatives()
+        getTnNatives()
     }, [])
 
     return (
@@ -18,8 +18,9 @@ export const PlantSelection = () => {
             <h2>Choose Your Plant</h2>
             <section className="selectPlantList">
                 {plants.map(plant => {
-                    debugger
-                    const filteredNatives = natives.TnNatives.scientificName.filter(nativeItem => nativeItem.TnNatives.scientificName === plant.plant_details.scientific_name)
+                    
+                    console.log(TnNatives)
+                    const filteredNatives = TnNatives.filter(nativeItem => nativeItem.scientificName === plant.plant_name)
                     return <SelectPlantCard key={plant.id} plant={plant} native={filteredNatives}/>
                 })}
             </section>

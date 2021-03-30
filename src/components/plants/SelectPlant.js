@@ -25,10 +25,9 @@ const useStyles = makeStyles({
 });
 
 // renders individual matching plants on DOM and handles the select plant function
-export const SelectPlantCard = ({ plant }) => {
+export const SelectPlantCard = ({ plant, filteredNatives }) => {
     const { addPlant } = useContext(PlantContext)
     const newPlant = plant.plant_details.common_names ? plant.plant_details.common_names[0] : null
-    const classes = useStyles();
 
     // when the user selects whichever plant is theirs, the data is sent to my 
     // API and a plantId is created. When the data comes back, we grab the plant id

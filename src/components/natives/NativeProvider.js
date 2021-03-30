@@ -1,28 +1,20 @@
 import React, { useState, createContext } from "react"
-import { testAPI } from "../../Settings.js";
 import { useHistory } from "react-router-dom";
 
 export const NativeContext = createContext()
-const apiKey = testAPI.apiKeyNative
 
 export const NativeProvider = (props) => {
-    const [natives, setNatives] = useState([])
+    const [TnNatives, setTnNatives] = useState([])
 
-    // const getNatives = () => {
-    //     return fetch(`https://trefle.io/api/v1/plants?token=${apiKey}`)
-    //         .then(res => res.json())
-    //         .then(setNatives)
-    // }
-
-    const getNatives = () => {
-        return fetch(`http://localhost:8088/natives`)
+    const getTnNatives = () => {
+        return fetch(`http://localhost:8088/TnNatives`)
             .then(res => res.json())
-            .then(setNatives)
+            .then(setTnNatives)
     }
 
     return (
         <NativeContext.Provider value={{
-            natives, getNatives
+            TnNatives, getTnNatives
         }}>
             {props.children}
         </NativeContext.Provider>
