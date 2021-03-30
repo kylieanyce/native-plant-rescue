@@ -18,6 +18,7 @@ import { CreatePost } from "./posts/CreatePostForm"
 import { ClaimPost } from "./posts/ClaimPost"
 import { SearchPost } from "./posts/SearchPost"
 import { NativeProvider } from "./natives/NativeProvider"
+import { UserPostList } from "./users/PostList"
 
 export const ApplicationViews = () => {
     return (
@@ -36,6 +37,9 @@ export const ApplicationViews = () => {
                         </Route>
                         <Route exact path="/claim">
                             <ClaimPost />
+                        </Route>
+                        <Route exact path="/myPosts">
+                            <UserPostList />
                         </Route>
                         <Route exact path="/library/detail/:postId(\d+)">
                             <PostDetails />
