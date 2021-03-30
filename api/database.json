@@ -122,6 +122,13 @@
       "description": "Echinacea purpurea (eastern purple coneflower, purple coneflower, hedgehog coneflower, or echinacea) is a North American species of flowering plant in the sunflower family. It is native to parts of eastern North America and present to some extent in the wild in much of the eastern, southeastern and midwestern United States as well as in the Canadian Province of Ontario. It is most common in the Ozarks and in the Mississippi/Ohio Valley. Its habitats include dry open woods, prairies and barrens.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/2f5/f103e268d9b4ae6f0233c48d81630.jpg",
       "id": 13
+    },
+    {
+      "commonName": "flame azalea",
+      "scientificName": "Rhododendron calendulaceum",
+      "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
+      "id": 14
     }
   ],
   "posts": [
@@ -212,6 +219,14 @@
       "pickupInfo": "",
       "available": true,
       "id": 11
+    },
+    {
+      "userId": 4,
+      "plantId": 14,
+      "address": "3248 Bloomington Way",
+      "pickupInfo": "out back",
+      "available": true,
+      "id": 12
     }
   ],
   "TnNatives": [

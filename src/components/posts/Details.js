@@ -91,7 +91,7 @@ export const PostDetails = () => {
 
 
                     {/* Back to library button */}
-                    <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p>
+                    {/* <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p> */}
                 </div>
             </div>
         </section>
