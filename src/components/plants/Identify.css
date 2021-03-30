@@ -5,8 +5,6 @@
     margin-right: auto;
 }
 .identifyForm {
-    /* display: flex;
-    align-content: center; */
     display: table-cell;
     vertical-align: middle;
     opacity: 0.8;

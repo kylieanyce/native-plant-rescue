@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13636e;
+    list-style: none;
+    padding: 10px;
+}
+.search {
+    color: black;
+    flex: 6;
+    margin-right:auto
+}
+.searchInput {
+    width: 50%;
+}
+.navbar__link {
+    flex: 1;
+    white-space: nowrap;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    overflow-wrap: break-word;
+}

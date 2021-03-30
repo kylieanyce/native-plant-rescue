@@ -16,8 +16,10 @@ import { LibraryList } from "./posts/LibraryList"
 import { PostDetails } from "./posts/Details"
 import { CreatePost } from "./posts/CreatePostForm"
 import { ClaimPost } from "./posts/ClaimPost"
-import { SearchPost } from "./posts/SearchPost"
+import { SearchPost } from "./nav/SearchPost"
 import { NativeProvider } from "./natives/NativeProvider"
+import { UserPostList } from "./users/PostList"
+import { NavBar } from "./nav/NavBar"
 
 export const ApplicationViews = () => {
     return (
@@ -26,16 +28,18 @@ export const ApplicationViews = () => {
                 <PostProvider>
                     <UserProvider>
                         <Header />
+                        <NavBar />
                         <Route exact path="/">
-                            <SearchPost />
                             <Home />
                         </Route>
                         <Route exact path="/library">
-                            <SearchPost />
                             <LibraryList />
                         </Route>
                         <Route exact path="/claim">
                             <ClaimPost />
+                        </Route>
+                        <Route exact path="/myPosts">
+                            <UserPostList />
                         </Route>
                         <Route exact path="/library/detail/:postId(\d+)">
                             <PostDetails />

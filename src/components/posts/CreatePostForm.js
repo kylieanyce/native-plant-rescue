@@ -129,7 +129,7 @@ export const CreatePost = () => {
                         }}>{postId ? "Save Edits" : "Add Post"}</button></p>
 
                         {/* go back to plant library */}
-                        <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p>
+                        {/* <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p> */}
                     </div>
 
 
