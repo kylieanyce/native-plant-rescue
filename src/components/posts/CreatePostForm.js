@@ -94,51 +94,51 @@ export const CreatePost = () => {
 
     // renders create/update post form
     return (
-        <form className="formContainer">
-            <div className="createPostContainer">
-                <div className="imageContainer">
-                    {/* The title changes: if their is a postId, it will say Edit, if not, it says Create */}
-                    <div className="title"><h2>{postId ? "Edit Post" : "Create Post"}</h2></div>
-                    <img className="editImage" src={plant.image}></img>
-                </div>
-                <div className="contentContainer">
-                    <div className="formStyle">
+        <section>
+            {/* The title changes: if their is a postId, it will say Edit, if not, it says Create */}
+            <h2 className="neon">{postId ? "Edit Post" : "Create Post"}</h2>
 
-                        {/* enter address */}
-                        <fieldset>
-                            <div className="form-group">
-                                <label htmlFor="createPost">Full Address: </label>
-                                <input type="text" id="address" required autoFocus placeholder="123 Flower Way, Washington, DC 90210" onChange={handleControlledInputChange} value={post.address} />
-                            </div>
-                        </fieldset>
-
-                        {/* enter pickup details */}
-                        <fieldset>
-                            <div className="form-group">
-                                <label htmlFor="createPost">Pickup Details: </label>
-                                <input type="text" id="pickupInfo" autoFocus onChange={handleControlledInputChange} value={post.pickupInfo} />
-                            </div>
-                        </fieldset>
+            <form className="formContainer">
+                <div className="createPostContainer">
+                    <div className="imageContainer">
+                        <h3 style={{ textTransform: 'capitalize' }}>{plant.scientificName}</h3>
+                        <img className="editImage" src={plant.image}></img>
                     </div>
 
-                    {/* either edit or create post */}
-                    <div className="buttons">
-                        <p><button className="btn" disabled={isLoading} onClick={event => {
-                            event.preventDefault()
-                            handleAddPost()
-                        }}>{postId ? "Save Edits" : "Add Post"}</button></p>
+                    <div className="contentContainer">
+                        <div className="formStyle">
 
-                        {/* go back to plant library */}
-                        {/* <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p> */}
+                            {/* enter address */}
+                                <div className="form-group">
+                                    <label htmlFor="createPost">Full Address: </label>
+                                    <input type="text" id="address" required autoFocus placeholder="123 Flower Way, Washington, DC 90210" onChange={handleControlledInputChange} value={post.address} />
+                                </div>
+
+                            {/* enter pickup details */}
+                                <div className="form-group">
+                                    <label htmlFor="createPost">Pickup Details: </label>
+                                    <input type="text" id="pickupInfo" autoFocus onChange={handleControlledInputChange} value={post.pickupInfo} />
+                                </div>
+                        </div>
+
+                        {/* either edit or create post */}
+                        <div className="buttons">
+                            <p><button className="btn" disabled={isLoading} onClick={event => {
+                                event.preventDefault()
+                                handleAddPost()
+                            }}>{postId ? "Save Edits" : "Add Post"}</button></p>
+
+                            {/* go back to plant library */}
+                            {/* <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p> */}
+                        </div>
+
+
+                        {/* This div grabs information from plant that was selected and posted to API to be displayed */}
+                        {plant.commonName ? <h4 style={{ textTransform: 'capitalize' }}>Common Name: {plant.commonName}</h4> : ""}
+                        <p>{plant.description}</p>
                     </div>
-
-
-                    {/* This div grabs information from plant that was selected and posted to API to be displayed */}
-                    <h3 style={{ textTransform: 'capitalize' }}>{plant.scientificName}</h3>
-                    {plant.commonName ? <h4 style={{ textTransform: 'capitalize' }}>Common Name: {plant.commonName}</h4> : ""}
-                    <p>{plant.description}</p>
                 </div>
-            </div>
-        </form>
+            </form>
+        </section>
     )
 }

@@ -12,12 +12,15 @@ export const UserPostList = () => {
     }, [])
 
     return (
-        <div className="postList">
-            {posts.map(post => {
-                if (post.userId === currentUserId) {
-                    return <UserPostCard key={post.id} post={post} />
-                }
-            })}
-        </div>
+        <section>
+            <h2 className="neon">My Posts</h2>
+            <div className="postList">
+                {posts.map(post => {
+                    if (post.userId === currentUserId) {
+                        return <UserPostCard key={post.id} post={post} />
+                    }
+                })}
+            </div>
+        </section>
     )
 }

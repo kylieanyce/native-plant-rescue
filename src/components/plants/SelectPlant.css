@@ -5,14 +5,14 @@
 .selectPlantCard {
     max-width: 70%;
     text-align: left;
-    background-color: #13636e;
-    color: whitesmoke;
+    background-color: #0C5F6A;
+    color: white;
     padding: 30px 30px 60px;
     margin: 10px;
     display: flex;
     flex: 3 3;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px 5px black;
 }
 .selectImageContainer {
     display: flex;
@@ -36,14 +36,19 @@
 .nonNativeContainer {
     display: flex;
     justify-content: center;
+    padding-top: 5em;
 }
 .nonNativeSubContainer {
     max-width: 70%;
     text-align: left;
-    background-color: #13636e;
-    color: whitesmoke;
+    background-color: #0C5F6A;
+    color: white;
     padding: 30px 30px 60px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px 5px black;
+}
+.nativeLink > a {
+    font-weight: bold;
+    color: lightcyan;
 }

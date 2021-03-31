@@ -21,6 +21,7 @@ export const IdentifyForm = () => {
 
     return (
         <div className="outerIdentifyForm">
+                <h2 className="neon">Identify Your Plant</h2>
             <div className="identifyForm">
                 <form className="innerIdentifyForm">
                     {/* ref needs to be associated with an input so the variable to be later 

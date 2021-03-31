@@ -7,17 +7,18 @@ body {
     flex-wrap: wrap;
 }
 .postCards {
-    background-color: #13636e;
-    color: whitesmoke;
+    background-color: #0C5F6A;
+    color: white;
     padding: 20px;
-    margin: 10px;
+    margin: 30px;
     display: flex;
     flex-direction: column;
     flex: 3 3;
-    max-width: 300px;
+    max-width: 250px;
+    min-width: 200px;
     text-align: left;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px 5px black;
 }
 .image {
     display: flex;
@@ -38,3 +39,15 @@ body {
     display: flex;
     justify-content: center;
 }
+.neon {
+    color: #1e2745;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
