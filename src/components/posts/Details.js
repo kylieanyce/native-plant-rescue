@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useContext, useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { PostContext } from "./PostProvider";
 import "./Detail.css";
@@ -9,6 +9,7 @@ export const PostDetails = () => {
     const currentUserId = parseInt(sessionStorage.getItem("app_user_id"))
     const { postId } = useParams();
     const history = useHistory();
+    const modal = useRef();
 
     // set post state variable
     const [post, setPost] = useState({
@@ -31,7 +32,7 @@ export const PostDetails = () => {
             id: post.id
         })
             // sends user to claim page where they are then thanked
-            .then(() => history.push(`/claim`))
+            .then(() => modal.current.showModal())
     }
 
     // deletes post from API and sends user to library
@@ -74,24 +75,32 @@ export const PostDetails = () => {
                     {/* Availablity */}
                     <p><strong>Available: </strong>{post.available === true ? "Yes" : "No"}</p>
 
-
                     {/* Claim plant button (only shows up if user logged in did not create this post) */}
-                    {currentUserId === post.userId ? "" : <div><label>Have you picked up this plant? </label><p><button className="btn claimButton" onClick={handleClaimPost}>Yes!</button></p></div>}
+                    {currentUserId === post.userId ? "" :
+                        <div>
+                            <label>Have you picked up this plant? </label>
+                            <p><button className="btn claimButton" onClick={handleClaimPost}>Yes!</button></p>
+                        </div>}
+
+                    <dialog className="claimModal" ref={modal}>
+                        <h3>Claimed!</h3>
+                        <p>Thank you for helping rescue native plants!</p>
+                        <button onClick={() => {
+                            modal.current.close()
+                            history.push("/library")}}>Back to Plant Library</button>
+                    </dialog>
 
                     {/* Edit button (only shows up if user created this) */}
                     {currentUserId === post.userId ? <button onClick={() => history.push(`/${postId}/${post.plant?.id}/edit`)}>
                         Edit
-            </button> : ""}
+                    </button> : ""}
 
                     {/* Delete button (only shows up if user created it) */}
                     {currentUserId === post.userId ? <button onClick={handleDeletePost}>
                         Delete
-            </button> : ""}
+                    </button> : ""}
 
 
-
-                    {/* Back to library button */}
-                    {/* <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p> */}
                 </div>
             </div>
         </section>

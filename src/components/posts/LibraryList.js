@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from "react"
-import { useHistory } from "react-router-dom"
 import { PlantContext } from "../plants/PlantProvider";
 import { PostContext } from "../posts/PostProvider";
 import { LibraryPostCard } from "./LibraryPost"
@@ -13,7 +12,6 @@ export const LibraryList = () => {
     const { posts, getPosts, searchTerms } = useContext(PostContext)
     // set filtered plant state for searching library 
     const [filteredPosts, setFiltered] = useState([])
-    const history = useHistory()
 
     // get plants then posts
     useEffect(() => {
@@ -31,7 +29,8 @@ export const LibraryList = () => {
             setFiltered(subset)
         } else {
             // if search terms is empty, set filtered post with all posts
-            setFiltered(posts)
+            const secondSubset = posts.filter(post => post.available === true)
+            setFiltered(secondSubset)
         }
         // watches for each time searchTerms and posts change so it can rerender
     }, [searchTerms, posts])
@@ -40,12 +39,6 @@ export const LibraryList = () => {
     return (
         <div className="libraryPosts">
             <h2>Available Plants</h2>
-
-            {/* identify button sends user to identify plant form */}
-            {/* <p><button className="btn identifyButton" onClick={() => {
-                history.push("/identifyForm")
-            }}>Identify Your Plant</button></p> */}
-
                 {/* map through filtered posts and send to library post card to be rendered*/}
                 <div className="postList">
                     {filteredPosts.map(post => {
