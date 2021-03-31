@@ -1,6 +1,7 @@
 .formContainer {
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .createPostContainer {
     max-width: 70%;

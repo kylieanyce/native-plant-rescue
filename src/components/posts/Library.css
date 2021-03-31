@@ -5,6 +5,7 @@ body {
 .postList {
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
 }
 .postCards {
     background-color: #0C5F6A;

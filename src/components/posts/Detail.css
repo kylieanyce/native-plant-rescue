@@ -1,8 +1,7 @@
 .details {
     display: flex;
     justify-content: center;
-    font-family: 'Lexend', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 .detailItem {
     max-width: 70%;

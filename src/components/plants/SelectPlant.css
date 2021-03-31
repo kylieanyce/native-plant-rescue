@@ -1,6 +1,7 @@
 .selectPlantContainer {
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .selectPlantCard {
     max-width: 70%;
