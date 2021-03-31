@@ -34,7 +34,8 @@
 .inputForm {
     display: flex;
     justify-content: flex-end;
+    min-width: 30em;
 }
 .form-group {
-    padding: 5px;
+    padding: 5px 0;
 }
