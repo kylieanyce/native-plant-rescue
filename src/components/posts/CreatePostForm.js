@@ -109,16 +109,16 @@ export const CreatePost = () => {
                         <div className="formStyle">
 
                             {/* enter address */}
-                                <div className="form-group">
-                                    <label htmlFor="createPost">Full Address: </label>
-                                    <input type="text" id="address" required autoFocus placeholder="123 Flower Way, Washington, DC 90210" onChange={handleControlledInputChange} value={post.address} />
-                                </div>
+                            <div className="form-group">
+                                <label htmlFor="createPost">Full Address: </label>
+                                <input className="inputForm" type="text" id="address" required autoFocus placeholder="123 Flower Way, Washington, DC 90210" onChange={handleControlledInputChange} value={post.address} />
+                            </div>
 
                             {/* enter pickup details */}
-                                <div className="form-group">
-                                    <label htmlFor="createPost">Pickup Details: </label>
-                                    <input type="text" id="pickupInfo" autoFocus onChange={handleControlledInputChange} value={post.pickupInfo} />
-                                </div>
+                            <div className="form-group">
+                                <label htmlFor="createPost">Pickup Details: </label>
+                                <input className="inputForm" type="text" id="pickupInfo" autoFocus onChange={handleControlledInputChange} value={post.pickupInfo} />
+                            </div>
                         </div>
 
                         {/* either edit or create post */}
@@ -126,7 +126,7 @@ export const CreatePost = () => {
                             <p><button className="btn" disabled={isLoading} onClick={event => {
                                 event.preventDefault()
                                 handleAddPost()
-                            }}>{postId ? "Save Edits" : "Add Post"}</button></p>
+                            }}>{postId ? "Save" : "Add Post"}</button></p>
 
                             {/* go back to plant library */}
                             {/* <p><button onClick={() => history.push(`/library`)}>Back to Plant Library</button></p> */}

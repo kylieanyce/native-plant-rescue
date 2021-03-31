@@ -8,7 +8,7 @@
     color: white;
     padding: 30px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 15px 5px black;
     text-align: left;
     display: flex;
@@ -29,4 +29,11 @@
     max-width: 75%;
     border-radius: 10px;
     box-shadow: 0 0 10px #1e2745;
+}
+.inputForm {
+    display: flex;
+    justify-content: flex-end;
+}
+.form-group {
+    padding: 5px;
 }
