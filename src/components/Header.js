@@ -1,7 +1,5 @@
 import React from "react"
 import "./Header.css"
-import { NavBar } from "./nav/NavBar"
-
 
 export const Header = () => {
     return (
@@ -9,8 +7,8 @@ export const Header = () => {
             <div className="headerOverlay">
                 <div className="header">
                     <header>
-                        <h1>Native Plant Rescue</h1>
-                        {/* <NavBar /> */}
+                        <img className="logo" src="../ScreenshotLogo.png" />
+                        <h1 className="title">Native Plant Rescue</h1>
                     </header>
                 </div>
             </div>

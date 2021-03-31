@@ -274,7 +274,7 @@
       "plantId": 21,
       "address": "789 Tulip Way",
       "pickupInfo": "",
-      "available": true,
+      "available": false,
       "id": 14
     }
   ],
