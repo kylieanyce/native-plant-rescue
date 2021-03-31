@@ -154,19 +154,19 @@
   ],
   "posts": [
     {
-      "userId": 2,
+      "userId": 4,
       "plantId": 1,
       "address": "526 shorty ln",
       "pickupInfo": "come around back",
-      "available": true,
+      "available": false,
       "id": 1
     },
     {
-      "userId": 6,
+      "userId": 4,
       "plantId": 2,
       "address": "789 boogie down rd",
       "pickupInfo": "on front porch",
-      "available": true,
+      "available": false,
       "id": 2
     },
     {
