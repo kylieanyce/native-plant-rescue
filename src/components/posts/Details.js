@@ -82,7 +82,7 @@ export const PostDetails = () => {
                             <p><button className="btn claimButton" onClick={handleClaimPost}>Yes!</button></p>
                         </div>}
 
-                    <dialog ref={modal}>
+                    <dialog className="claimModal" ref={modal}>
                         <h3>Claimed!</h3>
                         <p>Thank you for helping rescue native plants!</p>
                         <button onClick={() => {

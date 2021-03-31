@@ -178,11 +178,11 @@
       "id": 4
     },
     {
-      "userId": 5,
+      "userId": 4,
       "plantId": 5,
       "address": "789 Tulip Way",
       "pickupInfo": "",
-      "available": true,
+      "available": false,
       "id": 5
     },
     {
@@ -194,35 +194,35 @@
       "id": 6
     },
     {
-      "userId": 2,
+      "userId": 4,
       "plantId": 7,
       "address": "32 berry place",
       "pickupInfo": "",
-      "available": true,
+      "available": false,
       "id": 7
     },
     {
-      "userId": 3,
+      "userId": 4,
       "plantId": 8,
       "address": "231 forrest hills",
       "pickupInfo": "",
-      "available": true,
+      "available": false,
       "id": 8
     },
     {
-      "userId": 6,
+      "userId": 4,
       "plantId": 11,
       "address": "789 Tulip Way",
       "pickupInfo": "",
-      "available": true,
+      "available": false,
       "id": 9
     },
     {
-      "userId": 5,
+      "userId": 4,
       "plantId": 12,
       "address": "432 Rhododendron drive",
       "pickupInfo": "on street by mailbox",
-      "available": true,
+      "available": false,
       "id": 10
     },
     {

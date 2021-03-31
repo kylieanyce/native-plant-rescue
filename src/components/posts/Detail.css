@@ -30,3 +30,10 @@
 h2 {
     text-align: center;
 }
+.claimModal {
+    background-color: #1e2745;
+    color: gainsboro;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1e2745;
+}
