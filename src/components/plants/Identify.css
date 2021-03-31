@@ -3,17 +3,12 @@
     padding: 75px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
 }
 .identifyForm {
-    display: table-cell;
+    display: flex;
     vertical-align: middle;
-    opacity: 0.8;
+    padding-top: 9em;
+    
 }
-.outerIdentifyForm {
-    display: table; 
-    position: absolute;
-    top: 0px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-} 

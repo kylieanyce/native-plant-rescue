@@ -8,12 +8,13 @@
     padding: 10px;
 }
 .search {
-    color: black;
-    flex: 6;
-    margin-right:auto
+    display: flex;
+    padding-right: 40px;
+    flex: 3;
+    justify-content: flex-end;
 }
 .searchInput {
-    width: 50%;
+    width: 30em;
 }
 .navbar__link {
     flex: 1;
@@ -21,7 +22,7 @@
 }
 a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 ul {
     margin: 0;
