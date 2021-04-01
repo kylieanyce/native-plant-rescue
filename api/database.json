@@ -182,7 +182,7 @@
   ],
   "posts": [
     {
-      "userId": 4,
+      "userId": 1,
       "plantId": 1,
       "address": "526 shorty ln",
       "pickupInfo": "come around back",
@@ -190,7 +190,7 @@
       "id": 1
     },
     {
-      "userId": 4,
+      "userId": 2,
       "plantId": 4,
       "address": "87 sugar heights rd",
       "pickupInfo": "",
@@ -214,7 +214,7 @@
       "id": 6
     },
     {
-      "userId": 4,
+      "userId": 3,
       "plantId": 7,
       "address": "32 berry place",
       "pickupInfo": "",
@@ -222,7 +222,7 @@
       "id": 7
     },
     {
-      "userId": 4,
+      "userId": 5,
       "plantId": 8,
       "address": "231 forrest hills",
       "pickupInfo": "",
@@ -238,7 +238,7 @@
       "id": 9
     },
     {
-      "userId": 4,
+      "userId": 6,
       "plantId": 12,
       "address": "432 Rhododendron drive",
       "pickupInfo": "on street by mailbox",
@@ -254,7 +254,7 @@
       "id": 11
     },
     {
-      "userId": 4,
+      "userId": 1,
       "plantId": 14,
       "address": "3248 Bloomington Way",
       "pickupInfo": "out back",
@@ -270,11 +270,11 @@
       "id": 13
     },
     {
-      "userId": 4,
+      "userId": 3,
       "plantId": 21,
       "address": "789 Tulip Way",
       "pickupInfo": "",
-      "available": false,
+      "available": true,
       "id": 14
     }
   ],

@@ -25,11 +25,12 @@ body {
     display: flex;
     max-width: 200px;
     border-radius: 10px;
+    box-shadow: 0 0 10px #1e2745;
 }
 .image:hover {
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #1e2745;
+    box-shadow: 0 0 10px lightseagreen;
 }
 .alignCard {
     display: flex;
