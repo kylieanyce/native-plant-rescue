@@ -22,9 +22,11 @@ export const PlantSelection = () => {
                 :
                 <div className="nonNativeContainer">
                     <div className="nonNativeSubContainer">
-                        <h2>Non-Native</h2>
-                        <p>The plant you have uploaded is unfortunately a non-native species to the Nashville Area.</p>
-                        <p className="nativeLink"> <Link to={'/library'}> Ok </Link></p>
+                        <div className="nonNativeTitle">
+                            <h2>Non-Native</h2>
+                            <p>The plant you have uploaded is unfortunately a non-native species to the Nashville Area.</p>
+                        </div>
+                        <div className="nativeLink"> <Link to={'/library'}> Ok </Link></div>
                     </div>
                 </div>}
         </>

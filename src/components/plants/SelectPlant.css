@@ -10,6 +10,7 @@
     color: white;
     padding: 50px 70px 60px;
     margin: 10px;
+    line-height: 25px;
     display: flex;
     flex: 3 3;
     border-radius: 5px;
@@ -41,15 +42,18 @@
 }
 .nonNativeSubContainer {
     max-width: 70%;
-    text-align: left;
     background-color: #0C5F6A;
     color: white;
     padding: 30px 30px 60px;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 0 15px 5px black;
+    display: flex;
+    flex-direction: column;
+}
+.nonNativeTitle {
+    text-align: left;
 }
 .nativeLink > a {
     font-weight: bold;
-    color: lightcyan;
 }

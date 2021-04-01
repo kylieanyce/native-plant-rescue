@@ -6,6 +6,7 @@
 .createPostContainer {
     max-width: 60%;
     background-color: #0C5F6A;
+    line-height: 25px;
     color: white;
     padding: 30px;
     margin: 10px;
