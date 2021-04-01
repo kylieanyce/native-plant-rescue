@@ -28,10 +28,10 @@ h1 {
 		0.035em 0.035em 0 #13636e;
 }
 .logo {
-    border: 2px solid red;
+}
+.titleContainer {
+    flex: 3;
 }
 .title {
-    flex: 3;
-    padding-left: -30px;
-    border: 2px solid green;
+    padding-right: 2em;
 }

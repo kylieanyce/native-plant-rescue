@@ -1,12 +1,10 @@
 import React, { useContext, useRef } from "react";
 import { IdentifyContext } from "./Identify";
 import "./Identify.css";
-import { useHistory } from "react-router-dom";
 
 // creates identification form 
 export const IdentifyForm = () => {
     const { sendIdentification } = useContext(IdentifyContext)
-    const history = useHistory()
     // useRef grabs whatever associated file is input on the DOM 
     // must be set to null until it is filled
     const fileElement = useRef(null)
