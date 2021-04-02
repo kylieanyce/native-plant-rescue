@@ -1,4 +1,4 @@
-import React, { useContext, useHistory } from "react"
+import React, { useContext } from "react"
 import { IdentifyContext } from "./Identify";
 import { SelectPlantCard } from "./SelectPlant"
 import { Link } from "react-router-dom"

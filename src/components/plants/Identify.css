@@ -14,3 +14,15 @@
     padding-top: 5em;
     
 }
+.loadingModal {
+    background-color: #1e2745;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px black;
+    margin: auto;
+}
+.loadingDiv, svg{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display:inline-block;
+}
