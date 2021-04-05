@@ -19,7 +19,7 @@ Native plants are incredibly important to our ecosystem and are being driven out
 
 ## Tech Stack
 *Built with*
- - Plant.Id API: [GitHub link](https://github.com/Plant-id/Plant-id-API)
+ - [Plant.Id](https://plant.id/) API - [GitHub](https://github.com/Plant-id/Plant-id-API)
  - React
  - JavaScript
  - HTML
@@ -154,6 +154,6 @@ Once the user navigates to the page, register with name an email. Then the user 
 When the user wants to create a post, they can click on the *'Create A Post'* affordance in the navigation bar. This takes them to the **Verify Your Plant Is Native** form where they can then upload the image. If it is a native Nashville plant, they can click the *'This is my plant!'* affordance and will be taken to the **Create Post** form. Here, they can enter an address and optional pick up details, then post their plant. 
 
 ## Credits
-- The Plant.id API was a wonderful resource for this project and the folks there have been incredibly kind and generous as I have been working on it. This API has impressive features, and was slightly challenging and fun to learn!
+- The [Plant.Id](https://plant.id/) API was a wonderful resource for this project and the folks there have been incredibly kind and generous as I have been working on it. This API has impressive features, and was slightly challenging and fun to learn!
 - The Native Plant Rescue Squad non-profit located in Knoxville, TN was a big inspiration for this project. I loved their idea of saving native plants and was inspired to do similar work but with a slightly different approach.
 - Nashville Software School and my Cohort-46 colleagues. THANK YOU!
