@@ -38,7 +38,7 @@ export const LibraryList = () => {
     // renders plant library
     return (
         <div className="libraryPosts">
-            <h2>Available Plants</h2>
+            <h2 className="neon">Available Plants</h2>
                 {/* map through filtered posts and send to library post card to be rendered*/}
                 <div className="postList">
                     {filteredPosts.map(post => {

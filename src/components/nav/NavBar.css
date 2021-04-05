@@ -3,9 +3,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #13636e;
+    background-color: #0C5F6A;
     list-style: none;
     padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .search {
     display: flex;
@@ -15,6 +16,8 @@
 }
 .searchInput {
     width: 30em;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 .navbar__link {
     flex: 1;
@@ -22,7 +25,10 @@
 }
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
 }
 ul {
     margin: 0;

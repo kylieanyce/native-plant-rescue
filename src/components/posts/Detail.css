@@ -1,18 +1,20 @@
 .details {
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .detailItem {
-    max-width: 70%;
+    max-width: 60%;
     text-align: left;
-    background-color: #13636e;
-    color: whitesmoke;
+    background-color: #0C5F6A;
+    color: white;
+    line-height: 25px;
     padding: 30px 30px 60px;
     margin: 10px;
     display: flex;
     flex: 3 3;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px black;
 }
 .contentContainer {
     padding-left: 30px;
@@ -36,4 +38,5 @@ h2 {
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px #1e2745;
+    padding: 50px 130px 70px;
 }

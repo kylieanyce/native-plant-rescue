@@ -1,18 +1,20 @@
 .selectPlantContainer {
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .selectPlantCard {
-    max-width: 70%;
+    max-width: 55%;
     text-align: left;
-    background-color: #13636e;
-    color: whitesmoke;
-    padding: 30px 30px 60px;
+    background-color: #0C5F6A;
+    color: white;
+    padding: 50px 70px 60px;
     margin: 10px;
+    line-height: 25px;
     display: flex;
     flex: 3 3;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px black;
 }
 .selectImageContainer {
     display: flex;
@@ -36,14 +38,22 @@
 .nonNativeContainer {
     display: flex;
     justify-content: center;
+    padding-top: 5em;
 }
 .nonNativeSubContainer {
     max-width: 70%;
-    text-align: left;
-    background-color: #13636e;
-    color: whitesmoke;
+    background-color: #0C5F6A;
+    color: white;
     padding: 30px 30px 60px;
     margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px black;
+    display: flex;
+    flex-direction: column;
+}
+.nonNativeTitle {
+    text-align: left;
+}
+.nativeLink > a {
+    font-weight: bold;
 }

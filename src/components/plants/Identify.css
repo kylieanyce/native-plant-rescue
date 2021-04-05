@@ -1,14 +1,28 @@
 .innerIdentifyForm {
-    background-color: #13636e;
-    padding: 75px;
+    background-color: #0C5F6A;
+    color: white;
+    padding: 100px 150px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px black;
+    font-family: 'Montserrat', sans-serif;
 }
 .identifyForm {
     display: flex;
     vertical-align: middle;
-    padding-top: 9em;
+    padding-top: 5em;
     
+}
+.loadingModal {
+    background-color: #1e2745;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px black;
+    margin: auto;
+}
+.loadingDiv, svg{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display:inline-block;
 }
