@@ -220,6 +220,13 @@
       "description": "Rhododendron calendulaceum, the flame azalea, is a species of Rhododendron native to North America. All parts of this plant are poisonous to humans.",
       "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/975/73997c7d8defd76f1768cb9def346.jpg",
       "id": 27
+    },
+    {
+      "commonName": "Eastern Redbud",
+      "scientificName": "Cercis canadensis",
+      "description": "Cercis canadensis, the eastern redbud, is a large deciduous shrub or small tree, native to eastern North America from southern Michigan south to central Mexico, east to New Jersey. Species thrive as far west as California and as far north as southern Ontario, roughly corresponding to USDA hardiness zone 6b. It is the state tree of Oklahoma.",
+      "image": "https://storage.googleapis.com/plant_id_images/similar_images/20210309.efnB4/images/64a/c58d81a376d40b012e64aca3aba72.jpg",
+      "id": 28
     }
   ],
   "posts": [
@@ -270,14 +277,6 @@
       "pickupInfo": "out back",
       "available": true,
       "id": 12
-    },
-    {
-      "userId": 4,
-      "plantId": 20,
-      "address": "8422 Johnson Pike",
-      "pickupInfo": "",
-      "available": true,
-      "id": 13
     },
     {
       "userId": 3,
