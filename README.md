@@ -6,30 +6,6 @@ Hi, I'm Kylie and I love the outdoors! I chose to make this application because 
  - equal access and sustainability. 
 <br></br>
 
-### Create a Post
-First the user must upload an image and verify that it is a native plant. If so, they can then create a post with the location and optional pickup instructions. 
-![alt text](src/images/createApost.gif)
-
-### Edit a Post
-The user can edit their own posts as needed.
-![alt text](src/images/editPost.gif)
-
-### Delete a Post and View My Posts
-The user can claim a plant once they have picked it up, which deletes the plant from the library. They can also view all of their own posts.
-![alt text](src/images/deletePosts.gif)
-
-
-## Wireframe
-![alt text](src/images/wireframe1.png)
-![alt text](src/images/wireframe2.png)
-![alt text](src/images/wireframe3.png)
-
-## ERD
-![alt text](src/images/erd.png)
-
-## Dependency Chart
-![alt text](src/images/dependencyChart.png)
-
 ## Tech Stack
 *Built with*
  - [Plant.Id](https://plant.id/) API - [GitHub](https://github.com/Plant-id/Plant-id-API)
@@ -45,6 +21,35 @@ The user can claim a plant once they have picked it up, which deletes the plant 
 - The user can edit and delete their posts.
 - The user can search other posts and claim plants that they have picked up.
 - The user can view their own posts.
+<br>
+
+### Create a Post
+First the user must upload an image and verify that it is a native plant. If so, they can then create a post with the location and optional pickup instructions. 
+<br>
+![alt text](src/images/createApost.gif)
+
+
+### Edit a Post
+The user can edit their own posts as needed.
+<br>
+![alt text](src/images/editPost.gif)
+
+### Delete a Post and View My Posts
+The user can claim a plant once they have picked it up, which deletes the plant from the library. They can also view all of their own posts.
+<br>
+![alt text](src/images/deletePosts.gif)
+
+
+## Wireframe
+![alt text](src/images/wireframe1.png)
+![alt text](src/images/wireframe2.png)
+![alt text](src/images/wireframe3.png)
+
+## ERD
+![alt text](src/images/erd.png)
+
+## Dependency Chart
+![alt text](src/images/dependencyChart.png)
 
 ## Installation
 ```
