@@ -2,7 +2,8 @@
 This application is designed for gardeners to exchange native plants. A user can create a post for any plants they want to give away and others can come pick them up. A user however cannot post a plant that is not native to the Nashville Area. 
 
 ## Motivation
-Hi, I'm Kylie and I love the outdoors! I chose to make this application because I want to promote the conservation of natural and native habitats. Native plants are incredibly important to our ecosystem and are being driven out by invasive, non-native plant species. I also want access of native plants to be available to all at no cost. These are the two biggest motivating factors for me: equal access and sustainability. 
+Hi, I'm Kylie and I love the outdoors! I chose to make this application because I want to promote the conservation of natural and native habitats. Native plants are incredibly important to our ecosystem and are being driven out by invasive, non-native plant species. I also want access of native plants to be available to all at no cost. These are the two biggest motivating factors for me: 
+ - equal access and sustainability. 
 <br></br>
 
 ### Create a Post
