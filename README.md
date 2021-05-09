@@ -1,10 +1,22 @@
 # Native Plant Rescue
-This application is designed for gardeners to exchange native plants. A user can create a post for any plants they want to give away and others can come pick them up. A user however cannot post a plant that is not native to the Nashville Area.
+This application is designed for gardeners to exchange native plants. A user can create a post for any plants they want to give away and others can come pick them up. A user however cannot post a plant that is not native to the Nashville Area. 
 
 ## Motivation
-Native plants are incredibly important to our ecosystem and are being driven out by invasive, non-native plant species. I want to promote the conservation of native plants through this application. I also want access to native plants to be available to all at no cost. These are the two biggest motivating factors for me: equal access and sustainability. 
+Hi, I'm Kylie and I love the outdoors! I chose to make this application because I want to promote the conservation of natural and native habitats. Native plants are incredibly important to our ecosystem and are being driven out by invasive, non-native plant species. I also want access of native plants to be available to all at no cost. These are the two biggest motivating factors for me: equal access and sustainability. 
 <br></br>
-![alt text](https://user-images.githubusercontent.com/68411307/117588648-651a7280-b0ea-11eb-9ed1-0d2923ff81b9.mp4)
+
+### Create a Post
+First the user must upload an image and verify that it is a native plant. If so, they can then create a post with the location and optional pickup instructions. 
+![alt text](src/images/createApost.gif)
+
+### Edit a Post
+The user can edit their own posts as needed.
+![alt text](src/images/editPost.gif)
+
+### Delete a Post and View My Posts
+The user can claim a plant once they have picked it up, which deletes the plant from the library. They can also view all of their own posts.
+![alt text](src/images/deletePosts.gif)
+
 
 ## Wireframe
 ![alt text](src/images/wireframe1.png)
@@ -38,10 +50,13 @@ Native plants are incredibly important to our ecosystem and are being driven out
 git clone git@github.com:kylieanyce/native-plant-rescue.git
 cd api
 json-server -w database.json -p 8088
-..
+
 npm install
 npm start
 ```
+Be sure to make copy of database in database.json.example.
+
+<br>
 
 
 ## How To Use
@@ -57,3 +72,6 @@ When the user wants to create a post, they can click on the *'Create A Post'* af
 - The [Plant.Id](https://plant.id/) API was a wonderful resource for this project and the folks there have been incredibly kind and generous as I have been working on it. This API has impressive features, and was slightly challenging and fun to learn!
 - The Native Plant Rescue Squad non-profit located in Knoxville, TN was a big inspiration for this project. I loved their idea of saving native plants and was inspired to do similar work but with a slightly different approach.
 - Nashville Software School and my Cohort-46 colleagues. THANK YOU!
+
+## Authentication
+The authentication in this project was given to us by our instruction team and is completely false. 
