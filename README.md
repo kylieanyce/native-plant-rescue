@@ -4,7 +4,7 @@ This application is designed for gardeners to exchange native plants. A user can
 ## Motivation
 Native plants are incredibly important to our ecosystem and are being driven out by invasive, non-native plant species. I want to promote the conservation of native plants through this application. I also want access to native plants to be available to all at no cost. These are the two biggest motivating factors for me: equal access and sustainability. 
 <br></br>
-![alt text](src/images/landingPage.png)
+![alt text](https://user-images.githubusercontent.com/68411307/117588648-651a7280-b0ea-11eb-9ed1-0d2923ff81b9.mp4)
 
 ## Wireframe
 ![alt text](src/images/wireframe1.png)
