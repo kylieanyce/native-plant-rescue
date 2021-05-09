@@ -58,6 +58,7 @@ Be sure to make copy of database in database.json.example.
 
 <br>
 
+
 ## How To Use
 This application uses a json-server data store that only contains a few Nashville native plants. To find a match, either upload a photo that has one of the scientific names already listed under TnNatives in the json data store, or add a scientific name to the data store that matches the photo being uploaded. 
 
